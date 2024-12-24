@@ -6,8 +6,8 @@ const Organizers = [
     image: Omar,
     role: "Organizer",
     description: "",
-    github: "https://github.com/amarafray",
-    linkedIn: "https://www.linkedin.com/in/syed-omar-albeez/",
+    github: "https://github.com/",
+    linkedIn: "https://www.linkedin.com/",
     type: "organizer",
   },
 ];
