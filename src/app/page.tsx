@@ -1,6 +1,6 @@
-import ContactUs from '@/components/Contact';
-
 import Hero from "@/components/hero/Hero";
+import ContactUs from "@/components/Contact";
+
 import Image from "next/image";
 import React from "react";
 
