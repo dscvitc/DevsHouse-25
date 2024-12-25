@@ -14,7 +14,7 @@ export default function OrgHeader() {
         layout="fill"
         objectFit="contain"></Image>
       <h1
-        className={`text-5xl sm:text-7xl text-white font-extrabold tracking-tight ${inter.className}`}>
+        className={`text-4xl lg:text-7xl text-white font-extrabold tracking-tight ${inter.className}`}>
         ORGANIZERS
       </h1>
     </div>

@@ -5,7 +5,7 @@ import OrgBg from "./OrgBg";
 
 export default function Org() {
   return (
-    <>
+    <div className="py-10">
       <OrgHeader></OrgHeader>
       <div className="relative">
         <div className="absolute top-0 w-full">
@@ -15,6 +15,6 @@ export default function Org() {
           <OrgGrid></OrgGrid>
         </div>
       </div>
-    </>
+    </div>
   );
 }

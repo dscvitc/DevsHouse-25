@@ -17,7 +17,7 @@ const OrgCard: React.FC<OrgCardProps> = ({ name, image, linkedIn }) => {
         className="photo "
         src={image}
         alt="Syed Omar Albeez"
-        width={300}
+        width={500}
         height={100}
       />
       <Link

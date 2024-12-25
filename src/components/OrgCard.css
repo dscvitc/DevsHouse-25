@@ -74,15 +74,15 @@
 }
 
 .linkedin {
-  transform: translate(165%, 210%);
+  transform: translate(164%, 210%);
   z-index: 1;
   position: absolute;
 }
 
 .photo {
   position: absolute;
-  width: 300px;
+  width: 500px;
   height: auto;
   z-index: 1;
-  transform: translate(-2%, -18%);
+  transform: translate(-2%, -14%);
 }
