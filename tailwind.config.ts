@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mona: ['Mona Sans', 'sans-serif'],
+        space: ['Space Grotesk', 'serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
