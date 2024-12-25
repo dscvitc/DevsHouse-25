@@ -1,12 +1,12 @@
 import { Mona_Sans, Space_Grotesk, Hubot_Sans, Outfit } from "next/font/google"
 import Image from "next/image"
 
-const mona = Mona_Sans({ weight: ['800'] })
-const space = Space_Grotesk({ weight: ['400', '700'] })
-const hubot = Hubot_Sans({ weight: ['400', '700'] })
-const outfit = Outfit({ weight: ['400'] })
+const mona = Mona_Sans({ subsets: ['latin'], weight: ['800'] })
+const space = Space_Grotesk({ subsets: ['latin'], weight: ['400', '700'] })
+const hubot = Hubot_Sans({ subsets: ['latin'], weight: ['400', '700'] })
+const outfit = Outfit({ subsets: ['latin'], weight: ['400'] })
 
-import styles from '@/styles/Contact.module.css';
+import styles from '@/styles/Contact.module.scss';
 
 export default function Contact() {
     return (
