@@ -5,9 +5,9 @@ import gdscimage from "../../public/aboutsimages/GDSC_team.svg";
 import clubLogo from "../../public/aboutsimages/GDSC_Logo.svg"; // Add the path to your club logo image
 import diamond from "../../public/aboutsimages/Diamond.svg"; // Add the path to your diamond SVG
 import Image from "next/image";
-import Heading from "../components/ui/Heading"; // Adjust the path as necessary
+import Heading from "./ui/Heading"; // Adjust the path as necessary
 
-export default function About2() {
+export default function About() {
   return (
     <div id="about" className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk pt-12">
       
