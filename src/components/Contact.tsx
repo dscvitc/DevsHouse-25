@@ -37,10 +37,10 @@ export default function Contact() {
                     <path d="M171.5 195.758C125.982 195.758 83.1781 193.364 50.9756 189.017C17.1557 184.449 0 178.561 0 171.493C0 164.432 17.1486 158.537 50.9756 153.969C83.1781 149.622 125.982 147.228 171.5 147.228C217.018 147.228 259.822 149.622 292.025 153.969C325.852 158.537 343 164.425 343 171.493C343 178.553 325.852 184.449 292.025 189.017C259.822 193.364 217.018 195.758 171.5 195.758ZM171.5 149.828C126.096 149.828 83.4132 152.215 51.3246 156.541C15.396 161.385 2.60053 167.444 2.60053 171.5C2.60053 175.549 15.4031 181.608 51.3246 186.459C83.4132 190.792 126.096 193.172 171.5 193.172C216.904 193.172 259.587 190.785 291.676 186.459C327.604 181.615 340.4 175.556 340.4 171.5C340.4 167.451 327.597 161.392 291.676 156.541C259.587 152.208 216.911 149.828 171.5 149.828Z" fill="white" />
                 </svg>
 
-                <h2 style={mona.style} className='color-white text-center text-6xl'>CONTACT US</h2>
+                <h2 style={mona.style} className='color-white text-center text-6xl my-5'>CONTACT US</h2>
             </div>
 
-            <div className="relative grid grid-cols-1 md:grid-cols-2 border-2 border-white">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 border-2 border-white my-12">
                 <div style={{
                     position: 'absolute', left: 'calc(50% - 15px)', top: 'calc(10% - 15px)',
                     clipPath: 'polygon(100% 100%, 0 50%, 100% 0)',
