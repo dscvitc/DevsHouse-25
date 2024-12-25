@@ -38,8 +38,8 @@ const Panorama: React.FC = () => {
             <div className="py-8">
                 <h2 className={`${mona.className} text-center text-6xl my-5`}>GLIMPSES</h2>
                 <p className="text-center" style={space.style}>A sneak peek into the Relive the innovation, energy, and</p>
-                <p className={` ${space.style} text-center`}>brilliance that shaped last year's incredible hackathon experience!</p>
-                <h1 className="text-center font-extrabold text-4xl md:text-7xl my-3" style={hubot.style}>DEVSHOUSE'25</h1>
+                <p className={` ${space.style} text-center`}>brilliance that shaped last year&apos;s incredible hackathon experience!</p>
+                <h1 className="text-center font-extrabold text-4xl md:text-7xl my-3" style={hubot.style}>DEVSHOUSE&apos;25</h1>
                 <div className="panorama-slider">
                     <div className="swiper">
                         <div className="swiper-wrapper">
