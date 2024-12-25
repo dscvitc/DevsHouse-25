@@ -95,7 +95,7 @@ export default function Contact() {
                 filter: 'brightness(0.75)', width: '70vw', height: '70vw',
                 position: 'absolute', zIndex: -1,
                 left: '55%', transform: 'translate(-50%, -15%)'
-            }} src={BG_Image} className='top-full sm:top-1/2' width={800} height={800} alt='' />
+            }} src={BG_Image} className='top-1/2' width={800} height={800} alt='' />
         </section>
     )
 }
