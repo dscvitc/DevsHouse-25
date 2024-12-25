@@ -7,10 +7,13 @@ export default function Org() {
   return (
     <>
       <OrgHeader></OrgHeader>
-      {/*these 2 components will overlap*/}
-      <div>
-        <OrgBg></OrgBg>
-        <OrgGrid></OrgGrid>
+      <div className="relative">
+        <div className="absolute top-0 w-full">
+          <OrgBg></OrgBg>
+        </div>
+        <div className="absolute top-0 w-full">
+          <OrgGrid></OrgGrid>
+        </div>
       </div>
     </>
   );

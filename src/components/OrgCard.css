@@ -50,7 +50,7 @@
 .orgcard-gradient-small {
   transform: translateY(-6%);
   width: 218px;
-  height: 222px;
+  height: 225px;
   border: 0.25rem solid transparent;
   border-image-slice: 1;
   border-image-source: linear-gradient(

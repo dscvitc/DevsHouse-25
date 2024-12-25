@@ -1,7 +1,6 @@
 // this includes the cube and the wavy thingy
 import Image from "next/image";
 import Cube from "../../public/cube.svg";
-import waveVector from "../../public/wavy.svg";
 
 export default function OrgBg() {
   return (
