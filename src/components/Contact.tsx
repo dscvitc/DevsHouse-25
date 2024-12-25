@@ -1,5 +1,6 @@
 import { Mona_Sans, Space_Grotesk, Hubot_Sans, Outfit } from "next/font/google"
 import Image from "next/image"
+import BG_Image from '@/../public/contact_bg.svg'
 
 const mona = Mona_Sans({ subsets: ['latin'], weight: ['800'] })
 const space = Space_Grotesk({ subsets: ['latin'], weight: ['400', '700'] })
@@ -91,10 +92,10 @@ export default function Contact() {
             </div>
 
             <Image style={{
-                filter: 'brightness(0.75)', width: '80vw', height: '80vw',
+                filter: 'brightness(0.75)', width: '70vw', height: '70vw',
                 position: 'absolute', zIndex: -1,
-                left: '55%', transform: 'translate(-50%, 0)'
-            }} src='/contact_bg.png' className='top-full sm:top-1/2' width={900} height={900} alt='' />
+                left: '55%', transform: 'translate(-50%, -15%)'
+            }} src={BG_Image} className='top-full sm:top-1/2' width={800} height={800} alt='' />
         </section>
     )
 }
