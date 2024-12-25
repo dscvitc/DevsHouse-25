@@ -1,5 +1,6 @@
 import Hero from "@/components/hero/Hero";
 import ContactUs from "@/components/Contact";
+import Glimpses from "@/components/Glimpses";
 
 import Image from "next/image";
 import React from "react";
@@ -10,6 +11,7 @@ const Home = (props: Props) => {
   return (
     <div className="min-w-screen flex flex-col items-center justify-center">
       <Hero />
+      <Glimpses />
       <ContactUs />
     </div>
   );
