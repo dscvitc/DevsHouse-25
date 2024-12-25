@@ -11,7 +11,7 @@ import styles from '@/styles/Contact.module.scss';
 
 export default function Contact() {
     return (
-        <section id="contact" className='py-8 md:py-12'>
+        <section id="contact" className='relative py-8 md:py-12'>
             <div className="flex flex-wrap justify-center content-center" style={{ height: 225 }}>
                 <svg id={styles.contact_svg} className='absolute start-1/2'
                     viewBox="0 0 343 343" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@ export default function Contact() {
                 filter: 'brightness(0.75)', width: '70vw', height: '70vw',
                 position: 'absolute', zIndex: -1,
                 left: '55%', transform: 'translate(-50%, -15%)'
-            }} src={BG_Image} className='top-full sm:top-1/2' width={800} height={800} alt='' />
+            }} src={BG_Image} className='top-1/2' width={800} height={800} alt='' />
         </section>
     )
 }
