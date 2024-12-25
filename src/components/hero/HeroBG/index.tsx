@@ -16,7 +16,7 @@ const HeroBG = ({ children }: Props) => {
             alt="bg-asset"
             height={400}
             width={280}
-            className="-z-10 relative -top-20"
+            className="-z-10 relative -top-20 max-md:-left-10 max-md:scale-75"
           />
           <Image
             src="/images/cone.svg"
@@ -30,7 +30,7 @@ const HeroBG = ({ children }: Props) => {
             alt="bg-asset-cube"
             height={488}
             width={260}
-            className="-z-10 relative -left-40 -top-16"
+            className="-z-10 relative -left-40 -top-16 max-md:-top-20 max-md:hidden"
           />
           <Image
             src="/images/4-35.svg"
@@ -60,7 +60,7 @@ const HeroBG = ({ children }: Props) => {
             alt="bg-asset"
             height={250}
             width={250}
-            className="-z-10 relative -top-[100px] opacity-50"
+            className="-z-10 relative -top-[100px] opacity-50 max-md:-left-28 max-md:opacity-30"
           />
 
           <Image
@@ -68,9 +68,9 @@ const HeroBG = ({ children }: Props) => {
             alt="bg-asset"
             height={402}
             width={424}
-            className="-z-10 relative -right-50 -top-28 "
+            className="-z-50 relative -right-50 -top-28 "
           />
-          <div className="absolute right-0 top-[260px] w-[424px] h-[544px] bg-gradient-to-r from-transparent via-[#131313] to-[#131313] opacity-50 pointer-events-none"></div>
+          <div className="-z-50  absolute right-0 top-[260px] w-[424px] h-[544px] bg-gradient-to-r from-transparent via-[#131313] to-[#131313] opacity-50 pointer-events-none"></div>
           {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-[#131313] to-[#131313] opacity-50 pointer-events-none"></div> */}
         </div>
       </div>

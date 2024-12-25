@@ -38,7 +38,7 @@ const HeroContent = (props: Props) => {
       .padStart(2, "0")}`;
   };
   return (
-    <div className="flex flex-col justify-center items-start gap-y-0 ">
+    <div className="flex flex-col justify-center items-start gap-y-0">
       <div className=" flex flex-col justify-center items-center text-white w-full md:max-w-[875px] ">
         <div className="flex flex-col justify-center max-md:items-center md:items-start">
           <div className="flex justify-center items-start">
@@ -65,7 +65,7 @@ const HeroContent = (props: Props) => {
             </div>
           </div>
 
-          <div className="max-md:text-base md:text-[22px] text-[#AEAEAE] text-left font-mona-sans">
+          <div className="max-md:text-base md:text-[22px] text-[#AEAEAE] text-left font-mona-sans max-md:mt-6">
             DevsHouse '25 is a{" "}
             <span className="text-[#5B8EFF]">
               national-level

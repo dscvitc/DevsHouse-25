@@ -61,10 +61,10 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
       <div className="flex items-center max-md:gap-x-3 md:gap-x-6 font-outline leading-none">
         <div className="flex items-end justify-center max-md:gap-x-2 md:gap-x-4">
           <WordRotate
-            className="text-[30px] md:text-[122px] font-bold text-white/40"
+            className="text-[30px] md:text-[122px] font-bold text-white/40 max-md:text-white/80"
             words={[days.toString()]}
           />
-          <span className="text-[30px] md:text-[122px] text-white/40">
+          <span className="text-[30px] md:text-[122px] text-white/40 max-md:text-white/80">
             d
           </span>
         </div>
@@ -72,15 +72,15 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
           <span className="p-2 border-2 border-white/40" />
           <span className="p-2 border-2 border-white/40" />
         </span>
-        <span className="max-md:flex hidden text-white/40 text-[30px]">
+        <span className="max-md:flex hidden text-white/40 max-md:text-white/80 text-[30px]">
           :
         </span>
         <div className="flex items-end justify-center max-md:gap-x-2 md:gap-x-4">
           <WordRotate
-            className="text-[30px] md:text-[122px] font-bold text-white/40"
+            className="text-[30px] md:text-[122px] font-bold text-white/40 max-md:text-white/80"
             words={[hours.toString()]}
           />
-          <span className="text-[30px] md:text-[122px] text-white/40">
+          <span className="text-[30px] md:text-[122px] text-white/40 max-md:text-white/80">
             h
           </span>
         </div>
@@ -88,15 +88,15 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
           <span className="p-2 border-2 border-white/40" />
           <span className="p-2 border-2 border-white/40" />
         </span>
-        <span className="max-md:flex hidden text-white/40 text-[30px]">
+        <span className="max-md:flex hidden text-white/40 max-md:text-white/80 text-[30px]">
           :
         </span>
         <div className="flex items-end justify-center max-md:gap-x-2 md:gap-x-4">
           <WordRotate
-            className="text-[30px] md:text-[122px] font-bold text-white/40"
+            className="text-[30px] md:text-[122px] font-bold text-white/40 max-md:text-white/80"
             words={[minutes.toString()]}
           />
-          <span className="text-[30px] md:text-[122px] text-white/40">
+          <span className="text-[30px] md:text-[122px] text-white/40 max-md:text-white/80">
             m
           </span>
         </div>
