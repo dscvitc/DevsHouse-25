@@ -1,4 +1,4 @@
-// this containes the heading and the diamond
+// this contains the heading and the diamond
 import Image from "next/image";
 import Diamond from "../../public/diamond.svg";
 import { Inter } from "next/font/google";

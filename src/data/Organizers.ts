@@ -1,7 +1,9 @@
+import Omar from "../../public/organizers/syedOmarAlbeez.svg";
+
 export const Organizers = [
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -10,7 +12,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -19,7 +21,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -28,7 +30,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -37,7 +39,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -46,7 +48,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -55,7 +57,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -64,7 +66,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -73,7 +75,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -82,7 +84,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -91,7 +93,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -100,7 +102,7 @@ export const Organizers = [
   },
   {
     name: "Syed Omar Albeez",
-    image: "organizers/syedOmarAlbeez.svg",
+    image: Omar,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
