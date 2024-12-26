@@ -10,14 +10,14 @@ interface OrgCardProps {
 
 export default function OrgCard({ name, image, linkedIn }: OrgCardProps) {
   return (
-    <div className="relative outer overflow-visible">
+    <div className="relative outer">
       <div className="normal-div"></div>
-      <div className="h-[272px] w-[245px] bg-transparent absolute top-[30px] left-[28px] right-[70px] z-10 inner-gradient-border"></div>
+      <div className="h-[252px] w-[225px] bg-transparent absolute top-[30px] left-[25px] z-10 inner-gradient-border"></div>
       <Image
         className="photo absolute"
         src={image}
         alt="Syed Omar Albeez"
-        width={350}
+        width={500}
         height={100}
       />
       <Link
