@@ -132,3 +132,19 @@ body {
 	box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
 	transform: translate(3px, 3px);
 }
+
+
+
+@keyframes bob {
+	0%, 100% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-10px);
+	}
+  }
+  
+  .animate-bounce {
+	animation: bob 2s infinite;
+  }
+  
