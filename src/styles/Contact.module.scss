@@ -1,0 +1,46 @@
+#form {
+    input, textarea {
+        font-size: 22.5px;
+        display: block; width: 100%;
+        border-radius: 12px;
+        border: 2px solid #424242;
+        box-shadow: 3px 2px 0px white, 5px 4px #424242;
+        transition: transform 0.15s linear, box-shadow 0.15s linear;
+        background: transparent; color: #424242;
+        resize: none;
+    
+        &:focus {
+            box-shadow: none;
+            transform: translate(3px, 3px);
+        }
+    }
+
+    button[type="submit"] {
+        border: 2.5px solid #0D0D0D;
+        background: #0D0D0D; border-radius: 20px;
+        font-size: 22.5px; padding: 10px 50px;
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+        &:hover { background-color: transparent; color: #0d0d0d; }
+    }
+}
+
+
+svg#contact_svg  {
+    width: 225px; opacity: 0.49;
+    animation: rotate 20s linear infinite, draw 10s linear infinite;
+
+    path {
+        stroke-dasharray: 100;
+    }
+}
+
+@keyframes rotate {
+    0% { transform: translate(-50%, 0) rotate(0deg); }
+    100% { transform: translate(-50%, 0) rotate(360deg); }
+}
+
+@keyframes draw {
+    0% { stroke-dashoffset: 100%; }
+    100% { stroke-dashoffset: 0%; }
+}
