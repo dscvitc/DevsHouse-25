@@ -3,13 +3,13 @@
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 
-const WireframeDecahedron = () => {
+const Dodecahedron = () => {
   const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const currentMount = mountRef.current;
 
-    if (!currentMount) return; // Add null check
+    if (!currentMount) return;
 
     // Scene
     const scene = new THREE.Scene();
@@ -28,24 +28,24 @@ const WireframeDecahedron = () => {
     renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
     currentMount.appendChild(renderer.domElement);
 
-    // Geometry
-    const geometry = new THREE.DodecahedronGeometry(2.7, 0); // Dodecahedron for decahedron-like shape
-    const wireframe = new THREE.WireframeGeometry(geometry);
+    // Dodecahedron Geometry
+    const dodecahedronGeometry = new THREE.DodecahedronGeometry(2.0, 0);
+    const dodecahedronWireframe = new THREE.WireframeGeometry(dodecahedronGeometry);
 
     // Material
     const material = new THREE.LineBasicMaterial({
-      color: 0x808888,
+      color: 0x808080,
       opacity: 0.5,
       transparent: true,
     });
-    const decahedron = new THREE.LineSegments(wireframe, material);
-    scene.add(decahedron);
+    const dodecahedron = new THREE.LineSegments(dodecahedronWireframe, material);
+    scene.add(dodecahedron);
 
     // Animation
     const animate = () => {
       requestAnimationFrame(animate);
-      decahedron.rotation.x += 0.001;
-      decahedron.rotation.y += 0.001;
+      dodecahedron.rotation.x += 0.001;
+      dodecahedron.rotation.y += 0.001;
       renderer.render(scene, camera);
     };
 
@@ -53,11 +53,13 @@ const WireframeDecahedron = () => {
 
     // Cleanup
     return () => {
-      currentMount.removeChild(renderer.domElement);
+      if (currentMount && renderer.domElement.parentNode === currentMount) {
+        currentMount.removeChild(renderer.domElement);
+      }
     };
   }, []);
 
   return <div ref={mountRef} style={{ width: "100%", height: "350px" }} />;
 };
 
-export default WireframeDecahedron;
+export default Dodecahedron;
