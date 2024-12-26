@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Space_Grotesk } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
+
+import '@mantine/core/styles.css';
+
+import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -14,10 +17,6 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 });
 
-const space_Grotesk = Space_Grotesk({
-	subsets: ["latin"],
-	variable: "--font-spaceGrotesk",
-  });
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -30,11 +29,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`${space_Grotesk.variable} overflow-x-hidden`}>
+
+		<html lang="en" {...mantineHtmlProps}>
+			<head>
+				<ColorSchemeScript />
+			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				{children}
+				<MantineProvider>{children}</MantineProvider>
 				<SpeedInsights />
 			</body>
 		</html>

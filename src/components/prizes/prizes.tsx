@@ -2,19 +2,9 @@ import Divider from "./Divider";
 import MainPrize from "./MainPrizeCard";
 import SpecialPrize from "./SpecialPrizeCardImage";
 import Image from "next/image";
-import cybrance from "../../../public/sponsors/cybrance.png";
-import replit from "../../../public/sponsors/replit.png";
-import wolfram from "../../../public/sponsors/wolfram.png";
-import polygon from "../../../public/sponsors/polygon.png";
-import iblogo from "../../../public/sponsors/iblogotransparent.png";
-import bestgirls from "../../../public/images/prizes/best_all_girls_team.svg";
-import bestfresher from "../../../public/images/prizes/best_fresher_team.svg";
-import solana from "../../../public/sponsors/solana.png";
-import quillAudits from "../../../public/sponsors/quillaudits.png";
-import beeceptor from "../../../public/sponsors/beeceptor.png";
-import echo3D from "../../../public/sponsors/echo3d.png";
-import verbwire from "../../../public/sponsors/verbwire.png";
-import aops from "../../../public/sponsors/aops.png";
+
+
+
 export default function Prizes() {
   const PrizeInfo = [
     //Gold, silver and bronze images
@@ -84,90 +74,18 @@ export default function Prizes() {
   ];
 
 
-  // const tracks: any[] = [
-  //   {
-  //     trackName: "Polygon",
-  //     trackLogo: polygon,
-  //     trackText:
-  //       "Best hack built on Ethereum: $150 & \nEthereum + Polygon: $200",
-  //     color: "#07A158",
-  //   },
-  //   {
-  //     trackName: "Solana",
-  //     trackLogo: solana,
-  //     trackText:
-  //       "$100 for best beginners project, $250 for best intermediate project, $500 for the best advanced project",
-  //     color: "#07A158",
-  //   },
-
-  //   {
-  //     trackName: "QuillAudits",
-  //     trackLogo: quillAudits,
-  //     trackText:
-  //       "Wagsi grants worth $1500, Schwags for top developers using Quillcheck API/Quillai API, Best projects can pitch their projects to our incubator.",
-  //     color: "#07A158",
-  //   },
-
-  //   {
-  //     trackName: "Replit",
-  //     trackLogo: replit,
-  //     trackText: "Winning Project deployed on Replit: $50",
-  //   },
-  //   {
-  //     trackName: "Wolfram",
-  //     trackLogo: wolfram,
-  //     trackText:
-  //       "Top 6 teams receive One Year subscription to Wolfram|One Personal Edition & Wolfram|Alpha Pro each worth $375, 1 Month Trial for Wolfram|One worth $25.00 for all participants ",
-  //     color: "#07A158",
-  //   },
-  //   {
-  //     trackName: "IB",
-  //     trackLogo: iblogo,
-  //     trackText:
-  //       "VOUCHERS WORTH - 100% off to winners and runner-up, 90% off to participants",
-  //     color: "#07A158",
-  //   },
-  //   {
-  //     trackName: "Beeceptor",
-  //     trackLogo: beeceptor,
-  //     trackText:
-  //       "Free 1 year Team Plan for winning team. All participants get $25 credit to subscribe to the Team plan.",
-  //     color: "#07A158",
-  //   },
-  //   {
-  //     trackName: "echo3D",
-  //     trackLogo: echo3D,
-  //     trackText:
-  //       "1-month Pro tier subscription as a free resource to all participants ($99 value per sign up)",
-  //     color: "#07A158",
-  //   },
-
-  //   {
-  //     trackName: "Verbwire",
-  //     trackLogo: verbwire,
-  //     trackText:
-  //       "Up to $5,000 in Premium API Credits for Most Innovative Use Of Verbwire API up to 20 teams.One-month free Verbwire Starter Subscription to all participants.",
-  //     color: "#07A158",
-  //   },
-
-  //   {
-  //     trackName: "Art of Problem Solving",
-  //     trackLogo: aops,
-  //     trackText: "Top team get $25 coupons",
-  //     color: "#07A158",
-  //   },
-  // ];
+  
   return (
     <section
       id="prizes"
       className="w-full flex flex-col justify-center items-center overflow-hidden mb-8"
     >
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center mt-12">
       <svg
         viewBox="0 0 391 398"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px]"
+        className="w-[150px] h-[150px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] animate-spin-elastic"
       >
         <g opacity="0.21">
           <path
@@ -217,19 +135,16 @@ export default function Prizes() {
         </g>
       </svg>
 
-      <h1 className="text-white font-bold absolute text-[35px] font-mona z-10 sm:text-[40px] md:text-[45px] lg:text-[54px] text-center transform -translate-y-1/2 top-1/2">
+      <h1 className="text-white font-bold absolute text-[25px] font-mona z-10 sm:text-[30px] md:text-[35px] lg:text-[44px] text-center transform -translate-y-1/2 top-1/2">
         PRIZES
       </h1>
 
-      {/* <h1 className="text-white text-[35px] font-bold font-mona mt-25 sm:text-[40px] md:txt[45px] lg:[54px]">
-        PRIZES
-      </h1>
-       */}
+    
       </div>
       <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
       <div className="flex flex-row justify-center items-end md:px-12 md:gap-x-32 mt-[60px] mb-[60px]">
         <div className="w-[30%]">
-        <div className="absolute top-1/3 left-1/3 w-64 h-96 rounded-full bg-slate-500 blur-3xl z-[-1] opacity-150 mt-[450px] ml-[-280px]"></div>
+        <div className="outline-none absolute top-1/3 left-1/3 w-32 h-48 md:w-64 md:h-80 rounded-full bg-slate-500 blur-3xl z-[-1] opacity-150 md:mt-[320px] md:ml-[-280px] mt-[100px] ml-[-150px]"></div>
           <MainPrize
             src={PrizeInfo[1].src} //bronze
             width={PrizeInfo[1].width}
@@ -239,8 +154,15 @@ export default function Prizes() {
           />
         </div>
         <div className="w-[40%]">
-          <Image src="/images/prizes/bg.png" width={600} height={500} alt="Background" className="absolute z-[-1] mt-[50px] ml-[-140px]"/>
-          <div className="text-white text-7xl">adwwa</div>
+          <div className="absolute z-[-1] left-1/2 transform -translate-x-1/2">
+            <div className="relative w-[220px] h-[300px] ml-[10px] md:w-[600px] md:h-[600px] md:mt-12">
+              <Image src="/images/prizes/bg.png" fill priority alt="Background" />
+            </div>
+          </div>
+          <div className="absolute top-1/3 left-1/3 w-32 h-44 md:w-96 md:h-[400px] mt-[100px] ml-[20px] rounded-full bg-[#FDDB85] blur-3xl z-[-1] opacity-70 flex items-center justify-center md:mt-[200px] md:ml-[50px]">
+            <div className="w-32 h-44 md:w-56 md:h-56 rounded-full bg-[#FFC727] blur-3xl z-[-1] opacity-100 "></div>
+          </div>
+
           <MainPrize
             src={PrizeInfo[0].src} //gold
             width={PrizeInfo[0].width}
@@ -250,7 +172,8 @@ export default function Prizes() {
           />
         </div>
         <div className="w-[30%]">
-          <div className="text-white text-7xl">adwwa</div>
+          <div className="absolute top-1/3 left-1/3 w-32 h-48 ml-[160px] mt-[100px] md:w-64 md:h-80 rounded-full bg-[#0387DA] blur-3xl z-[-1] opacity-75 md:ml-[530px] md:mt-[320px]"></div>
+
           <MainPrize
             src={PrizeInfo[2].src} //silver
             width={PrizeInfo[2].width}
