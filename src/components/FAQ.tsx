@@ -11,7 +11,6 @@ import FaqBg from "../../public/FAQ_assets/Vector.svg"
 import { Mona_Sans } from "next/font/google"; 
 
 const Space = Space_Grotesk({ weight: "700", subsets: ["latin"] });
-const Space400 = Space_Grotesk({ weight: "400", subsets: ["latin"] });
 const Mona = Mona_Sans({ weight: "700", subsets: ["latin"] });
 
 const FAQ = () => {
@@ -27,7 +26,7 @@ const FAQ = () => {
     yellow: YellowBubble,
     green: GreenBubble,
   };
-  const items = FAQData.map((props, i) => (
+  const items = FAQData.map((props) => (
     <Accordion type="single" collapsible key={props.key}>
       <AccordionItem className="rounded-xl border-bottom bg-[#ffffff08]" value={props.question}>
         <AccordionTrigger className={`text-white text-left hover:bg-inherit`}>
