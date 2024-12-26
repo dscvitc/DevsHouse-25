@@ -3,132 +3,171 @@
 @tailwind utilities;
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer base {
   :root {
-		--background: 0 0% 100%;
-		--foreground: 240 10% 3.9%;
-		--card: 0 0% 100%;
-		--card-foreground: 240 10% 3.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 240 10% 3.9%;
-		--primary: 240 5.9% 10%;
-		--primary-foreground: 0 0% 98%;
-		--secondary: 240 4.8% 95.9%;
-		--secondary-foreground: 240 5.9% 10%;
-		--muted: 240 4.8% 95.9%;
-		--muted-foreground: 240 3.8% 46.1%;
-		--accent: 240 4.8% 95.9%;
-		--accent-foreground: 240 5.9% 10%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 240 5.9% 90%;
-		--input: 240 5.9% 90%;
-		--ring: 240 10% 3.9%;
-		--chart-1: 12 76% 61%;
-		--chart-2: 173 58% 39%;
-		--chart-3: 197 37% 24%;
-		--chart-4: 43 74% 66%;
-		--chart-5: 27 87% 67%;
-		--radius: 0.5rem;
-	}
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
   .dark {
-		--background: 240 10% 3.9%;
-		--foreground: 0 0% 98%;
-		--card: 240 10% 3.9%;
-		--card-foreground: 0 0% 98%;
-		--popover: 240 10% 3.9%;
-		--popover-foreground: 0 0% 98%;
-		--primary: 0 0% 98%;
-		--primary-foreground: 240 5.9% 10%;
-		--secondary: 240 3.7% 15.9%;
-		--secondary-foreground: 0 0% 98%;
-		--muted: 240 3.7% 15.9%;
-		--muted-foreground: 240 5% 64.9%;
-		--accent: 240 3.7% 15.9%;
-		--accent-foreground: 0 0% 98%;
-		--destructive: 0 62.8% 30.6%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 240 3.7% 15.9%;
-		--input: 240 3.7% 15.9%;
-		--ring: 240 4.9% 83.9%;
-		--chart-1: 220 70% 50%;
-		--chart-2: 160 60% 45%;
-		--chart-3: 30 80% 55%;
-		--chart-4: 280 65% 60%;
-		--chart-5: 340 75% 55%;
-	}
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
 }
 
 @layer base {
   * {
     @apply border-border;
-	}
+  }
   body {
     @apply bg-background text-foreground;
-	}
+  }
 }
 
 .gradient-text {
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .gradient-finance {
-	background-image: linear-gradient(90deg, #683CF8 0%, #854CFC 100%);
+  background-image: linear-gradient(90deg, #683cf8 0%, #854cfc 100%);
 }
 
 .gradient-innovation {
-	background-image: linear-gradient(90deg, #0073E5 0%, #00B4E1 100%);
+  background-image: linear-gradient(90deg, #0073e5 0%, #00b4e1 100%);
 }
 
 .gradient-arvr {
-	background-image: linear-gradient(90deg, #FF3E7B 0%, #FF8FC3 100%);
+  background-image: linear-gradient(90deg, #ff3e7b 0%, #ff8fc3 100%);
 }
 
 .gradient-environmental {
-	background-image: linear-gradient(90deg, #00E05A 1.5%, #01CC52 19.53%, #00A0E5 50.5%);
+  background-image: linear-gradient(
+    90deg,
+    #00e05a 1.5%,
+    #01cc52 19.53%,
+    #00a0e5 50.5%
+  );
 }
 
 .gradient-blockchain {
-	background-image: linear-gradient(90deg, #E00000 1.5%, #E5D200 50.5%);
+  background-image: linear-gradient(90deg, #e00000 1.5%, #e5d200 50.5%);
 }
 
 .gradient-iot {
-	background-image: linear-gradient(90deg, #E000BB 1.5%, #5C00E5 50.5%);
+  background-image: linear-gradient(90deg, #e000bb 1.5%, #5c00e5 50.5%);
 }
 
 .button-Sponsor {
-	appearance: button;
-	background-color: #fff!important;
-	background-image: none;
-	border-radius: 8px;
-	box-shadow: #000 6px 6px 0 0,#fff 6px 6px 0 1px;
-	color: #000!important;
-	cursor: pointer;
-	display: inline-block;
-	font-family: 'Space Grotesk', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	line-height: 20px;
-	overflow: visible;
-	text-align: left;
-	text-transform: none;
-	touch-action: manipulation;
-	user-select: none;
-	-webkit-user-select: none;
-	vertical-align: left;
+  appearance: button;
+  background-color: #fff !important;
+  background-image: none;
+  border-radius: 8px;
+  box-shadow: #000 6px 6px 0 0, #fff 6px 6px 0 1px;
+  color: #000 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 20px;
+  overflow: visible;
+  text-align: left;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: left;
 }
 
 .button-Sponsor:active {
-	box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-	outline: 0;
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
 }
 
 .button-Sponsor:not([disabled]):active {
-	box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-	transform: translate(3px, 3px);
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(3px, 3px);
+}
+
+.top {
+  appearance: button;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 8px;
+  box-shadow: #000 6px 6px 0 0, #fff 6px 6px 0 1px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 20px;
+  overflow: visible;
+  text-align: left;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: left;
+  width: 272px;
+  height: 75px;
+}
+
+.top:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.top:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(3px, 3px);
 }
