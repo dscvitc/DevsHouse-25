@@ -9,10 +9,10 @@ const hubot = Hubot_Sans({ subsets: ["latin"] });
 export default function Speakers() {
   return (
     <section className="flex flex-col justify-center items-center text-center py-8">
-      <div className="h-60 w-64 bg-[url('/speakers/bg1.png')] bg-contain bg-no-repeat bg-center flex items-center justify-center m-6">
+      <div className="h-60 w-64 bg-[url('/speakers/bg1.svg')] bg-contain bg-no-repeat bg-center flex items-center justify-center m-6">
         <h2 className={`text-4xl font-extrabold ${monasans.className}`}>SPEAKERS</h2>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 bg-[url('/speakers/bg2.png')] bg-contain bg-no-repeat bg-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 bg-[url('/speakers/bg2.svg')] bg-contain bg-no-repeat bg-center">
         {speakers.map((speaker, index) => {
           return (
             <div
