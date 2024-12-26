@@ -6,7 +6,7 @@ import Timeline from "@/components/Timeline";
 import HostInvitation from "@/components/HostInvitation";
 import About from "@/components/About";
 import Prizes from '@/components/prizes/PrizesComponent';
-
+import Speakers from "@/components/Speakers";
 
 export default function Home() {
   return (
