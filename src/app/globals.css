@@ -173,7 +173,8 @@ body {
 }
 
 @keyframes bob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -184,4 +185,3 @@ body {
 .animate-bounce {
   animation: bob 2s infinite;
 }
-
