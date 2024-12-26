@@ -12,12 +12,24 @@ export default {
   	extend: {
 		animation: {
 			'spin-elastic': 'spin-elastic 3s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite',
+			"accordion-down": "accordion-down 0.6s ease-out",
+			"accordion-up": "accordion-up 0.6s ease-out",
+			  'printedGraphic':"url('/Pasted Graphic.png')",
+			  'PastedGraphics':"url('/Pasted Graphic 2.png')"
 		  },
 		  keyframes: {
 			'spin-elastic': {
 			  '0%': { transform: 'rotate(0deg) scale(1)' },
 			  '50%': { transform: 'rotate(180deg) scale(1.3)' },
 			  '100%': { transform: 'rotate(360deg) scale(1)' },
+			},
+			  "accordion-down": {
+			  from: { height: "0" },
+			  to: { height: "var(--radix-accordion-content-height)" },
+			},
+			"accordion-up": {
+			  from: { height: "var(--radix-accordion-content-height)" },
+			  to: { height: "0" },
 			},
 		  },
   		colors: {
@@ -72,22 +84,6 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		keyframes: {
-			"accordion-down": {
-			  from: { height: "0" },
-			  to: { height: "var(--radix-accordion-content-height)" },
-			},
-			"accordion-up": {
-			  from: { height: "var(--radix-accordion-content-height)" },
-			  to: { height: "0" },
-			},
-		},
-		animation: {
-			"accordion-down": "accordion-down 0.6s ease-out",
-			"accordion-up": "accordion-up 0.6s ease-out",
-			  'printedGraphic':"url('/Pasted Graphic.png')",
-			  'PastedGraphics':"url('/Pasted Graphic 2.png')"
-		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
