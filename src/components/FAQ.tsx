@@ -94,7 +94,7 @@ const FAQ = () => {
             transform: "translate(-50%, -50%)", 
             width: "85vw",
             height: "75vw",
-            filter: "blur(40px)",
+            filter: "blur(45px)",
           }}
           src={BlackBg}
           width={800}
