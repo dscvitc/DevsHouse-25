@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 
 import { DottedSeperator } from "@/components/tracks/dotted-seperator"
 import { tracks } from '@/data/tracks'
-
+import Heading from "../ui/Heading";
 const monasans = Mona_Sans({ subsets: ['latin'] })
 
 export default function Tracks() {
@@ -13,7 +13,7 @@ export default function Tracks() {
     <div className={`p-16 ${monasans.className}`}>
       {/* Intro Section with Background */}
       <div className="relative mb-16 max-w-xs mx-auto">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <Image
             src="/tracks/tracks-bg.svg"
             alt="Tracks Background"
@@ -22,9 +22,12 @@ export default function Tracks() {
             className="w-full h-full object-contain"
             priority
           />
-        </div>
-        <div className="relative z-10 flex items-center justify-center h-[150px]">
+        </div> */}
+        {/* <div className="relative z-10 flex items-center justify-center h-[150px]">
           <h1 className="text-3xl font-bold text-white">TRACKS</h1>
+        </div> */}
+        <div className="md-108">
+        <Heading title="TRACKS" geometry="Cubedodecahedron"/> {/* Add margin-bottom here */}
         </div>
       </div>
 
