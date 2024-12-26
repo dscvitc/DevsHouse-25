@@ -16,7 +16,7 @@ export default function OrgCard({ name, image, linkedIn }: OrgCardProps) {
       <Image
         className="photo absolute"
         src={image}
-        alt="Syed Omar Albeez"
+        alt={name}
         width={500}
         height={100}
       />

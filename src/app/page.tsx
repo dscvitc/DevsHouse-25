@@ -1,4 +1,4 @@
-import Org from "@/components/Org";
+import Org from "@/components/organizers/Org";
 
 export default function Home() {
   return <Org></Org>;

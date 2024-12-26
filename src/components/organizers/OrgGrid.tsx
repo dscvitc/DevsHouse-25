@@ -1,5 +1,5 @@
-import OrgCard from "./OrgCard";
-import { Organizers } from "../data/Organizers";
+import OrgCard from "./OrgCard/OrgCard";
+import { Organizers } from "../../data/Organizers";
 
 export default function OrgGrid() {
   return (
