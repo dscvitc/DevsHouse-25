@@ -8,7 +8,18 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
   	extend: {
+		animation: {
+			'spin-elastic': 'spin-elastic 3s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite',
+		  },
+		  keyframes: {
+			'spin-elastic': {
+			  '0%': { transform: 'rotate(0deg) scale(1)' },
+			  '50%': { transform: 'rotate(180deg) scale(1.3)' },
+			  '100%': { transform: 'rotate(360deg) scale(1)' },
+			},
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -16,6 +27,7 @@ export default {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
   			},
+			
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
@@ -51,6 +63,10 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		  fontFamily: {
+			mona: ['Mona Sans', 'sans-serif'],
+			space: ['Space Grotesk', 'serif'],
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
