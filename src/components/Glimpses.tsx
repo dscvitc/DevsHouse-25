@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { Mona_Sans, Space_Grotesk, Hubot_Sans } from "next/font/google"
 import Image from "next/image"
-
+import Bgimage from "@/../public/glimpses_bg.svg";
 const mona = Mona_Sans({ subsets: ['latin'], weight: ['800'] })
 const space = Space_Grotesk({ subsets: ['latin'], weight: ['400', '700'] })
 const hubot = Hubot_Sans({ subsets: ['latin'], weight: ['800', '700'] })
@@ -35,8 +35,13 @@ const Panorama: React.FC = () => {
 
     return (
         <>
-            <div className="py-8">
-                <h2 className={`${mona.className} text-center text-6xl my-5`}>GLIMPSES</h2>
+            <div className="my-8">
+
+                <div
+                    className="relative flex justify-center items-center my-3" style={{ height: 205 }} >
+                    <Image className="absolute" src={Bgimage} alt="bgimage" width={200} height={200} />
+                    <h2 className={`${mona.className} text-center text-6xl`}>GLIMPSES</h2>
+                </div>
                 <p className="text-center" style={space.style}>A sneak peek into the innovation, energy, and</p>
                 <p className={` ${space.style} text-center`}>brilliance that shaped last year&apos;s incredible hackathon experience!</p>
                 <h1 className="text-center font-extrabold text-4xl md:text-7xl my-3" style={hubot.style}>DEVSHOUSE&apos;24</h1>

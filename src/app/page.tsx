@@ -6,8 +6,7 @@ import Timeline from "@/components/Timeline";
 import HostInvitation from "@/components/HostInvitation";
 import About from "@/components/About";
 import Prizes from '@/components/prizes/PrizesComponent';
-
-
+import Org from "@/components/organizers/Org";
 import Speakers from "@/components/Speakers";
 
 export default function Home() {
@@ -18,6 +17,7 @@ export default function Home() {
       <Tracks />
 	    <Prizes />
       <Timeline />
+      <Org />
       <Speakers />
       <Glimpses />
       <HostInvitation />

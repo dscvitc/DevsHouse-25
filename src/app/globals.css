@@ -173,7 +173,8 @@ body {
 }
 
 @keyframes bob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -184,23 +185,3 @@ body {
 .animate-bounce {
   animation: bob 2s infinite;
 }
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
-}
-
-@keyframes glitter {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-
-.animate-bounce {
-  animation: bounce 2s infinite;
-}
-
-.animate-bounce-glitter {
-  animation: bounce 2s infinite, glitter 2s infinite;
-}
-
