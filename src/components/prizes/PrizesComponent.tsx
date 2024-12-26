@@ -144,7 +144,10 @@ export default function Prizes() {
       <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
       <div className="flex flex-row justify-center items-end md:px-12 md:gap-x-32 mt-[60px] mb-[60px]">
         <div className="w-[30%]">
-        <div className="outline-none absolute top-1/3 left-1/3 w-32 h-48 md:w-64 md:h-80 rounded-full bg-slate-500 blur-3xl z-[-1] opacity-150 md:mt-[320px] md:ml-[-280px] mt-[100px] ml-[-150px]"></div>
+
+          <div className="absolute">
+            <div className="absolute top-1/3 left-1/3 w-32 h-48 md:w-64 md:h-80 rounded-full bg-slate-500 blur-3xl z-[-1] opacity-150 md:mt-[60px] md:ml-[-30px] mt-[40px] ml-[-10px]"></div> 
+          </div>
           <MainPrize
             src={PrizeInfo[1].src} //bronze
             width={PrizeInfo[1].width}
@@ -159,9 +162,12 @@ export default function Prizes() {
               <Image src="/images/prizes/bg.png" fill priority alt="Background" />
             </div>
           </div>
-          <div className="absolute top-1/3 left-1/3 w-32 h-44 md:w-96 md:h-[400px] mt-[100px] ml-[20px] rounded-full bg-[#FDDB85] blur-3xl z-[-1] opacity-70 flex items-center justify-center md:mt-[200px] md:ml-[50px]">
+          <div className="absolute">
+          <div className="absolute top-1/3 left-1/3 w-32 h-44 md:w-96 md:h-[400px] mt-[30px] ml-[30px] rounded-full bg-[#FDDB85] blur-3xl z-[-1] opacity-70 flex items-center justify-center md:mt-[50px] md:ml-[-20px]">
             <div className="w-32 h-44 md:w-56 md:h-56 rounded-full bg-[#FFC727] blur-3xl z-[-1] opacity-100 "></div>
+          </div> 
           </div>
+         
 
           <MainPrize
             src={PrizeInfo[0].src} //gold
@@ -172,8 +178,9 @@ export default function Prizes() {
           />
         </div>
         <div className="w-[30%]">
-          <div className="absolute top-1/3 left-1/3 w-32 h-48 ml-[160px] mt-[100px] md:w-64 md:h-80 rounded-full bg-[#0387DA] blur-3xl z-[-1] opacity-75 md:ml-[530px] md:mt-[320px]"></div>
-
+          <div className="absolute">
+          <div className="absolute top-1/3 left-1/3 w-32 h-48 ml-[-10px] mt-[40px] md:w-64 md:h-80 rounded-full bg-[#0387DA] blur-3xl z-[-1] opacity-75 md:ml-[10px] md:mt-[60px]"></div>
+          </div>
           <MainPrize
             src={PrizeInfo[2].src} //silver
             width={PrizeInfo[2].width}
@@ -202,6 +209,7 @@ export default function Prizes() {
       ) : (
         <></>
       )}
+      {/* </div> */}
     </section>
   );
 }

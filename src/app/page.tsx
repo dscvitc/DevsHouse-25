@@ -11,14 +11,16 @@ import Speakers from "@/components/Speakers";
 export default function Home() {
   return (
     <>
+      
       <About />
       <Tracks />
-	  <Prizes />
+	    <Prizes />
       <Timeline />
       <Speakers />
       <Glimpses />
       <HostInvitation />
       <ContactUs />
+      
     </>
   );
 }
