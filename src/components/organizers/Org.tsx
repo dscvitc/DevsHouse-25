@@ -8,8 +8,8 @@ export default function Org() {
     <div className="py-10">
       <OrgHeader></OrgHeader>
       <div className="relative">
-        <div className="absolute top-0 w-full">
-          <OrgBg></OrgBg>
+        <div className=" lg:block">
+          <OrgBg />
         </div>
         <div className="absolute top-0 w-full">
           <OrgGrid></OrgGrid>

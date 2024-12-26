@@ -5,13 +5,13 @@ import Wavy from "../../../public/wavy.svg";
 export default function OrgBg() {
   return (
     <div
-      className="bg-no-repeat bg-contain bg-bottom flex justify-center"
+      className="bg-no-repeat bg-contain bg-bottom flex justify-center overflow-visible"
       style={{ backgroundImage: `url(${Wavy.src})` }} // Access `.src` for the path of the image
     >
       <Image
-        className="size-[85%] -translate-y-36"
+        className="xl:size-[85%] size-[100%] lg:-translate-y-36 md:-translate-y-20 -translate-y-12"
         src={Cube}
-        alt="WaveVector background"
+        alt="Cube Vector"
       />
     </div>
   );
