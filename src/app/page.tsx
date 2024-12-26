@@ -13,6 +13,7 @@ export default function Home() {
       <About />
       <Tracks />
       <Timeline />
+      <Org />
       <Speakers />
       <Glimpses />
       <HostInvitation />
