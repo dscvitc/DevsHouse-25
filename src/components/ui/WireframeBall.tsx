@@ -1,14 +1,15 @@
-// components/WireframeDecahedron.tsx
 "use client";
 
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 
 const WireframeDecahedron = () => {
-  const mountRef = useRef(null);
+  const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const currentMount = mountRef.current;
+
+    if (!currentMount) return; // Add null check
 
     // Scene
     const scene = new THREE.Scene();
