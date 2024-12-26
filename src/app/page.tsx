@@ -8,7 +8,9 @@ import About from "@/components/About";
 import Prizes from '@/components/prizes/PrizesComponent';
 import Org from "@/components/organizers/Org";
 import Speakers from "@/components/Speakers";
-
+import FAQ from '@/components/FAQ';
+  
+  
 export default function Home() {
   return (
     <>
@@ -19,6 +21,7 @@ export default function Home() {
       <Timeline />
       <Org />
       <Speakers />
+      <FAQ />
       <Glimpses />
       <HostInvitation />
       <ContactUs />
