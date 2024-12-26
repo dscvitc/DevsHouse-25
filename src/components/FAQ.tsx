@@ -40,7 +40,7 @@ const FAQ = () => {
           </div>
         </AccordionTrigger>
         <AccordionContent className={`${colorClasses[props.color as keyof typeof colorClasses]} rounded-xl p-5`}>
-          <p className={`${Space.className} pl-2 md:md:text-lg text-[0.8rem] text-black`}>
+          <p className={`${Space.className} pl-2 md:md:text-lg text-[0.8rem] text-black text-[0.8rem] text-black`}>
             {props.answer}
           </p>
         </AccordionContent>
@@ -94,7 +94,7 @@ const FAQ = () => {
             transform: "translate(-50%, -50%)", 
             width: "85vw",
             height: "75vw",
-            filter: "blur(40px)",
+            filter: "blur(45px)",
           }}
           src={BlackBg}
           width={800}
