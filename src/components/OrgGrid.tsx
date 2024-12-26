@@ -1,4 +1,4 @@
-import OrgCard from "./OrgCard.tsx";
+import OrgCard from "./OrgCard";
 import { Organizers } from "../data/Organizers";
 
 export default function OrgGrid() {
