@@ -17,7 +17,7 @@ export default function Speakers() {
           return (
             <div
               key={index}
-              className="backdrop-blur-sm bg-white/5 backdrop-blur-md rounded-t-[12]"
+              className="backdrop-blur-sm bg-white/5 backdrop-blur-md rounded-t-xl"
             >
               <Image
                 src={speaker.image}
