@@ -17,6 +17,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Menu } from "lucide-react";
+import { FadeText } from "@/components/ui/fade-text";
 
 type Props = {};
 
@@ -52,13 +53,23 @@ const Navbar = (props: Props) => {
 
               <div>
                 <ul className="flex flex-col gap-y-3 items-start justify-center">
-                  {navbarItems.map((item) => (
+                  {navbarItems.map((item, idx) => (
                     <li key={item.href}>
                       <Link
                         href={item.href}
                         className="cursor-pointer font-space-grotesk-reg"
                       >
-                        {item.title}
+                        <FadeText
+                          direction="right"
+                          framerProps={{
+                            show: {
+                              transition: {
+                                delay: idx * 0.25,
+                              },
+                            },
+                          }}
+                          text={item.title}
+                        />
                       </Link>
                     </li>
                   ))}
