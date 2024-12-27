@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { Mona_Sans, Space_Grotesk, Hubot_Sans } from "next/font/google"
+import { Space_Grotesk, Hubot_Sans } from "next/font/google"
 import Image from "next/image"
 
-const mona = Mona_Sans({ subsets: ['latin'], weight: ['800'] })
+import Heading from '../components/ui/Heading';
+
+
 const space = Space_Grotesk({ subsets: ['latin'], weight: ['400', '700'] })
 const hubot = Hubot_Sans({ subsets: ['latin'], weight: ['800', '700'] })
 
@@ -35,11 +37,19 @@ const Panorama: React.FC = () => {
 
     return (
         <>
-            <div className="py-8">
-                <h2 className={`${mona.className} text-center text-6xl my-5`}>GLIMPSES</h2>
-                <p className="text-center" style={space.style}>A sneak peek into the Relive the innovation, energy, and</p>
+            <div className="my-8">
+
+                {/* <div
+                    className="relative flex justify-center items-center my-3" style={{ height: 205 }} >
+                    <Image className="absolute" src={Bgimage} alt="bgimage" width={200} height={200} />
+                    <h2 className={`${mona.className} text-center text-6xl`}>GLIMPSES</h2>
+                </div> */}
+                <div className="relative flex justify-center items-center my-3" style={{ height: 205 }}>
+                   <Heading title="GLIMPSES" geometry="Sphere"/> {/* Add margin-bottom here */}
+                </div>
+                <p className="text-center" style={space.style}>A sneak peek into the innovation, energy, and</p>
                 <p className={` ${space.style} text-center`}>brilliance that shaped last year&apos;s incredible hackathon experience!</p>
-                <h1 className="text-center font-extrabold text-4xl md:text-7xl my-3" style={hubot.style}>DEVSHOUSE&apos;25</h1>
+                <h1 className="text-center font-extrabold text-4xl md:text-7xl my-3 " style={hubot.style}>DEVSHOUSE&apos;24</h1>
                 <div className="panorama-slider">
                     <div className="swiper">
                         <div className="swiper-wrapper">
