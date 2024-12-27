@@ -3,51 +3,57 @@
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 
-const EllipsoidWireframe = () => {
+const DodecahedronWireframe: React.FC = () => {
   const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const currentMount = mountRef.current;
 
-    if (!currentMount) return; // Add null check
+    if (!currentMount) return;
 
     // Scene
     const scene = new THREE.Scene();
 
     // Camera
     const camera = new THREE.PerspectiveCamera(
-      75,
+      75, // Field of view
       currentMount.clientWidth / currentMount.clientHeight,
       0.1,
       1000
     );
-    camera.position.z = 5;
+    camera.position.z = 10; // Move the camera further back
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
     currentMount.appendChild(renderer.domElement);
 
-    // Ellipsoid Geometry (using SphereGeometry and scaling)
-    const ellipsoidGeometry = new THREE.SphereGeometry(1, 32, 32);
-    ellipsoidGeometry.scale(1, 2, 1); // Scale to form an ellipsoid
-
-    const ellipsoidWireframe = new THREE.WireframeGeometry(ellipsoidGeometry);
-
-    // Material
-    const material = new THREE.LineBasicMaterial({
-      color: 0x808080, // Grey color
-      opacity: 0.5,
-      transparent: true,
-    });
-    const ellipsoid = new THREE.LineSegments(ellipsoidWireframe, material);
-    scene.add(ellipsoid);
+    // Dodecahedron Geometry
+    const geometry = new THREE.DodecahedronGeometry(1, 0);
+    const wireframe = new THREE.WireframeGeometry(geometry);
+    const lineMaterial = new THREE.LineBasicMaterial({ color: 0x888888 }); // Grey color
+    const line = new THREE.LineSegments(wireframe, lineMaterial);
+    scene.add(line);
 
     // Animation
+    let scaleDirection = 1;
     const animate = () => {
       requestAnimationFrame(animate);
-      ellipsoid.rotation.x += 0.001;
-      ellipsoid.rotation.y += 0.001;
+
+      // Update scale
+      line.scale.x += 0.001 * scaleDirection;
+      line.scale.y += 0.001 * scaleDirection;
+      line.scale.z += 0.001 * scaleDirection;
+
+      // Rotate on x and y axes
+      line.rotation.x += 0.01;
+      line.rotation.y += 0.01;
+
+      // Reverse direction if scale exceeds limits
+      if (line.scale.x > 2 || line.scale.x < 0.5) {
+        scaleDirection *= -1;
+      }
+
       renderer.render(scene, camera);
     };
 
@@ -61,7 +67,7 @@ const EllipsoidWireframe = () => {
     };
   }, []);
 
-  return <div ref={mountRef} style={{ width: "100%", height: "350px" }} />;
+  return <div ref={mountRef} style={{ width: "100%", height: "450px" }} />;
 };
 
-export default EllipsoidWireframe;
+export default DodecahedronWireframe;
