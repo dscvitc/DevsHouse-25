@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 @layer base {
@@ -79,15 +80,27 @@ body {
 }
 
 .gradient-finance {
-  background-image: linear-gradient(90deg, #683cf8 0%, #854cfc 100%);
+  background-image: linear-gradient(
+    90deg,
+    #683cf8 0%,
+    #854cfc 100%
+  );
 }
 
 .gradient-innovation {
-  background-image: linear-gradient(90deg, #0073e5 0%, #00b4e1 100%);
+  background-image: linear-gradient(
+    90deg,
+    #0073e5 0%,
+    #00b4e1 100%
+  );
 }
 
 .gradient-arvr {
-  background-image: linear-gradient(90deg, #ff3e7b 0%, #ff8fc3 100%);
+  background-image: linear-gradient(
+    90deg,
+    #ff3e7b 0%,
+    #ff8fc3 100%
+  );
 }
 
 .gradient-environmental {
@@ -100,11 +113,19 @@ body {
 }
 
 .gradient-blockchain {
-  background-image: linear-gradient(90deg, #e00000 1.5%, #e5d200 50.5%);
+  background-image: linear-gradient(
+    90deg,
+    #e00000 1.5%,
+    #e5d200 50.5%
+  );
 }
 
 .gradient-iot {
-  background-image: linear-gradient(90deg, #e000bb 1.5%, #5c00e5 50.5%);
+  background-image: linear-gradient(
+    90deg,
+    #e000bb 1.5%,
+    #5c00e5 50.5%
+  );
 }
 
 .button-Sponsor {
@@ -185,4 +206,95 @@ body {
 
 .animate-bounce {
   animation: bob 2s infinite;
+}
+
+@font-face {
+  font-family: "HubotSans";
+  src: url("/fonts/HubotSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 800; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonaSans";
+  src: url("/fonts/MonaSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 300; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonaSansBold";
+  src: url("/fonts/MonaSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 900; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 900; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SpaceGroteskRegular";
+  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outline";
+  src: url("/fonts/Avita-OutlineBlack.otf")
+    format("opentype");
+  font-weight: 200; /* Regular weight */
+  font-style: normal;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.font-outline {
+  font-family: Outline;
+}
+
+.font-poppins {
+  font-family: Poppins;
+}
+
+.font-mona-sans {
+  font-family: MonaSans;
+}
+
+.font-mona-sans-bold {
+  font-family: MonaSansBold;
+}
+
+.font-space-grotesk {
+  font-family: SpaceGrotesk;
+}
+.font-space-grotesk-reg {
+  font-family: SpaceGroteskRegular;
+}
+
+.font-hubot-sans {
+  font-family: HubotSans;
 }
