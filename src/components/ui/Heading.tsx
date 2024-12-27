@@ -5,6 +5,7 @@ import Cubedodecahedron from './Cubedodecahedron';
 import Ellipsoid from './Ellipsoid';
 import Sphere from './Sphere';
 import Horizontalhyperboloid from './HorizontalHyperboloid';
+import Sphereenclosed from './Torus';
 
 interface HeadingProps {
   title: string;
@@ -26,6 +27,8 @@ const Heading: React.FC<HeadingProps> = ({ title, geometry }) => {
         return <Sphere />;
       case 'Horizontalhyperboloid':
         return <Horizontalhyperboloid />;
+      case 'Sphereenclosed':
+          return <Sphereenclosed />;
       default:
         return null; // Or a default component if needed
     }

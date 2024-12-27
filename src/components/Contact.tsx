@@ -1,8 +1,9 @@
-import { Mona_Sans, Space_Grotesk, Hubot_Sans, Outfit } from "next/font/google";
+import {  Space_Grotesk, Hubot_Sans, Outfit } from "next/font/google";
 import Image from "next/image";
+import Heading from "../components/ui/Heading";
 // import BG_Image from "@/../public/contact_bg.svg";
 
-const mona = Mona_Sans({ subsets: ["latin"], weight: ["800"] });
+// const mona = Mona_Sans({ subsets: ["latin"], weight: ["800"] });
 const space = Space_Grotesk({ subsets: ["latin"], weight: ["400", "700"] });
 const hubot = Hubot_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
@@ -17,7 +18,7 @@ export default function Contact() {
         className="flex flex-wrap justify-center content-center"
         style={{ height: 225 }}
       >
-        <svg
+        {/* <svg
           id={styles.contact_svg}
           className="absolute start-1/2"
           viewBox="0 0 343 343"
@@ -115,7 +116,10 @@ export default function Contact() {
           className="color-white text-center text-6xl my-5"
         >
           CONTACT US
-        </h2>
+        </h2> */}
+        <div className="md-108">
+        <Heading title="CONTACT US" geometry="Sphereenclosed"/> {/* Add margin-bottom here */}
+      </div>
       </div>
 
       <div className="relative grid grid-cols-1 md:grid-cols-2 border-2 border-white my-12">
