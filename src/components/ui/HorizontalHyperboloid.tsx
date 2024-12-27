@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 
-const HyperboloidWormholeWireframe = () => {
+const HyperboloidRadialContours = () => {
   const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -13,15 +13,16 @@ const HyperboloidWormholeWireframe = () => {
 
     // Scene
     const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x000000, 50, 100); // Add fog with a black color
 
     // Camera
     const camera = new THREE.PerspectiveCamera(
-      75,
+      80,
       currentMount.clientWidth / currentMount.clientHeight,
-      0.1,
+      0.01,
       1000
     );
-    camera.position.z = 35;
+    camera.position.set(0, 15, 10); // Set camera position with a slight upward tilt
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -31,17 +32,17 @@ const HyperboloidWormholeWireframe = () => {
     // Hyperboloid Geometry using BufferGeometry
     const hyperboloidGeometry = new THREE.BufferGeometry();
     const segments = 50;
-    const length = 10; // Elongated length
-    const fixedRadius = 7; // Fixed radius for entrance/exit
+    const length = 5; // Elongated length
+    const fixedRadius = 10; // Fixed radius for entrance/exit
 
     const vertices = [];
 
     for (let i = 0; i <= segments; i++) {
       const theta = (i / segments) * Math.PI * 2;
       for (let j = -length; j <= length; j++) {
-        const x = j; // Elongate along the x-axis
-        const y = fixedRadius * Math.cosh(x / length) * Math.cos(theta);
-        const z = fixedRadius * Math.cosh(x / length) * Math.sin(theta);
+        const y = j; // Elongate along the y-axis
+        const x = fixedRadius * Math.cosh(y / length) * Math.cos(theta);
+        const z = fixedRadius * Math.cosh(y / length) * Math.sin(theta);
         vertices.push(x, y, z);
       }
     }
@@ -79,13 +80,13 @@ const HyperboloidWormholeWireframe = () => {
       requestAnimationFrame(animate);
 
       // Rotate the hyperboloid
-      hyperboloid.rotation.x += 0.005;
+      hyperboloid.rotation.y += 0.005;
 
       // Rotate the camera around the y-axis
-      angle += 0.005;
+      angle += 0.001;
       camera.position.x = 35 * Math.sin(angle);
       camera.position.z = 35 * Math.cos(angle);
-      camera.lookAt(scene.position);
+      camera.lookAt(new THREE.Vector3(0, 0, 0)); // Ensure the camera looks at the center of the scene
 
       renderer.render(scene, camera);
     };
@@ -103,4 +104,4 @@ const HyperboloidWormholeWireframe = () => {
   return <div ref={mountRef} style={{ width: "100%", height: "450px" }} />; // Adjusted width and height
 };
 
-export default HyperboloidWormholeWireframe;
+export default HyperboloidRadialContours;
