@@ -25,7 +25,7 @@ type Props = {};
 const Navbar = (props: Props) => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className="bg-white/5 backdrop-blur-lg text-black py-6 px-5 flex justify-between items-center fixed w-full z-10">
+    <div className="bg-white/5 backdrop-blur-lg text-black py-6 px-5 flex justify-between items-center fixed w-full z-50">
       <div className="flex justify-center items-center gap-x-5 z-50">
         <Image
           src={"images/gdsc-logo.svg"}
