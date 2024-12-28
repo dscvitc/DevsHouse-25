@@ -51,7 +51,7 @@ const HeroBG = ({ children }: Props) => {
             alt="bg-asset"
             height={388}
             width={290}
-            className="z-10 relative -left-[480px] pointer-events-none"
+            className="z-[1000] relative -left-[480px] pointer-events-none"
           />
         </div>
         <div className="flex justify-between w-full">
