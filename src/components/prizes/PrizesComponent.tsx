@@ -142,7 +142,7 @@ export default function Prizes() {
     
       </div>
       <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
-      <div className="flex flex-row justify-center items-end md:px-12 md:gap-x-32 mt-[60px] mb-[60px]">
+      <div className="flex flex-row justify-center items-end md:px-12 md:gap-x-10 lg:gap-x-32 mt-[60px] mb-[60px]">
         <div className="w-[30%]">
 
           <div className="absolute">
@@ -179,7 +179,7 @@ export default function Prizes() {
         </div>
         <div className="w-[30%]">
           <div className="absolute">
-          <div className="absolute top-1/3 left-1/3 w-32 h-48 ml-[-10px] mt-[40px] md:w-64 md:h-80 rounded-full bg-[#0387DA] blur-3xl z-[-1] opacity-75 md:ml-[10px] md:mt-[60px]"></div>
+          <div className="absolute top-1/3 left-1/3 w-32 h-48 ml-[-10px] mt-[40px] md:w-64 md:h-80 rounded-full bg-[#0387DA] blur-3xl z-[-1] opacity-75 md:mt-[60px]"></div>
           </div>
           <MainPrize
             src={PrizeInfo[2].src} //silver
