@@ -1,12 +1,13 @@
 "use client";
 import {
-  Sheet,
+  CloseOnClickLink,
+  CustomSheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/custom-sheet";
 import Image from "next/image";
 import React, { useState } from "react";
 import { navbarItems } from "@/constants/index";
@@ -42,8 +43,8 @@ const Navbar = (props: Props) => {
           </span>
         </div>
       </div>
-      <div className="text-5xl cursor-pointer mx-2 md:hidden flex h-10 w-7 items-center">
-        <Sheet>
+      <div className="text-5xl cursor-pointer mx-2 lg:hidden flex h-10 w-7 items-center">
+        <CustomSheet>
           <SheetTrigger>
             <Menu className="h-5 w-5 text-white" />
           </SheetTrigger>
@@ -55,9 +56,10 @@ const Navbar = (props: Props) => {
                 <ul className="flex flex-col gap-y-3 items-start justify-center">
                   {navbarItems.map((item, idx) => (
                     <li key={item.href}>
-                      <Link
+                      <CloseOnClickLink
                         href={item.href}
                         className="cursor-pointer font-space-grotesk-reg"
+                        onClick={() => {}}
                       >
                         <FadeText
                           direction="right"
@@ -70,38 +72,23 @@ const Navbar = (props: Props) => {
                           }}
                           text={item.title}
                         />
-                      </Link>
+                      </CloseOnClickLink>
                     </li>
                   ))}
                 </ul>
               </div>
             </SheetHeader>
           </SheetContent>
-        </Sheet>
+        </CustomSheet>
       </div>
-      <ul
-        className={`bg-[#131313] flex flex-col justify-center items-start gap-y-5 z-50 absolute w-full left-0 py-4  pl-7  mt-0 transition-all ease-in duration-500 ${
-          !navbar && "opacity-0 top-[-400px] "
-        } ${navbar && "opacity-100 top-[5.75rem] "}`}
-      >
-        {navbarItems.map((item) => (
-          <li key={item.href}>
-            <Link
-              href={item.href}
-              className="cursor-pointer text-white font-space-grotesk-reg"
-            >
-              {item.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <div className="hidden md:block flex-1 justify-center items-center gap-x-5 z-50">
-        <ul className="flex justify-center items-center gap-x-10">
+
+      <div className="hidden lg:block flex-1 justify-center items-center gap-x-5 z-50">
+        <ul className=" ps-10 flex justify-start items-center gap-x-6">
           {navbarItems.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="cursor-pointer text-white font-space-grotesk-reg"
+                className="cursor-pointer text-white font-space-grotesk-reg text-sm line-clamp-1"
               >
                 {item.title}
               </Link>
