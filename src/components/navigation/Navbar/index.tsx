@@ -23,9 +23,24 @@ import { FadeText } from "@/components/ui/fade-text";
 type Props = {};
 
 const Navbar = (props: Props) => {
-  const [navbar, setNavbar] = useState(false);
+  // Custom scroll handler with offset
+  const handleClick = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+
+    if (id) {
+      const section = document.getElementById(id);
+      if (section) {
+        const offset = 100; // Adjust this value to set how much space above the section you want
+        const sectionTop = section.offsetTop - offset;
+        window.scrollTo({
+          top: sectionTop,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
   return (
-    <div className="bg-white/5 backdrop-blur-lg text-black py-6 px-5 flex justify-between items-center fixed w-full z-50">
+    <div className="bg-white/5 backdrop-blur-lg text-black py-6 px-5 max-sm:px-3 flex justify-between items-center fixed w-full z-50">
       <div className="flex justify-center items-center gap-x-5 z-50">
         <Image
           src={"images/gdsc-logo.svg"}
@@ -34,11 +49,11 @@ const Navbar = (props: Props) => {
           width={80}
           className="max-md:h-10 max-md:w-10"
         />
-        <div className="flex flex-col justify-center items-center text-white font-poppins">
-          <span className="max-md:text-lg md:text-xl">
+        <div className="flex flex-col justify-center items-center text-white font-poppins max-sm:gap-y-0">
+          <span className="max-md:text-lg md:text-xl max-sm:text-[16px]">
             Google Developer Groups
           </span>
-          <span className="max-md:text-xs md:text-xs">
+          <span className="text-xs max-sm:text-[10px] leading-none">
             Vellore Institute of Technology, Chennai
           </span>
         </div>
@@ -53,13 +68,34 @@ const Navbar = (props: Props) => {
               <SheetTitle></SheetTitle>
 
               <div>
+                {/* <ul className="flex flex-col gap-y-3 items-start justify-center">
+                  {navbarItems.map((item, idx) => (
+                    <li key={idx}>
+                      <CloseOnClickLink
+                        className="cursor-pointer font-space-grotesk-reg"
+                        // href={item.href}
+                      >
+                        <FadeText
+                          direction="right"
+                          framerProps={{
+                            show: {
+                              transition: {
+                                delay: idx * 0.25,
+                              },
+                            },
+                          }}
+                          text={item.title}
+                        />
+                      </CloseOnClickLink>
+                    </li>
+                  ))}
+                </ul> */}
                 <ul className="flex flex-col gap-y-3 items-start justify-center">
                   {navbarItems.map((item, idx) => (
-                    <li key={item.href}>
+                    <li key={idx}>
                       <CloseOnClickLink
-                        href={item.href}
                         className="cursor-pointer font-space-grotesk-reg"
-                        onClick={() => {}}
+                        id={item.href} // Make sure each item has an href like "#section1"
                       >
                         <FadeText
                           direction="right"
@@ -89,6 +125,9 @@ const Navbar = (props: Props) => {
               <Link
                 href={item.href}
                 className="cursor-pointer text-white font-space-grotesk-reg text-sm line-clamp-1"
+                onClick={(event) =>
+                  handleClick(event, item.href)
+                }
               >
                 {item.title}
               </Link>
