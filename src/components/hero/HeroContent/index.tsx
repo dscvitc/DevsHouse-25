@@ -8,9 +8,18 @@ type Props = {};
 
 const HeroContent = (props: Props) => {
   //   * Change this time for the countdown timer
-  const targetTimeInSeconds = 200000;
+  // Target date: April 4, 2025, 00:00:00
+  const targetDate = new Date(
+    "2025-04-04T00:00:00Z"
+  ).getTime();
+  const currentTime = new Date().getTime();
+  const initialTimeLeft = Math.max(
+    Math.floor((targetDate - currentTime) / 1000),
+    0
+  );
 
-  const [timeLeft, setTimeLeft] = useState<number>(60 * 1); // 5 minutes countdown in seconds
+  const [timeLeft, setTimeLeft] =
+    useState<number>(initialTimeLeft);
 
   // Update the countdown timer every second
   useEffect(() => {
@@ -27,20 +36,27 @@ const HeroContent = (props: Props) => {
     return () => clearInterval(intervalId); // Cleanup on unmount
   }, []);
 
-  // Format the time into mm:ss format
-  const formatTime = (seconds: number) => {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes
-      .toString()
-      .padStart(2, "0")}:${remainingSeconds
-      .toString()
-      .padStart(2, "0")}`;
-  };
+  // Format the time into days, hours, minutes, and seconds
+  //   const formatTime = (seconds: number) => {
+  //     const days = Math.floor(seconds / (3600 * 24));
+  //     const hours = Math.floor(
+  //       (seconds % (3600 * 24)) / 3600
+  //     );
+  //     const minutes = Math.floor((seconds % 3600) / 60);
+  //     const remainingSeconds = seconds % 60;
+
+  //     return `${days}d ${hours
+  //       .toString()
+  //       .padStart(2, "0")}h:${minutes
+  //       .toString()
+  //       .padStart(2, "0")}m:${remainingSeconds
+  //       .toString()
+  //       .padStart(2, "0")}s`;
+  //   };
   return (
     <div className="flex flex-col justify-center items-center gap-y-0 w-full">
       <div className="flex flex-col justify-center items-start gap-y-0">
-        <div className=" flex flex-col justify-center items-center text-white w-full md:max-w-[875px] ">
+        <div className=" flex flex-col justify-center items-start text-white w-full md:max-w-[875px] ">
           <div className="flex flex-col justify-center max-md:items-center md:items-start ">
             <div className="flex justify-center items-start mx-4">
               <div className="flex flex-col justify-center items-start">
@@ -81,9 +97,7 @@ const HeroContent = (props: Props) => {
           </div>
         </div>
         <div className="mt-4 px-4">
-          <CountdownTimer
-            targetTime={targetTimeInSeconds}
-          />
+          <CountdownTimer targetTime={timeLeft} />
         </div>
         <Button
           size="compact-lg"

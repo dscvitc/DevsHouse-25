@@ -173,28 +173,37 @@ const SheetContext = React.createContext<
 
 // Custom link component that closes the sheet when clicked
 const CloseOnClickLink = React.forwardRef<
-  HTMLAnchorElement,
-  React.AnchorHTMLAttributes<HTMLAnchorElement>
->(({ href, children, ...props }, ref) => {
+  HTMLDivElement,
+  React.AnchorHTMLAttributes<HTMLDivElement>
+>(({ id, children, ...props }, ref) => {
   const close = React.useContext(SheetContext);
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (close) close();
+    e.preventDefault();
+
+    if (id) {
+      const section = document.getElementById(id);
+      if (section) {
+        const offset = 100; // Adjust this value to set how much space above the section you want
+        const sectionTop = section.offsetTop - offset;
+        window.scrollTo({
+          top: sectionTop,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
 
   return (
     <SheetClose asChild>
-      <a
-        ref={ref}
-        href={href}
-        onClick={(e) => {
-          if (close) close();
-          // If you want to prevent default link behavior, uncomment the next line
-          // e.preventDefault()
-        }}
-        {...props}
-      >
+      <div ref={ref} onClick={handleClick} {...props}>
         {children}
-      </a>
+      </div>
     </SheetClose>
   );
 });
+
 CloseOnClickLink.displayName = "CloseOnClickLink";
 
 // Custom Sheet component that provides the close function to its children

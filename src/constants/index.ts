@@ -1,35 +1,35 @@
 export const navbarItems = [
   {
     title: "About",
-    href: "#about",
+    href: "about",
   },
   {
     title: "Tracks",
-    href: "#tracks",
+    href: "tracks",
   },
   {
     title: "Prizes",
-    href: "#prizes",
+    href: "prizes",
   },
   {
     title: "Timeline",
-    href: "#timeline",
+    href: "timeline",
   },
   {
     title: "Organisers",
-    href: "#organizers",
+    href: "organizers",
   },
   {
     title: "FAQs",
-    href: "#faqs",
+    href: "faqs",
   },
   {
     title: "Glimpses",
-    href: "#glimpses",
+    href: "glimpses",
   },
   {
     title: "Contact Us",
-    href: "#contact",
+    href: "contact",
   },
 ];
 
