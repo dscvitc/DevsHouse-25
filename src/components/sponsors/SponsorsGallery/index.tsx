@@ -6,17 +6,17 @@ type Props = {};
 const sponsorsListRow1 = [
   {
     id: 1,
-    img: "/sponsors-new/sponsor-img1.jpg",
+    img: "/sponsors-new/profile-img.png",
     title: "Ruby Sponsor",
   },
   {
     id: 2,
-    img: "/sponsors-new/sponsor-img1.jpg",
+    img: "/sponsors-new/profile-img.png",
     title: "Sapphire Sponsor",
   },
   {
     id: 3,
-    img: "/sponsors-new/sponsor-img1.jpg",
+    img: "/sponsors-new/profile-img.png",
     title: "Emerald Sponsor",
   },
 ];
@@ -24,25 +24,25 @@ const sponsorsListRow1 = [
 const sponsorsListRow2 = [
   {
     id: 4,
-    img: "/sponsors-new/sponsor-img1.jpg",
+    img: "/sponsors-new/profile-img.png",
     title: "Topaz Sponsor",
     className: "",
   },
   {
     id: 5,
-    img: "/sponsors-new/sponsor-img1.jpg",
+    img: "/sponsors-new/profile-img.png",
     title: "Ruby Sponsor",
     className: "relative top-[40px]",
   },
   {
     id: 6,
-    img: "/sponsors-new/sponsor-img1.jpg",
+    img: "/sponsors-new/profile-img.png",
     title: "Ruby Sponsor",
     className: "relative top-[40px]",
   },
   {
     id: 7,
-    img: "/sponsors-new/sponsor-img1.jpg",
+    img: "/sponsors-new/profile-img.png",
     title: "Ruby Sponsor",
     className: "",
   },
