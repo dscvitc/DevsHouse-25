@@ -228,6 +228,14 @@ body {
 }
 
 @font-face {
+  font-family: "MonaSansSemiBold";
+  src: url("/fonts/MonaSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 600; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
   font-family: "MonaSansBold";
   src: url("/fonts/MonaSans-VariableFont_wdth,wght.ttf")
     format("truetype");
@@ -285,6 +293,10 @@ body {
 
 .font-mona-sans {
   font-family: MonaSans;
+}
+
+.font-mona-sans-semi-bold {
+  font-family: MonaSansSemiBold;
 }
 
 .font-mona-sans-bold {
