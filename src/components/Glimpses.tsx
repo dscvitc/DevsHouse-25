@@ -48,18 +48,17 @@ const Panorama: React.FC = () => {
 
   return (
     <>
-      <div className="my-8" id="glimpses">
+      <div className="my-16" id="glimpses">
         {/* <div
                     className="relative flex justify-center items-center my-3" style={{ height: 205 }} >
                     <Image className="absolute" src={Bgimage} alt="bgimage" width={200} height={200} />
                     <h2 className={`${mona.className} text-center text-6xl`}>GLIMPSES</h2>
                 </div> */}
         <div
-          className="relative flex justify-center items-center my-3"
+          className="relative flex justify-center items-center mb-6"
           style={{ height: 205 }}
         >
           <Heading title="GLIMPSES" geometry="Sphere" />{" "}
-          {/* Add margin-bottom here */}
         </div>
         <p className="text-center" style={space.style}>
           A sneak peek into the innovation, energy, and
@@ -80,7 +79,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image w-[100px] h-[50px] sm:w-[100px] sm:h-[50px]"
-                  src="/Glimpsesimages/image1.svg"
+                  src="/Glimpsesimages/image1.png"
                   alt="image1"
                   width={200}
                   height={100}
@@ -89,7 +88,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image2.svg"
+                  src="/Glimpsesimages/image2.png"
                   alt="image2"
                   width={200}
                   height={100}
@@ -98,7 +97,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image3.svg"
+                  src="/Glimpsesimages/image3.png"
                   alt="image3"
                   width={200}
                   height={100}
@@ -107,7 +106,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image4.svg"
+                  src="/Glimpsesimages/image4.png"
                   alt="image4"
                   width={200}
                   height={100}
@@ -116,7 +115,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image5.svg"
+                  src="/Glimpsesimages/image5.png"
                   alt="image5"
                   width={200}
                   height={100}
@@ -125,7 +124,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image6.svg"
+                  src="/Glimpsesimages/image6.png"
                   alt="image6"
                   width={200}
                   height={100}
@@ -134,7 +133,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image7.svg"
+                  src="/Glimpsesimages/image7.png"
                   alt="image7"
                   width={200}
                   height={100}
@@ -143,7 +142,7 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image8.svg"
+                  src="/Glimpsesimages/image8.png"
                   alt="image8"
                   width={200}
                   height={100}
@@ -152,8 +151,35 @@ const Panorama: React.FC = () => {
               <div className="swiper-slide">
                 <Image
                   className="slide-image"
-                  src="/Glimpsesimages/image9.svg"
+                  src="/Glimpsesimages/image9.png"
                   alt="image9"
+                  width={200}
+                  height={100}
+                />
+              </div>
+              <div className="swiper-slide">
+                <Image
+                  className="slide-image w-[100px] h-[50px] sm:w-[100px] sm:h-[50px]"
+                  src="/Glimpsesimages/image10.png"
+                  alt="image10"
+                  width={200}
+                  height={100}
+                />
+              </div>
+              <div className="swiper-slide">
+                <Image
+                  className="slide-image w-[100px] h-[50px] sm:w-[100px] sm:h-[50px]"
+                  src="/Glimpsesimages/image11.png"
+                  alt="image11"
+                  width={200}
+                  height={100}
+                />
+              </div>
+              <div className="swiper-slide">
+                <Image
+                  className="slide-image w-[100px] h-[50px] sm:w-[100px] sm:h-[50px]"
+                  src="/Glimpsesimages/image12.png"
+                  alt="image12"
                   width={200}
                   height={100}
                 />

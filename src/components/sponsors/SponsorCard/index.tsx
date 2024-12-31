@@ -12,15 +12,15 @@ type Props = {
 
 const SponsorCard = ({ sponsor }: Props) => {
   return (
-    <div className="h-[300px] w-[220px]  flex flex-col justify-center items-center">
+    <div className="h-full w-full mx-auto flex flex-col justify-center items-center">
       <Image
         src={sponsor.img}
         height={100}
         width={100}
         alt="sponsor"
-        className="h-full w-full object-cover rounded-[40px] border"
+        className="h-auto w-3/4 md:w-full object-cover rounded-[13px] md:rounded-[40px] border"
       />
-      <div className="font-mona-sans-semi-bold">
+      <div className="font-mona-sans-semi-bold text-xs sm:text-sm md:text-xl">
         {sponsor.title}
       </div>
     </div>
