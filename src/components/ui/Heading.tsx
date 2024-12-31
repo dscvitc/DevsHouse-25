@@ -6,6 +6,7 @@ import Ellipsoid from "./Ellipsoid";
 import Sphere from "./Sphere";
 import Horizontalhyperboloid from "./HorizontalHyperboloid";
 import Sphereenclosed from "./Torus";
+import Heart from "./Heart";
 
 interface HeadingProps {
   title: string;
@@ -32,6 +33,8 @@ const Heading: React.FC<HeadingProps> = ({
         return <Horizontalhyperboloid />;
       case "Sphereenclosed":
         return <Sphereenclosed />;
+      case "Heart":
+        return <Heart />;
       default:
         return null; // Or a default component if needed
     }
