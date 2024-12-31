@@ -55,7 +55,7 @@ const FAQ = () => {
     <>
       <div
         id="faqs"
-        className="flex flex-col justify-center items-center pb-20 pt-10 relative mt-12 lg:mt-36 md:mt-10" 
+        className="flex flex-col justify-center items-center pb-20 pt-10 relative mt-8 md:mt-12 lg:mt-20 xl:mt-36"
       >
       <div className="relative flex flex-col items-center">
         {/* Heading with relative positioning */}
