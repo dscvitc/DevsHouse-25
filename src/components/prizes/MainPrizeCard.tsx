@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Hubot_Sans } from "next/font/google";
+
+const hubot = Hubot_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 type MainPrizeProp = {
   src: string; // image src link
@@ -38,10 +44,10 @@ export default function MainPrizeCard({ src, width, height, price, alt }: MainPr
     <div className="flex flex-col justify-end">
       <div className="text-center text-white text-xs font-bold md:text-[24px] whitespace-nowrap">
         <h1
-          className={`font-bold font-space ${
+          className={`font-bold ${
             alt === "1st" ? "text-2xl md:text-7xl md:mr-5" : "text-xl md:text-5xl"
           }`}
-          style={gradientStyle()}
+          style={{...gradientStyle(), ...hubot.style}}
         >
           {price}
         </h1>
@@ -49,7 +55,9 @@ export default function MainPrizeCard({ src, width, height, price, alt }: MainPr
       <Image src={src} alt={`${alt} place`} width={width} height={height} className="shadow" />
       <div className="text-center text-white text-xs font-bold md:text-[24px]  whitespace-nowrap">
         {/* <h1 >INR {price}</h1> */}
-        <h1 className="bold text-xl md:text-5xl font-space mt-20">{alt} {" "} Prize</h1>
+        <h1 className="bold text-xl md:text-5xl mt-20"
+          style={hubot.style}
+        >{alt} {" "} Prize</h1>
       </div>
     </div>
   );
