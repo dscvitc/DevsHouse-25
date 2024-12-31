@@ -2,8 +2,12 @@ import Divider from "./Divider";
 import MainPrize from "./MainPrizeCard";
 import SpecialPrize from "./SpecialPrizeCardImage";
 import Image from "next/image";
+import { Hubot_Sans } from "next/font/google";
 
-
+const hubot = Hubot_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function Prizes() {
   const PrizeInfo = [
