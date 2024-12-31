@@ -94,7 +94,7 @@ const Navbar = (props: Props) => {
                   {navbarItems.map((item, idx) => (
                     <li key={idx}>
                       <CloseOnClickLink
-                        className="cursor-pointer font-space-grotesk-reg"
+                        className="cursor-pointer font-hubot-sans-reg"
                         id={item.href} // Make sure each item has an href like "#section1"
                       >
                         <FadeText
@@ -124,7 +124,7 @@ const Navbar = (props: Props) => {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="cursor-pointer text-white font-space-grotesk-reg text-sm line-clamp-1"
+                className="cursor-pointer text-white font-hubot-sans-reg text-sm line-clamp-1"
                 onClick={(event) =>
                   handleClick(event, item.href)
                 }

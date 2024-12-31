@@ -215,7 +215,22 @@ body {
   font-family: "HubotSans";
   src: url("/fonts/HubotSans-VariableFont_wdth,wght.ttf")
     format("truetype");
-  font-weight: 800; /* Regular weight */
+  font-weight: 700; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HubotSansReg";
+  src: url("/fonts/HubotSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+@font-face {
+  font-family: "HubotSansBold";
+  src: url("/fonts/HubotSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 900; /* Regular weight */
   font-style: normal;
 }
 
@@ -312,4 +327,10 @@ body {
 
 .font-hubot-sans {
   font-family: HubotSans;
+}
+.font-hubot-sans-reg {
+  font-family: HubotSansReg;
+}
+.font-hubot-sans-bold {
+  font-family: HubotSansBold;
 }
