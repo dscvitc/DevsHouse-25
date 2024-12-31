@@ -57,7 +57,7 @@ const HeroContent = (props: Props) => {
     <div className="flex flex-col justify-center items-center gap-y-0 w-full">
       <div className="flex flex-col justify-center items-start gap-y-0">
         <div className=" flex flex-col justify-center items-start text-white w-full md:max-w-[875px] ">
-          <div className="flex flex-col justify-center max-md:items-center md:items-start ">
+          <div className="flex flex-col justify-center max-md:items-center md:items-start">
             <div className="flex justify-center items-start mx-4">
               <div className="flex flex-col justify-center items-start">
                 <span className="font-bold max-md:text-[45px] md:text-[100px] font-hubot-sans leading-none">
@@ -81,7 +81,7 @@ const HeroContent = (props: Props) => {
                 25
               </div>
             </div>
-            <div className="max-md:text-base md:text-[22px] text-[#AEAEAE] text-left font-mona-sans max-md:mt-6 px-4">
+            <div className="max-md:text-base md:text-[22px] text-[#AEAEAE] text-left font-mona-sans max-md:mt-3 px-4">
               DevsHouse '25 is a{" "}
               <span className="text-[#5B8EFF]">
                 national-level
@@ -96,7 +96,7 @@ const HeroContent = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="mt-4 px-4">
+        <div className="px-4">
           <CountdownTimer targetTime={timeLeft} />
         </div>
         <Button

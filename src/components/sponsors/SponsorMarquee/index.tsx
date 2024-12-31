@@ -33,7 +33,7 @@ export function SponsorMarquee() {
 export const MarqueeCard = () => {
   return (
     <div className="w-full">
-      <div className="text-white font-bold font-space-grotesk text-2xl">
+      <div className="text-white font-bold font-hubot-sans text-2xl">
         SPONSORS
       </div>
     </div>

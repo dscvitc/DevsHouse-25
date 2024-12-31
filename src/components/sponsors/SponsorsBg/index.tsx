@@ -11,6 +11,7 @@ const SponsorsBg = ({ children }: Props) => {
       <div className="absolute mx-auto top-1/2 sm:top-[250px] xl:top-1/2">
         {children}
       </div>
+      {/* Background */}
       <div className="w-full h-full flex flex-col justify-start items-center z-[-50]">
         <Image
           src="/sponsors-new/line-wireframe.svg"
