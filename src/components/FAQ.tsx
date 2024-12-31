@@ -76,7 +76,7 @@ const FAQ = () => {
             />
           </div> */}
           <div className="md-108">
-        <Heading title=" FAQ  " geometry="Ellipsoid"/> {/* Add margin-bottom here */}
+        <Heading title="‎ FAQ‎ " geometry="Ellipsoid"/> {/* Add margin-bottom here */}
       </div>
     
 
