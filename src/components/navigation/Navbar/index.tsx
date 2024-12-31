@@ -40,7 +40,7 @@ const Navbar = (props: Props) => {
     }
   };
   return (
-    <div className="bg-white/5 backdrop-blur-lg text-black py-6 px-5 max-sm:px-3 flex justify-between items-center fixed w-full z-50">
+    <div className="bg-white/5 backdrop-blur-lg lg:mt-2 text-black py-6 px-5 max-sm:px-3 flex justify-between items-center fixed w-full z-50">
       <div className="flex justify-center items-center gap-x-5 z-50">
         <Image
           src={"images/gdsc-logo.svg"}
@@ -68,28 +68,6 @@ const Navbar = (props: Props) => {
               <SheetTitle></SheetTitle>
 
               <div>
-                {/* <ul className="flex flex-col gap-y-3 items-start justify-center">
-                  {navbarItems.map((item, idx) => (
-                    <li key={idx}>
-                      <CloseOnClickLink
-                        className="cursor-pointer font-space-grotesk-reg"
-                        // href={item.href}
-                      >
-                        <FadeText
-                          direction="right"
-                          framerProps={{
-                            show: {
-                              transition: {
-                                delay: idx * 0.25,
-                              },
-                            },
-                          }}
-                          text={item.title}
-                        />
-                      </CloseOnClickLink>
-                    </li>
-                  ))}
-                </ul> */}
                 <ul className="flex flex-col gap-y-3 items-start justify-center">
                   {navbarItems.map((item, idx) => (
                     <li key={idx}>

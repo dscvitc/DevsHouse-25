@@ -9,7 +9,7 @@ export function MarqueeDemo() {
     <Marquee
       reverse
       pauseOnHover
-      className="[--duration:20s] border border-y-4 border-white/70 w-full py-2 bg-[#1A1A1A] mt-12 max-md:mt-20"
+      className="[--duration:20s] border border-y-4 border-white/70 w-full py-2 bg-[#1A1A1A] mt-12 max-md:mt-32"
     >
       {row.map((_, idx) => (
         <div key={idx} className="flex gap-x-8">
