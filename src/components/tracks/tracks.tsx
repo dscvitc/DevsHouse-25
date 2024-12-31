@@ -1,18 +1,21 @@
-import Image from "next/image"
-import { Mona_Sans } from 'next/font/google'
-import { Button } from "@mantine/core"
-import { ArrowRight } from 'lucide-react'
+import Image from "next/image";
+import { Mona_Sans } from "next/font/google";
+import { Button } from "@mantine/core";
+import { ArrowRight } from "lucide-react";
 
-import { DottedSeperator } from "@/components/tracks/dotted-seperator"
-import { tracks } from '@/data/tracks'
+import { DottedSeperator } from "@/components/tracks/dotted-seperator";
+import { tracks } from "@/data/tracks";
 import Heading from "../ui/Heading";
-const monasans = Mona_Sans({ subsets: ['latin'] })
+const monasans = Mona_Sans({ subsets: ["latin"] });
 
 export default function Tracks() {
   return (
-    <div className={`p-16 ${monasans.className}`}>
+    <div
+      className={`px-4 py-16 ${monasans.className} w-full`}
+      id="tracks"
+    >
       {/* Intro Section with Background */}
-      <div className="relative mb-16 max-w-xs mx-auto">
+      <div className="relative mb-16 mx-auto w-full">
         {/* <div className="absolute inset-0">
           <Image
             src="/tracks/tracks-bg.svg"
@@ -26,15 +29,22 @@ export default function Tracks() {
         {/* <div className="relative z-10 flex items-center justify-center h-[150px]">
           <h1 className="text-3xl font-bold text-white">TRACKS</h1>
         </div> */}
-        <div className="md-108">
-        <Heading title="TRACKS" geometry="Cubedodecahedron"/> {/* Add margin-bottom here */}
+        <div className="md-108 w-full">
+          <Heading
+            title="TRACKS"
+            geometry="Cubedodecahedron"
+          />{" "}
+          {/* Add margin-bottom here */}
         </div>
       </div>
 
       <div className="text-center mb-16">
         <p className="mx-auto max-w-2xl text-base text-gray-400">
           Embark on a journey where the
-          <span className="font-bold text-white"> boundaries </span>
+          <span className="font-bold text-white">
+            {" "}
+            boundaries{" "}
+          </span>
           of possibility are pushed to new horizons.
         </p>
       </div>
@@ -45,10 +55,11 @@ export default function Tracks() {
           {/* Vertical timeline indicator */}
           <div className="absolute left-6 top-0 h-full w-1 bg-white" />
 
-          <div className="space-y-16">
+          <div className="space-y-16 max-sm:space-y-10">
             {tracks.map((track, index) => (
               <div key={track.title} className="relative">
                 <div className="flex">
+                  {/* Image */}
                   <div className="relative flex-shrink-0 flex h-14 w-14 items-center justify-center rounded-full border-2 border-white bg-black z-10">
                     <Image
                       src={`/tracks/${track.icon}`}
@@ -61,7 +72,7 @@ export default function Tracks() {
 
                   {/* Track Content */}
                   <div className="ml-8">
-                    <div className="max-w-lg space-y-3">
+                    <div className="max-w-lg space-y-3 max-sm:space-y-1">
                       <h3
                         className={`text-3xl font-bold md:text-5xl gradient-text ${track.gradientClass}`}
                       >
@@ -70,7 +81,7 @@ export default function Tracks() {
                       <p className="text-lg font-semibold tracking-wider text-[#AEAEAE] md:text-xl">
                         {track.number}
                       </p>
-                      <p className="text-base leading-relaxed text-gray-300 md:text-lg">
+                      <p className="text-base leading-relaxed text-gray-300 md:text-lg max-sm:leading-[22px]">
                         {track.description}
                       </p>
                     </div>
@@ -94,9 +105,13 @@ export default function Tracks() {
 
                 <div className="ml-8 flex md:flex-row flex-col items-start md:items-center justify-center gap-6">
                   <p className="text-xl font-medium text-white md:text-2xl">
-                    Let&apos;s redefine what&apos;s possible.
+                    Let&apos;s redefine what&apos;s
+                    possible.
                   </p>
-                  <Button size="compact-lg" className="button-Sponsor">
+                  <Button
+                    size="compact-lg"
+                    className="button-Sponsor"
+                  >
                     Register Now!
                   </Button>
                 </div>

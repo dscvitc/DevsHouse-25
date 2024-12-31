@@ -7,11 +7,12 @@ import YellowBubble from "../../public/FAQ_assets/green bubbles (1).svg";
 import BlueBubble from "../../public/FAQ_assets/green bubbles (2).svg";
 import GreenBubble from "../../public/FAQ_assets/green bubbles (3).svg";
 import BlackBg from "../../public/FAQ_assets/blackblob.png"
-import FaqBg from "../../public/FAQ_assets/Vector.svg"
-import { Mona_Sans } from "next/font/google"; 
+
+// import { Mona_Sans } from "next/font/google"; 
+import Heading from "../components/ui/Heading"
 
 const Space = Space_Grotesk({ weight: "700", subsets: ["latin"] });
-const Mona = Mona_Sans({ weight: "700", subsets: ["latin"] });
+// const Mona = Mona_Sans({ weight: "700", subsets: ["latin"] });
 
 const FAQ = () => {
   const colorClasses = {
@@ -56,15 +57,15 @@ const FAQ = () => {
       >
       <div className="relative flex flex-col items-center">
         {/* Heading with relative positioning */}
-        <div className="w-[90%] md:w-[80%] h-auto relative">
-          <h1
+        
+          {/* <h1
             className={`text-5xl ${Mona.className} text-white text-center mb-14 relative z-10`}
           >
             FAQs
-          </h1>
+          </h1> */}
 
           {/* Image positioned absolutely behind the text */}
-          <div className="absolute inset-0 flex justify-center -top-14">
+          {/* <div className="absolute inset-0 flex justify-center -top-14">
             <Image
               src={FaqBg}
               alt="Tracks Background"
@@ -73,8 +74,11 @@ const FAQ = () => {
               className="w-40 h-40 object-contain opacity-70"
               priority
             />
-          </div>
-        </div>
+          </div> */}
+          <div className="md-108">
+        <Heading title="‎ ‎ FAQ‎ ‎ " geometry="Ellipsoid"/> {/* Add margin-bottom here */}
+      </div>
+    
 
         {/* Accordion content below */}
         <div className="w-[90%] md:w-[80%] h-auto z-10 mt-10">

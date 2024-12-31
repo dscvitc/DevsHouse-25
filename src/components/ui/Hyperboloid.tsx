@@ -74,9 +74,19 @@ const HyperboloidWormholeWireframe = () => {
     scene.add(hyperboloid);
 
     // Animation
+    let angle = 0;
     const animate = () => {
       requestAnimationFrame(animate);
-      hyperboloid.rotation.y += 0.001; // Rotate around the y-axis for horizontal orientation
+
+      // Rotate the hyperboloid
+      hyperboloid.rotation.x += 0.005;
+
+      // Rotate the camera around the y-axis
+      angle += 0.005;
+      camera.position.x = 35 * Math.sin(angle);
+      camera.position.z = 35 * Math.cos(angle);
+      camera.lookAt(scene.position);
+
       renderer.render(scene, camera);
     };
 

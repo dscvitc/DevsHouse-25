@@ -1,23 +1,40 @@
-import { Mona_Sans, Space_Grotesk, Hubot_Sans, Outfit } from "next/font/google";
+import {
+  Space_Grotesk,
+  Hubot_Sans,
+  Outfit,
+} from "next/font/google";
 import Image from "next/image";
+import Heading from "../components/ui/Heading";
 // import BG_Image from "@/../public/contact_bg.svg";
 
-const mona = Mona_Sans({ subsets: ["latin"], weight: ["800"] });
-const space = Space_Grotesk({ subsets: ["latin"], weight: ["400", "700"] });
-const hubot = Hubot_Sans({ subsets: ["latin"], weight: ["400", "700"] });
-const outfit = Outfit({ subsets: ["latin"], weight: ["400"] });
+// const mona = Mona_Sans({ subsets: ["latin"], weight: ["800"] });
+const space = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+const hubot = Hubot_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 import styles from "@/styles/Contact.module.scss";
 import Footer from "./footer";
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-8 md:py-12">
+    <section
+      id="contact"
+      className="relative py-8 md:py-12"
+    >
       <div
         className="flex flex-wrap justify-center content-center"
         style={{ height: 225 }}
       >
-        <svg
+        {/* <svg
           id={styles.contact_svg}
           className="absolute start-1/2"
           viewBox="0 0 343 343"
@@ -115,7 +132,14 @@ export default function Contact() {
           className="color-white text-center text-6xl my-5"
         >
           CONTACT US
-        </h2>
+        </h2> */}
+        <div className="md-108">
+          <Heading
+            title="CONTACT US"
+            geometry="Sphereenclosed"
+          />{" "}
+          {/* Add margin-bottom here */}
+        </div>
       </div>
 
       <div className="relative grid grid-cols-1 md:grid-cols-2 border-2 border-white my-12">
@@ -141,9 +165,10 @@ export default function Contact() {
             Get In Touch!
           </h4>
           <p style={hubot.style} className="my-5">
-            Thank you for visiting our website! If you have any questions or
-            queries, drop us a message, and we&apos;ll get back to you promptly.
-            Your time is valuable to us!
+            Thank you for visiting our website! If you have
+            any questions or queries, drop us a message, and
+            we&apos;ll get back to you promptly. Your time
+            is valuable to us!
           </p>
           <div className="my-5">
             <div className="flex my-8">
@@ -161,10 +186,17 @@ export default function Contact() {
                   strokeWidth="2.6"
                 />
               </svg>
-              <p style={space.style} className="ms-4 font-normal">
-                <a href="tel:+919341405360">+91 9341405360</a>
+              <p
+                style={space.style}
+                className="ms-4 font-normal"
+              >
+                <a href="tel:+919341405360">
+                  +91 9341405360
+                </a>
                 <br />
-                <a href="tel:+919003065894">+91 9003065894</a>
+                <a href="tel:+919003065894">
+                  +91 9003065894
+                </a>
               </p>
             </div>
             <div className="flex my-8">
@@ -183,7 +215,10 @@ export default function Contact() {
                   fill="white"
                 />
               </svg>
-              <p style={space.style} className="ms-4 font-normal">
+              <p
+                style={space.style}
+                className="ms-4 font-normal"
+              >
                 <a href="mailto:devshouse.tech@gmail.com">
                   devshouse.tech@gmail.com
                 </a>
@@ -210,13 +245,19 @@ export default function Contact() {
                   fill="white"
                 />
               </svg>
-              <p style={space.style} className="ms-4 my-auto font-normal">
+              <p
+                style={space.style}
+                className="ms-4 my-auto font-normal"
+              >
                 VIT, Chennai
               </p>
             </div>
           </div>
         </div>
-        <div className="py-4 px-12" style={{ backgroundColor: "#F9F9F9" }}>
+        <div
+          className="py-4 px-12"
+          style={{ backgroundColor: "#F9F9F9" }}
+        >
           <form id={styles.form} action="" method="post">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 my-5">
               <input
