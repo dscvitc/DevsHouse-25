@@ -26,7 +26,7 @@ const Timeline = () => {
           {/* Add margin-bottom here */}
         </div>
       </div>
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-4xl pt-20">
         <Image
           src="/Timeline.svg"
           alt="Timeline"
