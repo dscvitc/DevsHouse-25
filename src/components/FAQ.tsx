@@ -1,7 +1,8 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Image from "next/image";
 import FAQData from "./FAQData";
-import { Space_Grotesk } from "next/font/google";
+// import { Space_Grotesk } from "next/font/google";
+import { Hubot_Sans } from "next/font/google";
 import RedBubble from "../../public/FAQ_assets/green bubbles.svg";
 import YellowBubble from "../../public/FAQ_assets/green bubbles (1).svg";
 import BlueBubble from "../../public/FAQ_assets/green bubbles (2).svg";
@@ -11,7 +12,8 @@ import BlackBg from "../../public/FAQ_assets/blackblob.png"
 // import { Mona_Sans } from "next/font/google"; 
 import Heading from "../components/ui/Heading"
 
-const Space = Space_Grotesk({ weight: "700", subsets: ["latin"] });
+// const Space = Space_Grotesk({ weight: "700", subsets: ["latin"] });
+const Hubot = Hubot_Sans({weight:"700", subsets:["latin"]});
 // const Mona = Mona_Sans({ weight: "700", subsets: ["latin"] });
 
 const FAQ = () => {
@@ -31,7 +33,7 @@ const FAQ = () => {
     <Accordion type="single" collapsible key={props.key}>
       <AccordionItem className="rounded-xl border-bottom bg-[#ffffff08]" value={props.question}>
         <AccordionTrigger className={`text-white text-left hover:bg-inherit`}>
-          <div className={`flex  ${Space.className} md:text-2xl text-[0.8rem] items-center`}>
+          <div className={`flex  ${Hubot.className} md:text-2xl text-[0.8rem] items-center`}>
             <Image
               src={imageClasses[props.color as keyof typeof imageClasses]}
               alt="bubbles"
@@ -41,7 +43,7 @@ const FAQ = () => {
           </div>
         </AccordionTrigger>
         <AccordionContent className={`${colorClasses[props.color as keyof typeof colorClasses]} rounded-xl p-5`}>
-          <p className={`${Space.className} pl-2 md:md:text-lg text-[0.8rem] text-black text-[0.8rem] text-black`}>
+          <p className={`${Hubot.className} pl-2 md:md:text-lg text-[0.8rem] text-black `}>
             {props.answer}
           </p>
         </AccordionContent>
@@ -53,7 +55,7 @@ const FAQ = () => {
     <>
       <div
         id="faqs"
-        className="flex flex-col justify-center items-center pb-20 pt-10 relative mt-72"
+        className="flex flex-col justify-center items-center pb-20 pt-10 relative mt-8 md:mt-12 lg:mt-20 xl:mt-36"
       >
       <div className="relative flex flex-col items-center">
         {/* Heading with relative positioning */}
@@ -81,7 +83,7 @@ const FAQ = () => {
     
 
         {/* Accordion content below */}
-        <div className="w-[90%] md:w-[80%] h-auto z-10 mt-10">
+        <div className="w-[100%] md:w-[80%] h-auto z-10 mt-10">
           <Accordion type="single" className="space-y-4">
             {items}
           </Accordion>
