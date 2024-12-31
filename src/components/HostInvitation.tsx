@@ -6,7 +6,7 @@ const hubot = Hubot_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 const HostInvitation = () => {
     return (
-        <div className="relative mt-32 mb-64 h-screen flex flex-col items-center justify-center">
+        <div className="relative lg:mt-32 lg:mb-64 h-screen flex flex-col items-center justify-center">
             <div className="absolute flex justify-center left-1/2 transform -translate-x-1/2 translate-y-0 w-full">
                 <Image
                     src="/detailedGlobe.svg"
@@ -17,7 +17,7 @@ const HostInvitation = () => {
                 />
             </div>
 
-            <div className="relative md:flex md:justify-center items-center z-10 w-full md:pl-6 lg:px-24 px-8 py-28 mb-12 backdrop-blur-md bg-opacity-20 rounded-lg mt-32 sm:flex-row flex-col">
+            <div className="relative md:flex md:justify-center items-center z-10 w-full md:pl-6 lg:px-24 px-8 py-28 backdrop-blur-md bg-opacity-20 rounded-lg lg:mt-32 lg:mb-12 sm:flex-row flex-col">
                 <div className="flex justify-center">
                     <Image
                         src="/invitationHouse.svg"

@@ -1,18 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import {
-  Space_Grotesk,
-  Hubot_Sans,
-} from "next/font/google";
+import { Hubot_Sans, } from "next/font/google";
+
 import Image from "next/image";
 
 import Heading from "../components/ui/Heading";
 
-const space = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 const hubot = Hubot_Sans({
   subsets: ["latin"],
   weight: ["800", "700"],
@@ -48,7 +42,7 @@ const Panorama: React.FC = () => {
 
   return (
     <>
-      <div className="my-16" id="glimpses">
+      <div className=" py-20" id="glimpses">
         {/* <div
                     className="relative flex justify-center items-center my-3" style={{ height: 205 }} >
                     <Image className="absolute" src={Bgimage} alt="bgimage" width={200} height={200} />
@@ -60,10 +54,10 @@ const Panorama: React.FC = () => {
         >
           <Heading title="GLIMPSES" geometry="Sphere" />{" "}
         </div>
-        <p className="text-center" style={space.style}>
+        <p className="text-center" style={hubot.style}>
           A sneak peek into the innovation, energy, and
         </p>
-        <p className={` ${space.style} text-center`}>
+        <p className={` ${hubot.style} text-center`}>
           brilliance that shaped last year&apos;s incredible
           hackathon experience!
         </p>
@@ -187,6 +181,19 @@ const Panorama: React.FC = () => {
             </div>
             <div className="swiper-pagination"></div>
           </div>
+
+        </div>
+        <div className="flex justify-center items-center">
+
+          <p className="text-center pr-2 pl-4" style={hubot.style}>
+            Swipe Left
+          </p>
+          <Image
+            src="/Glimpsesimages/arrow.png"
+            alt="arrow"
+            width={20}
+            height={10}
+          />
         </div>
       </div>
     </>
