@@ -32,7 +32,7 @@ export const MarqueeCard = () => {
   return (
     <div className="w-full">
       <div className="text-white font-bold font-hubot-sans-bold text-2xl">
-        DevsHouse'25
+        DevsHouse '25
       </div>
     </div>
   );

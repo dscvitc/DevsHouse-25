@@ -16,16 +16,8 @@ export const tracks: Track[] = [
         gradientClass: "gradient-finance",
     },
     {
-        title: "Open Innovation",
-        number: "TRACK #02",
-        description:
-            "Innovate without boundaries! The Open Innovation track is your playground to dream big. Collaborate with diverse minds, tackle real-world challenges, and create groundbreaking solutions that defy convention.",
-        icon: "open-innovation.svg",
-        gradientClass: "gradient-innovation",
-    },
-    {
         title: "AR/VR",
-        number: "TRACK #03",
+        number: "TRACK #02",
         description:
             "Step into the future! Our AR/VR track invites you to craft immersive experiences and simulations. Explore how augmented and virtual realities can revolutionize industries and redefine human interaction.",
         icon: "ar-vr.svg",
@@ -33,7 +25,7 @@ export const tracks: Track[] = [
     },
     {
         title: "Environmental Sustainability",
-        number: "TRACK #04",
+        number: "TRACK #03",
         description:
             "Build a sustainable tomorrow! In the Environmental Sustainability track, leverage cutting-edge technology to tackle environmental challenges. Innovate eco-friendly solutions that contribute to a greener, healthier planet.",
         icon: "env-sus.svg",
@@ -41,7 +33,7 @@ export const tracks: Track[] = [
     },
     {
         title: "Blockchain and DApps",
-        number: "TRACK #05",
+        number: "TRACK #04",
         description:
             "Embrace decentralization! The Blockchain and DApps track empowers you to create transparent, secure, and decentralized ecosystems. Dive into smart contracts and blockchain technology to shape the future.",
         icon: "ethereum-2.svg",
@@ -49,10 +41,18 @@ export const tracks: Track[] = [
     },
     {
         title: "IoT and Smart Devices",
-        number: "TRACK #06",
+        number: "TRACK #05",
         description:
             "Connect the world around you! The IoT and Smart Devices track is your chance to develop intelligent solutions for a seamlessly connected future. Create smart technologies that simplify and enhance everyday life.",
         icon: "iot.svg",
         gradientClass: "gradient-iot",
+    },
+    {
+        title: "Open Innovation",
+        number: "TRACK #06",
+        description:
+            "Innovate without boundaries! The Open Innovation track is your playground to dream big. Collaborate with diverse minds, tackle real-world challenges, and create groundbreaking solutions that defy convention.",
+        icon: "open-innovation.svg",
+        gradientClass: "gradient-innovation",
     },
   ];

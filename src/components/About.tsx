@@ -78,7 +78,7 @@ export default function About() {
             {/* Adjusted position and animation */}
           </div>
           <p className="text-2xl text-gray-400">
-            GDSC VIT Chennai is a student run community
+            GDG On Campus VIT Chennai is a student run community
             group powered by Google Developers. We are a
             passionate group of budding developers who work
             together to build solutions for local businesses
