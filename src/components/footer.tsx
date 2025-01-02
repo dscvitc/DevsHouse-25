@@ -151,6 +151,7 @@ const Footer = () => {
       </div>
       <div className="flex lg:flex-row-reverse md:flex-row-reverse sm:mt-1 justify-between mr-8  w-full">
         <Link
+          target="_blank"
           href="https://devshouse25.devfolio.co/"
           className="relative w-2/3 md:h-44 md:-mr-7 mb-40 lg:mb-10 lg:mt-56 "
         >
