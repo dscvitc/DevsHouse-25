@@ -11,10 +11,11 @@ import Heart from "./Heart";
 interface HeadingProps {
   title: string;
   geometry: string;
+  textClass?: string;
 }
 
 const Heading: React.FC<HeadingProps> = ({
-  title,
+  title, textClass,
   geometry,
 }) => {
   const renderGeometry = () => {
@@ -46,7 +47,7 @@ const Heading: React.FC<HeadingProps> = ({
         className="flex flex-col justify-end items-center pb-1 md:pb-3 z-10 w-full"
         style={{ marginTop: "40px" }}
       >
-        <p className="text-6xl font-bold mb-8">{title}</p>
+        <p className={"font-bold mb-8 " + (textClass ?? 'text-6xl')}>{title}</p>
       </div>
       <div className="absolute top-5 left-0 w-full h-full flex items-center justify-center z-0">
         {renderGeometry()}
