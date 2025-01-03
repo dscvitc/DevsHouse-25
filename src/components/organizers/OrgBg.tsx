@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Cube from "../../../public/cube.svg";
+import Cube from "../../../public/cube.png";
 import Wavy from "../../../public/wavy.svg";
 
 export default function OrgBg() {

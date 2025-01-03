@@ -1,4 +1,14 @@
 import Omar from "../../public/organizers/syedOmarAlbeez.svg";
+import Shaan from "../../public/organizers/ShaanPic.png";
+import Shubhi from "../../public/organizers/shubhi.jpg";
+import Aditya from "../../public/organizers/AdityaPic.png";
+import Ayush from "../../public/organizers/AyushPic.png";
+import Jayrupika from "../../public/organizers/jayrupika.jpg";
+import Joshua from "../../public/organizers/joshua.jpg";
+import Joel from "../../public/organizers/JoelPic.png";
+import Sanjana from "../../public/organizers/SanjanaPic.png";
+import Emir from "../../public/organizers/EmirHPic.png";
+import Adityaash from "../../public/organizers/adityaash.png";
 
 export const Organizers = [
   {
@@ -12,7 +22,7 @@ export const Organizers = [
   },
   {
     name: "Joel Gibi",
-    image: Omar,
+    image: Joel,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -21,7 +31,7 @@ export const Organizers = [
   },
   {
     name: "Shaan Mukherjee",
-    image: Omar,
+    image: Shaan,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -30,7 +40,16 @@ export const Organizers = [
   },
   {
     name: "Jayarhupika G",
-    image: Omar,
+    image: Jayrupika,
+    role: "Organizer",
+    description: "",
+    github: "https://github.com/",
+    linkedIn: "https://www.linkedin.com/",
+    type: "organizer",
+  },
+  {
+    name: "Sanjana",
+    image: Sanjana,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -39,7 +58,7 @@ export const Organizers = [
   },
   {
     name: "Emir Husain",
-    image: Omar,
+    image: Emir,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -48,7 +67,7 @@ export const Organizers = [
   },
   {
     name: "Ayush Awasthi",
-    image: Omar,
+    image: Ayush,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -57,16 +76,7 @@ export const Organizers = [
   },
   {
     name: "Aditya",
-    image: Omar,
-    role: "Organizer",
-    description: "",
-    github: "https://github.com/",
-    linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
-  },
-  {
-    name: "Syed Omar Albeez",
-    image: Omar,
+    image: Adityaash,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -84,7 +94,7 @@ export const Organizers = [
   },
   {
     name: "Aditya Aryan",
-    image: Omar,
+    image: Aditya,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -93,7 +103,7 @@ export const Organizers = [
   },
   {
     name: "Shubhi Goel",
-    image: Omar,
+    image: Shubhi,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
@@ -129,7 +139,7 @@ export const Organizers = [
   },
   {
     name: "Joshua S Raju",
-    image: Omar,
+    image: Joshua,
     role: "Organizer",
     description: "",
     github: "https://github.com/",
