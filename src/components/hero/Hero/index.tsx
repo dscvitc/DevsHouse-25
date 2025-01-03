@@ -9,7 +9,7 @@ const Hero = (props: Props) => {
   return (
     <div className="h-full">
       <HeroBG>
-        <div className="container mx-auto h-[82%] max-md:h-[65%]  flex justify-center items-end w-full ">
+        <div className="container mx-auto h-[700px] max-md:h-[65%]  flex justify-center items-end w-full ">
           <HeroContent />
         </div>
         <MarqueeDemo />
