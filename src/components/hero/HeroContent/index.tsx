@@ -100,32 +100,32 @@ const HeroContent = (props: Props) => {
         <div className="px-4">
           <CountdownTimer targetTime={timeLeft} />
         </div>
-        <div className="flex space-x-4">
-        <Link 
-          target="_blank"
-          href="https://devshouse25.devfolio.co/" 
-          passHref
-        >
-          <Button
-            size="compact-lg"
-            className="button-Sponsor mt-3 mx-4"
+        <div className="flex space-x-4 max-md:justify-center w-full">
+          <Link
+            target="_blank"
+            href="https://devshouse25.devfolio.co/"
+            passHref
           >
-            Register Now!
-          </Button>
-        </Link>
-        <Link 
-          target="_blank"
-          href="https://discord.com/invite/UFfPjTtzh7" 
-          passHref
-        >
-          <Button
-            size="compact-lg"
-            className="button-Sponsor mt-3 mx-4"
+            <Button
+              size="compact-lg"
+              className="button-Sponsor mt-3 mx-4"
+            >
+              Register Now!
+            </Button>
+          </Link>
+          <Link
+            target="_blank"
+            href="https://discord.com/invite/UFfPjTtzh7"
+            passHref
           >
-            Community Page
-          </Button>
-        </Link>
-      </div>
+            <Button
+              size="compact-lg"
+              className="button-Sponsor mt-3 mx-4"
+            >
+              Community Page
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
