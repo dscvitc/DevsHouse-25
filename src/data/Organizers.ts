@@ -9,150 +9,136 @@ import Joel from "../../public/organizers/JoelPic.png";
 import Sanjana from "../../public/organizers/SanjanaPic.png";
 import Emir from "../../public/organizers/EmirHPic.png";
 import Adityaash from "../../public/organizers/adityaash.png";
+import Bhavika from "../../public/organizers/bhavika.jpg";
+import Karthikey from "../../public/organizers/kartikey.jpg";
 
 export const Organizers = [
   {
     name: "Syed Omar Albeez",
     image: Omar,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Joel Gibi",
     image: Joel,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Shaan Mukherjee",
     image: Shaan,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Jayarhupika G",
     image: Jayrupika,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Sanjana",
     image: Sanjana,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Emir Husain",
     image: Emir,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Ayush Awasthi",
     image: Ayush,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Aditya",
     image: Adityaash,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Bhavika Maini",
-    image: Omar,
+    image: Bhavika,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Aditya Aryan",
     image: Aditya,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Shubhi Goel",
     image: Shubhi,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Abhinav",
     image: Omar,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "P.Mohit",
     image: Omar,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Yash Sharma",
     image: Omar,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Joshua S Raju",
     image: Joshua,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
   {
     name: "Karthikey Patel",
-    image: Omar,
+    image: Karthikey,
     role: "Organizer",
-    description: "",
+
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-    type: "organizer",
   },
 ];
