@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Mona_Sans } from "next/font/google";
 import { Button } from "@mantine/core";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 import { DottedSeperator } from "@/components/tracks/dotted-seperator";
 import { tracks } from "@/data/tracks";
@@ -108,12 +109,18 @@ export default function Tracks() {
                     Let&apos;s redefine what&apos;s
                     possible.
                   </p>
+                  <Link 
+          target="_blank"
+          href="https://devshouse25.devfolio.co/" 
+          passHref
+        >
                   <Button
                     size="compact-lg"
                     className="button-Sponsor"
                   >
                     Register Now!
                   </Button>
+                  </Link>
                 </div>
               </div>
             </div>
