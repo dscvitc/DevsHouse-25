@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import CountdownTimer from "../CountdownTimer";
 import { Button } from "@mantine/core";
+import Link from "next/link";
 
 type Props = {};
 
@@ -99,12 +100,32 @@ const HeroContent = (props: Props) => {
         <div className="px-4">
           <CountdownTimer targetTime={timeLeft} />
         </div>
-        <Button
-          size="compact-lg"
-          className="button-Sponsor mt-3 mx-4"
-        >
-          Register Now!
-        </Button>
+        <div className="flex space-x-4 max-md:justify-center w-full">
+          <Link
+            target="_blank"
+            href="https://devshouse25.devfolio.co/"
+            passHref
+          >
+            <Button
+              size="compact-lg"
+              className="button-Sponsor mt-3 mx-4"
+            >
+              Register Now!
+            </Button>
+          </Link>
+          <Link
+            target="_blank"
+            href="https://discord.com/invite/UFfPjTtzh7"
+            passHref
+          >
+            <Button
+              size="compact-lg"
+              className="button-Sponsor mt-3 mx-4"
+            >
+              Community Page
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

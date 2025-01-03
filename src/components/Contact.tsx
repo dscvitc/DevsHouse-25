@@ -134,7 +134,7 @@ export default function Contact() {
           CONTACT US
         </h2> */}
         <div className="md-108">
-          <Heading
+          <Heading textClass="text-5xl md:text-6xl"
             title="CONTACT US"
             geometry="Sphereenclosed"
           />{" "}
@@ -190,12 +190,12 @@ export default function Contact() {
                 style={space.style}
                 className="ms-4 font-normal"
               >
-                <a href="tel:+919341405360">
-                  +91 9341405360
+                <a href="tel:+918943136813">
+                  +91 89431 36813
                 </a>
                 <br />
-                <a href="tel:+919003065894">
-                  +91 9003065894
+                <a href="tel:+919339244224">
+                  +91 93392 44224
                 </a>
               </p>
             </div>
