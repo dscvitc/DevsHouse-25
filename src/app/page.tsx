@@ -14,18 +14,18 @@ import Sponsors from "@/components/sponsors/Sponsors";
 export default function Home() {
   return (
     <>
-      {/* <Hero />
+      <Hero />
       <About />
       <Tracks />
-      <Prizes /> */}
+      <Prizes />
       <Timeline />
       {/*  <Speakers /> */}
       <Org />
       <Sponsors />
-      {/* <FAQ />
+      <FAQ />
       <Glimpses />
       <HostInvitation />
-      <ContactUs /> */}
+      <ContactUs />
     </>
   );
 }
