@@ -28,7 +28,7 @@ export default function OrgCard({ name, image, linkedIn }: OrgCardProps) {
         rel="noopener noreferrer">
         <Image src="linkedin.svg" alt="Linkedin" width={50} height={50} />
       </Link>
-      <div className="name absolute">{name}</div>
+      <div className="name whitespace-pre-wrap absolute">{name}</div>
     </div>
   );
 }
