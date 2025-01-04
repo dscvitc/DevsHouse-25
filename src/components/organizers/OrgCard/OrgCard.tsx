@@ -1,10 +1,11 @@
 import "./OrgCard.css";
 import Image from "next/image";
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 
 interface OrgCardProps {
   name: string;
-  image: string;
+  image: string | StaticImageData;
   linkedIn: string;
 }
 

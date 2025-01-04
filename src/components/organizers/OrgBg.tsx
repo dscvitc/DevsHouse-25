@@ -9,7 +9,7 @@ export default function OrgBg() {
       style={{ backgroundImage: `url(${Wavy.src})` }} // Access `.src` for the path of the image
     >
       <Image
-        className="xl:size-[85%] size-[100%] lg:-translate-y-36 md:-translate-y-20 -translate-y-12"
+        className="xl:size-[85%] size-[100%] lg:-translate-y-36 md:-translate-y-20 -translate-y-12 "
         src={Cube}
         alt="Cube Vector"
       />
