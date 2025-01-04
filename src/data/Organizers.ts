@@ -67,7 +67,7 @@ export const Organizers = [
   },
   {
     name: "Aditya",
-    image: Adityaash,
+    image: Aditya,
     role: "Technical Team",
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
@@ -81,7 +81,7 @@ export const Organizers = [
   },
   {
     name: "Aditya Aryan",
-    image: Aditya,
+    image: Adityaash,
     role: "Co-Organizer",
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
