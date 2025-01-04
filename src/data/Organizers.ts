@@ -11,6 +11,9 @@ import Emir from "../../public/organizers/EmirHPic.png";
 import Adityaash from "../../public/organizers/adityaash.png";
 import Bhavika from "../../public/organizers/bhavika.jpg";
 import Karthikey from "../../public/organizers/kartikey.jpg";
+import Abhinav from "../../public/organizers/abhinav.jpg";
+import Mohit from "../../public/organizers/mohit.jpg";
+import Yash from "../../public/organizers/yash.jpg";
 
 export const Organizers = [
   {
@@ -103,7 +106,7 @@ export const Organizers = [
   },
   {
     name: "Abhinav",
-    image: Omar,
+    image: Abhinav,
     role: "Organizer",
 
     github: "https://github.com/",
@@ -111,7 +114,7 @@ export const Organizers = [
   },
   {
     name: "P.Mohit",
-    image: Omar,
+    image: Mohit,
     role: "Organizer",
 
     github: "https://github.com/",
@@ -119,7 +122,7 @@ export const Organizers = [
   },
   {
     name: "Yash Sharma",
-    image: Omar,
+    image: Yash,
     role: "Organizer",
 
     github: "https://github.com/",
