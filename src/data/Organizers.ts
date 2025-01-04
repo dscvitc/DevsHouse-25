@@ -13,7 +13,7 @@ import Bhavika from "../../public/organizers/bhavika.png";
 import Karthikey from "../../public/organizers/kartikey.png";
 import Abhinav from "../../public/organizers/abhinav.png";
 import Yash from "../../public/organizers/yash.png";
-// import Mohit from "../../public/organizers/mohit.png";
+import Mohit from "../../public/organizers/mohit.png";
 
 export const Organizers = [
   {
@@ -102,7 +102,7 @@ export const Organizers = [
   },
   {
     name: "P.Mohit",
-    image: Omar,
+    image: Mohit,
     role: "Co-Organizer",
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
