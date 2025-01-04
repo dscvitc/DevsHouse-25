@@ -17,7 +17,9 @@ export default function OrgGrid() {
           ))}
         </div>
       </div>
-      <Heading title="TECHNICAL TEAM" geometry=""></Heading>
+      <div className="text-center">
+        <Heading title="TECHNICAL TEAM" geometry=""></Heading>
+      </div>
       <div className="w-full flex justify-center -mt-8">
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-max gap-8">
           {Organizers.slice(5, 8).map((organizer) => (
@@ -30,7 +32,9 @@ export default function OrgGrid() {
           ))}
         </div>
       </div>
-      <Heading title="CO-ORGANIZER" geometry=""></Heading>
+      <div className="text-center">
+        <Heading title="CO-ORGANIZER" geometry=""></Heading>
+      </div>
       <div className="w-full flex justify-center -mt-8">
         <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-max gap-8">
           {Organizers.slice(8, 16).map((organizer) => (
