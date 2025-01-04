@@ -19,7 +19,7 @@ export default function Home() {
       <Tracks />
       <Prizes />
       <Timeline />
-      {/*  <Speakers /> */}
+      <Speakers />
       <Org />
       <Sponsors />
       <FAQ />

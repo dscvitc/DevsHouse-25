@@ -59,7 +59,7 @@ const HeroContent = (props: Props) => {
       <div className="flex flex-col justify-center items-start gap-y-0">
         <div className=" flex flex-col justify-center items-start text-white w-full md:max-w-[875px] ">
           <div className="flex flex-col justify-center max-md:items-center md:items-start">
-            <div className="flex justify-center items-start mx-4">
+            <div className="flex justify-center items-start">
               <div className="flex flex-col justify-center items-start">
                 <span className="font-bold max-md:text-[45px] md:text-[100px] font-hubot-sans leading-none">
                   DEVSHOUSE'
@@ -100,7 +100,7 @@ const HeroContent = (props: Props) => {
         <div className="px-4">
           <CountdownTimer targetTime={timeLeft} />
         </div>
-        <div className="flex space-x-4 max-md:justify-center w-full">
+        <div className="flex md:gap-x-4 max-md:justify-center max-md:gap-x-4 max-md:px-2 w-full">
           <Link
             target="_blank"
             href="https://devshouse25.devfolio.co/"
@@ -108,7 +108,7 @@ const HeroContent = (props: Props) => {
           >
             <Button
               size="compact-lg"
-              className="button-Sponsor mt-3 mx-4"
+              className="button-Sponsor mt-3 md:mx-4"
             >
               Register Now!
             </Button>
@@ -120,7 +120,7 @@ const HeroContent = (props: Props) => {
           >
             <Button
               size="compact-lg"
-              className="button-Sponsor mt-3 mx-4"
+              className="button-Sponsor mt-3 md:mx-4"
             >
               Community Page
             </Button>
