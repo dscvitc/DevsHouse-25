@@ -9,7 +9,7 @@ import Org from "@/components/organizers/Org";
 // import Speakers from "@/components/Speakers";
 import FAQ from "@/components/FAQ";
 import Hero from "@/components/hero/Hero";
-// import Sponsors from "@/components/sponsors/Sponsors";
+import Sponsors from "@/components/sponsors/Sponsors";
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
       <Tracks />
       {/* <Prizes /> */}
       <Timeline />
-      <Speakers />
+      {/* <Speakers /> */}
       <Org />
-      {/* <Sponsors /> */}
+      <Sponsors />
       <FAQ />
       <Glimpses />
       <HostInvitation />

@@ -30,7 +30,7 @@ export default function Tracks() {
         {/* <div className="relative z-10 flex items-center justify-center h-[150px]">
           <h1 className="text-3xl font-bold text-white">TRACKS</h1>
         </div> */}
-        <div className="md-108 w-full">
+        <div className="md-108 w-full md:pb-2">
           <Heading
             title="TRACKS"
             geometry="Cubedodecahedron"

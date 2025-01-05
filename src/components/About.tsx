@@ -12,14 +12,14 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk pt-12"
+      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk md:mt-6 pt-12"
     >
       <div className="md-108 w-full flex items-center justify-center">
         <Heading title="ABOUT US" geometry="Dodecahedron" />{" "}
         {/* Add margin-bottom here */}
       </div>
 
-      <div className="flex flex-col md:flex-row w-full px-8 md:px-16 items-center gap-20 m-12 pt-12">
+      <div className="flex flex-col md:flex-row w-full px-8 md:px-16 items-center gap-20 m-12 pt-12 md:pt-0">
         <div className="flex flex-col md:w-1/2">
           <p className="text-6xl font-bold mb-8">
             VIT Chennai

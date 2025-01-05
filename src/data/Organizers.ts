@@ -94,8 +94,8 @@ export const Organizers = [
     linkedIn: "https://www.linkedin.com/",
   },
   {
-    name: "           Abhinav",
-    image: Abhinav,
+    name: "    Kartikey Patel",
+    image: Karthikey,
     role: "Co-Organizer",
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
@@ -122,10 +122,10 @@ export const Organizers = [
     linkedIn: "https://www.linkedin.com/",
   },
   {
-    name: "    Karthikey Patel",
-    image: Karthikey,
+    name: "           Abhinav",
+    image: Abhinav,
     role: "Co-Organizer",
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-  },
+  }
 ];

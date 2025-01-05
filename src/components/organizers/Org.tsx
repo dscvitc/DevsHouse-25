@@ -5,7 +5,7 @@ import OrgBg from "./OrgBg";
 
 export default function Org() {
   return (
-    <div className="py-10" id="organizers">
+    <div className="py-10 md:py-0" id="organizers">
       <OrgHeader></OrgHeader>
       <div className="relative">
         <div className="md:block hidden xl:mb-[22rem] lg:mb-[102rem] md:mb-[162rem]">

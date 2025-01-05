@@ -18,7 +18,7 @@ const SponsorCard = ({ sponsor }: Props) => {
         height={100}
         width={100}
         alt="sponsor"
-        className="h-auto w-3/4 md:w-full object-cover rounded-[13px] md:rounded-[40px] border"
+        className="h-auto w-3/4 md:w-36 border object-cover rounded-[13px] md:rounded-[40px]"
       />
       <div className="font-mona-sans-semi-bold text-xs sm:text-sm md:text-xl">
         {sponsor.title}

@@ -133,7 +133,7 @@ export default function Contact() {
         >
           CONTACT US
         </h2> */}
-        <div className="md-108">
+        <div className="md-108 md:pb-12">
           <Heading textClass="text-5xl md:text-6xl"
             title="CONTACT US"
             geometry="Sphereenclosed"
@@ -326,7 +326,7 @@ export default function Contact() {
           position: "absolute",
           zIndex: -1,
           left: "55%",
-          transform: "translate(-100%, 10%)",
+          transform: "translate(-100%, 4%)",
         }}
         src="footer/footerBg.svg"
         className="bottom-0 hidden md:inline-block "

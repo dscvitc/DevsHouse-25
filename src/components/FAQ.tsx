@@ -55,7 +55,7 @@ const FAQ = () => {
     <>
       <div
         id="faqs"
-        className="flex flex-col justify-center items-center pb-20 pt-10 relative mt-8 md:mt-12 lg:mt-20 xl:mt-36"
+        className="flex flex-col justify-center items-center pb-20 md:pb-0 pt-10 relative mt-8"
       >
       <div className="relative flex flex-col items-center">
         {/* Heading with relative positioning */}
@@ -97,9 +97,9 @@ const FAQ = () => {
             zIndex: -1,
             top: "55%", 
             left: "50%", 
-            transform: "translate(-50%, -50%)", 
-            width: "85vw",
-            height: "75vw",
+            transform: "translate(-50%, -38%)", 
+            width: "65vw",
+            height: "55vw",
             filter: "blur(45px)",
           }}
           src={BlackBg}

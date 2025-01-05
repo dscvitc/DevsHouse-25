@@ -6,22 +6,22 @@ type Props = {};
 const sponsorsListRow1 = [
   {
     id: 1,
-    img: "/sponsors-new/profile-img.png",
+    img: "/sponsors-new/devfolio.jpg",
     title: "Ruby Sponsor",
   },
   {
     id: 2,
-    img: "/sponsors-new/profile-img.png",
+    img: "/sponsors-new/polygon.png",
     title: "Sapphire Sponsor",
   },
   {
     id: 3,
-    img: "/sponsors-new/profile-img.png",
+    img: "/sponsors-new/ethindia.jpg",
     title: "Emerald Sponsor",
   },
 ];
 
-const sponsorsListRow2 = [
+/* const sponsorsListRow2 = [
   {
     id: 4,
     img: "/sponsors-new/profile-img.png",
@@ -46,7 +46,7 @@ const sponsorsListRow2 = [
     title: "Ruby Sponsor",
     className: "",
   },
-];
+]; */
 
 const SponsorsGallery = (props: Props) => {
   return (
@@ -58,7 +58,7 @@ const SponsorsGallery = (props: Props) => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-4 sm:gap-5 md:gap-10">
+      {/* <div className="grid grid-cols-4 sm:gap-5 md:gap-10">
         {sponsorsListRow2.map((sponsor) => (
           <div
             className={sponsor.className}
@@ -67,7 +67,7 @@ const SponsorsGallery = (props: Props) => {
             <SponsorCard sponsor={sponsor} />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
