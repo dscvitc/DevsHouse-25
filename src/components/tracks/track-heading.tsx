@@ -10,7 +10,7 @@ export function TrackHeading() {
     <motion.div 
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-150px" }}
+      viewport={{ margin: "-100px" }}
       className="relative mb-16 mx-auto w-full"
     >
       <div className="md-108 w-full md:pb-2">

@@ -20,6 +20,9 @@ interface TrackItemProps {
 export function TrackItem({ track, isLast }: TrackItemProps) {
     return (
         <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ margin: "-100px" }}
             className="relative"
             variants={trackVariants}
         >
