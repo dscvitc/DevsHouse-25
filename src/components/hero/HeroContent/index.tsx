@@ -64,7 +64,7 @@ const HeroContent = (props: Props) => {
                 <span className="font-bold max-md:text-[45px] md:text-[100px] font-hubot-sans leading-none">
                   DEVSHOUSE'
                 </span>
-                <span className="flex max-md:flex-col justify-start gap-x-8 items-center w-full m-0 p-0 leading-none">
+                <span className="flex max-md:flex-col justify-start gap-x-8 items-center w-full m-0 p-0 leading-none md:translate-x-4">
                   <div className="max-md:grid max-md:grid-cols-2 max-md:gap-x-5 flex justify-start gap-x-8 items-center ">
                     <span className="col-span-1 font-mona-sans-bold font-extrabold text-[32px] max-md:text-[28px]">
                       HACK IT.

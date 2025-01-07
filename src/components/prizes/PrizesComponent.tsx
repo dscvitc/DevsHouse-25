@@ -17,23 +17,21 @@ export default function Prizes() {
       width: 300,
       height: 300,
       // price: "₹50,000",
-      price: "Soon",
+      price: "₹???",
       alt: "1st",
     },
     {
       src: "/images/prizes/bronze.svg",
       width: 250,
       height: 250,
-      // price: "₹10,000",
-      price: "",
+      price: "₹???",
       alt: "3rd",
     },
     {
       src: "/images/prizes/silver.svg",
       width: 250,
       height: 250,
-      // price: "₹15,000",
-      price: "",
+      price: "₹???",
       alt: "2nd",
     },
   ];
@@ -198,7 +196,7 @@ export default function Prizes() {
         </div>
       </div>
 
-      {tracks.length > 0 ? (
+      {/* {tracks.length > 0 ? (
         <>
           <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
           <div className="w-full px-12 grid grid-cols-1 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
@@ -215,7 +213,7 @@ export default function Prizes() {
         </>
       ) : (
         <></>
-      )}
+      )} */}
       {/* </div> */}
     </section>
   );

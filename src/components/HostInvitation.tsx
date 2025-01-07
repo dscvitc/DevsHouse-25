@@ -46,7 +46,7 @@ const HostInvitation = () => {
                         Elevate your brand, be part of the tech revolution!
                     </div>
                     <div className="lg:text-3xl text-lg md:text-left">
-                        Write to collaborate with us at: sponsorship@devshouse.tech
+                        Write to collaborate with us at: devshouse.tech@gmail.com
                     </div>
                 </div>
             </div>

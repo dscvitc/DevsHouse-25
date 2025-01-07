@@ -50,12 +50,12 @@ const Footer = () => {
           </div>
           <div className="mr-36 mb-5">
             <h3 className="text-white font-bold text-2xl sm:mt-5">Join Us</h3>
-            <div className="mt-2 text-xl">
+            <div className="mt-2 text-xl flex flex-col gap-2">
               <Link
                 href="https://github.com/dscvitc/dscvitchennai"
                 className="flex items-center hover:underline"
               >
-                <div className="ml-2 flex">
+                <div className=" flex">
                   <Image
                     src="footer/github.svg"
                     alt="Github"
@@ -70,7 +70,7 @@ const Footer = () => {
                 href="https://discord.com/invite/UFfPjTtzh7"
                 className="flex items-center hover:underline"
               >
-                <div className="ml-2 flex">
+                <div className=" flex">
                   <Image
                     src="footer/discord.svg"
                     alt="Discord"
@@ -102,7 +102,7 @@ const Footer = () => {
                     height="20"
                   />
                 </Link>
-                <Link
+                {/* <Link
                   className="mr-3"
                   href="/"
                   style={{
@@ -115,7 +115,7 @@ const Footer = () => {
                     width="26"
                     height="20"
                   />
-                </Link>
+                </Link> */}
                 <Link
                   className="mr-3"
                   href="https://x.com/devshouse_tech"

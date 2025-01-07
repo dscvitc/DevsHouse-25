@@ -7,7 +7,7 @@ export default function Org() {
   return (
     <div className="py-10 md:py-0" id="organizers">
       <OrgHeader></OrgHeader>
-      <div className="relative">
+      <div className="relative mt-16">
         <div className="md:block hidden xl:mb-[55rem] lg:mb-[135rem] md:mb-[195rem]">
           <OrgBg />
         </div>
