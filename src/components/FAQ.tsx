@@ -7,7 +7,7 @@ import RedBubble from "../../public/FAQ_assets/green bubbles.svg";
 import YellowBubble from "../../public/FAQ_assets/green bubbles (1).svg";
 import BlueBubble from "../../public/FAQ_assets/green bubbles (2).svg";
 import GreenBubble from "../../public/FAQ_assets/green bubbles (3).svg";
-import BlackBg from "../../public/FAQ_assets/blackblob.png"
+import BlackBg from "../../public/FAQ_assets/Black-119.svg"
 
 // import { Mona_Sans } from "next/font/google"; 
 import Heading from "../components/ui/Heading"
@@ -97,10 +97,9 @@ const FAQ = () => {
             zIndex: -1,
             top: "55%", 
             left: "50%", 
-            transform: "translate(-50%, -38%)", 
-            width: "65vw",
-            height: "55vw",
-            filter: "blur(45px)",
+            transform: "translate(-50%, -45%)", 
+            width: "90vw",
+            height: "80vw",
           }}
           src={BlackBg}
           width={800}

@@ -32,7 +32,7 @@ export default function Contact() {
     >
       <div
         className="flex flex-wrap justify-center content-center"
-        style={{ height: 225 }}
+        style={{ height: 220 }}
       >
         {/* <svg
           id={styles.contact_svg}

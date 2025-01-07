@@ -6,8 +6,8 @@ const hubot = Hubot_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 const HostInvitation = () => {
     return (
-        <div className="relative lg:mt-32 lg:mb-32 h-screen flex flex-col items-center justify-center">
-            <div className="absolute flex justify-center left-1/2 transform -translate-x-1/2 translate-y-0 w-full">
+        <div className="relative lg:mt-24 lg:mb-36 h-fit flex flex-col items-center justify-center">
+            <div className="absolute flex justify-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/2 md:translate-y-0 w-full">
                 <Image
                     src="/detailedGlobe.svg"
                     alt="Host Background"

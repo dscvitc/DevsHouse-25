@@ -10,7 +10,7 @@ const HeroBG = ({ children }: Props) => {
     <div className=" flex flex-col justify-between w-full h-full">
       <div className="flex flex-col justify-start relative inset-0 w-full overflow-hidden h-full">
         {/* Done */}
-        {/* <div className="flex justify-between ">
+        <div className="flex justify-between ">
           <Image
             src="/images/g91-2.svg"
             alt="bg-asset"
@@ -19,18 +19,18 @@ const HeroBG = ({ children }: Props) => {
             className="-z-10 relative -top-20 max-md:-left-10 max-md:scale-75"
           />
           <Image
-            src="/images/navbar-bg/cone.webp"
+            src="/images/navbar-bg/cone.svg"
             alt="cone"
             height={100}
             width={200}
-            className="-z-10 relative -left-5 -top-[100px] h-[200px]"
+            className="-z-10 relative left-7 -top-[10px] h-[200px]"
           />
           <Image
             src="/images/cube.svg"
             alt="bg-asset-cube"
             height={488}
             width={260}
-            className="-z-10 relative -left-40 -top-16 max-md:-top-20 max-md:hidden"
+            className="-z-10 relative -left-48 -top-16 max-md:-top-20 max-md:hidden"
           />
           <Image
             src="/images/4-35.svg"
@@ -52,22 +52,6 @@ const HeroBG = ({ children }: Props) => {
             height={388}
             width={290}
             className="z-[1000] relative -left-[480px] pointer-events-none"
-          />
-        </div> */}
-        <div className="flex justify-between">
-          <Image
-            src="/images/navbar-bg/bg.png"
-            alt="bg"
-            height={300}
-            width={500}
-            className="w-11/12 relative -top-[270px] -left-[120px]"
-          />
-          <Image
-            src="/hero/holo-7.png"
-            alt="bg-asset"
-            height={308}
-            width={268}
-            className="z-[1000] absolute m-0 p-0 right-0 -top-7 pointer-events-none max-xl:hidden"
           />
         </div>
 
