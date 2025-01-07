@@ -7,7 +7,8 @@ const Footer = () => {
     <div className="px-8 py-4 mt-3 -mb-20 w-full">
       <div className="justify-between items-center lg:flex">
         <ScrollButton />
-        <div className="lg:flex md:flex mt-10 mr-20">
+        <div className='md:flex mt-10 md:mr-20'>
+        <div className="grid grid-cols-2">
           <div className="mr-36 z-10 mb-5">
             <h2 className="font-bold text-2xl sm:mt-5">QuickLinks</h2>
             <ul className="mt-2 text-xl">
@@ -83,7 +84,8 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div>
+          </div>
+          <div className="mx-auto w-fit">
             <h2 className="font-bold text-2xl sm:mt-5">Follow Us</h2>
             <div className="mt-2 text-2xl">
               <div>Connect. Learn. Grow</div>
@@ -156,7 +158,7 @@ const Footer = () => {
           className="relative w-2/3 md:h-44 md:-mr-7 mb-40 lg:mb-10 lg:mt-56 "
         >
           <Image
-            src="footer/ticket.svg"
+            src="footer/TICKET.svg"
             alt="ticket"
             width="1000"
             height="10"

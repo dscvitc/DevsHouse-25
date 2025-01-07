@@ -328,7 +328,7 @@ export default function Contact() {
           left: "55%",
           transform: "translate(-100%, 4%)",
         }}
-        src="footer/footerBg.svg"
+        src="footer/FOOTERBG.svg"
         className="bottom-0 hidden md:inline-block "
         width={800}
         height={800}
