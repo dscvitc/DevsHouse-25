@@ -35,7 +35,7 @@ const DodecahedronInCube = () => {
     // Dodecahedron Material
     const dodecahedronMaterial = new THREE.LineBasicMaterial({
       color: 0x808080, // Grey color
-      opacity: 0.7,
+      opacity: 0.8,
       transparent: true,
     });
     const dodecahedron = new THREE.LineSegments(dodecahedronWireframe, dodecahedronMaterial);
@@ -57,10 +57,10 @@ const DodecahedronInCube = () => {
     // Animation
     const animate = () => {
       requestAnimationFrame(animate);
-      dodecahedron.rotation.x += 0.001;
-      dodecahedron.rotation.y += 0.001;
-      cube.rotation.x += 0.001;
-      cube.rotation.y += 0.001;
+      dodecahedron.rotation.x += 0.005;
+      dodecahedron.rotation.y += 0.005;
+      cube.rotation.x += 0.005;
+      cube.rotation.y += 0.005;
       renderer.render(scene, camera);
     };
 
