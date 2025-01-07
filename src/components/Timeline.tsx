@@ -4,7 +4,7 @@ const Timeline = () => {
   return (
     <div
       id="timeline"
-      className="relative flex flex-col items-center  p-6"
+      className="relative flex flex-col items-center md:pt-12 pt-20 p-6"
     >
       <div className="relative flex items-center justify-center w-full mb-8">
         {/* <div className="absolute inset-0 flex justify-center items-center -z-1 mt-5 mr-14">
