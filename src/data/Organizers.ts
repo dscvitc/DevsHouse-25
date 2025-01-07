@@ -127,7 +127,7 @@ export const Organizers = [
     image: Abhinav,
     role: "Co-Organizer",
     github: "https://github.com/",
-    linkedIn: "https://www.linkedin.com/",
+    linkedIn: "https://www.linkedin.com/in/abhinav-kumar-v/",
   },
   {
     name: "       Dr. Logesh R",

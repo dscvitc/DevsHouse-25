@@ -7,7 +7,7 @@ type Props = {};
 
 const Sponsors = (props: Props) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-y-0">
+    <div className="flex flex-col justify-center items-center gap-y-0" id="sponsors">
       <SponsorMarquee />
       {/* background */}
       <SponsorsBg>
