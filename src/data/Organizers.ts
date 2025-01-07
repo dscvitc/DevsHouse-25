@@ -14,6 +14,7 @@ import Karthikey from "../../public/organizers/kartikey.png";
 import Abhinav from "../../public/organizers/abhinav.png";
 import Yash from "../../public/organizers/yash.png";
 import Mohit from "../../public/organizers/mohit.png";
+import Logesh from "../../public/organizers/logesh.png";
 
 export const Organizers = [
   {
@@ -127,5 +128,12 @@ export const Organizers = [
     role: "Co-Organizer",
     github: "https://github.com/",
     linkedIn: "https://www.linkedin.com/",
-  }
+  },
+  {
+    name: "       Dr. Logesh R",
+    image: Logesh,
+    role: "Faculty Co-ordinator",
+    github: "https://github.com/",
+    linkedIn: "https://www.linkedin.com/",
+  },
 ];
