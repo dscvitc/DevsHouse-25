@@ -21,7 +21,7 @@ const DodecahedronWireframe: React.FC = () => {
       0.1,
       1000
     );
-    camera.position.z = 14; // Move the camera further back
+    camera.position.z = 7.05; // Move the camera further back
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -67,7 +67,7 @@ const DodecahedronWireframe: React.FC = () => {
     };
   }, []);
 
-  return <div ref={mountRef} style={{ width: "100%", height: "1000px" }} />;
+  return <div ref={mountRef} style={{ width: "100%", height: "100vh" }} />;
 };
 
 export default DodecahedronWireframe;
