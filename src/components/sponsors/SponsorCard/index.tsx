@@ -20,7 +20,7 @@ const SponsorCard = ({ sponsor }: Props) => {
         alt="sponsor"
         className="h-auto w-3/4 md:w-36 border object-cover rounded-[13px] md:rounded-[40px]"
       />
-      <div className="font-mona-sans-semi-bold text-xs sm:text-sm md:text-xl">
+      <div className="font-mona-sans-semi-bold text-xs sm:text-sm md:text-lg">
         {sponsor.title}
       </div>
     </div>
