@@ -11,6 +11,7 @@ import {
   mantineHtmlProps,
 } from "@mantine/core";
 import Navbar from "@/components/navigation/Navbar";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
         <MantineProvider>
           <Navbar />
           {children}
+          <Footer />
         </MantineProvider>
         <SpeedInsights />
       </body>
