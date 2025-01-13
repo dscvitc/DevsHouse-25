@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Hubot_Sans } from "next/font/google";
 import { Button } from "@mantine/core";
+import Link from "next/link";
 
 const hubot = Hubot_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -37,9 +38,11 @@ const HostInvitation = () => {
                             Let&apos;s Host Together
                         </div>
                         <div>
+                            <Link href="https://forms.gle/Rq1hYWMu3MvQCcQv5" target="_blank">
                             <Button size="compact-xl" className="button-Sponsor mt-4 ml-0 ">
                                 Sponsor Us
                             </Button>
+                            </Link>
                         </div>
                     </div>
                     <div className=" mb-2 lg:text-3xl text-lg md:text-left">
