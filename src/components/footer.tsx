@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import ScrollButton from "./scrollButton";
 
 import { Outfit, Space_Grotesk } from "next/font/google";
@@ -45,7 +44,7 @@ const Footer = () => {
 						<a href="https://www.instagram.com/devshouse.in?igsh=dWp5MjZ0eTdmMGc4" target="_blank" rel="noopener noreferrer">
 							<Image style={{ height: 40, width: 'auto' }} src='footer/insta.svg' width={40} height={40} alt='Instagram' />
 						</a>
-						<a href="https://x.com/devshouse_tech" target="_blank" rel="noopener noreferrer">
+						<a href="https://x.com/devshouse_In" target="_blank" rel="noopener noreferrer">
 							<Image style={{ height: 40, width: 'auto' }} src='footer/twitter.svg' width={40} height={40} alt='Twitter' />
 						</a>
 						<a href="https://www.linkedin.com/company/devshouse/" target="_blank" rel="noopener noreferrer">
