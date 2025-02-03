@@ -9,7 +9,7 @@ const HeroBG = ({ children }: Props) => {
   return (
     <div className=" flex flex-col justify-between w-full h-full">
       <div className="flex flex-col justify-start relative inset-0 w-full overflow-hidden h-full">
-        {/* Done */}
+
         <div className="flex justify-between ">
           <Image
             src="/images/g91-2.svg"
@@ -37,21 +37,21 @@ const HeroBG = ({ children }: Props) => {
             alt="bg-asset"
             height={580}
             width={600}
-            className="-z-10 relative -left-[292px] -top-[40px]"
+            className="-z-10 relative -left-[292px] -top-[66px]"
           />
           <Image
             src="/images/rectangle-67.svg"
             alt="bg-asset"
             height={420}
             width={380}
-            className="-z-10 relative -left-[443px] -top-[60px]"
+            className="-z-10 relative -left-[443px] -top-[70px]"
           />
           <Image
             src="/images/holo-7.svg"
             alt="bg-asset"
-            height={388}
-            width={290}
-            className="z-[1000] relative -top-6 -left-[480px] pointer-events-none"
+            height={420}
+            width={380}
+            className="z-[1000] relative -top-12 -left-[490px] right-0 max-md:left-auto max-md:right-0"
           />
         </div>
 
@@ -72,7 +72,7 @@ const HeroBG = ({ children }: Props) => {
             className="-z-50 relative -right-50 -top-28 "
           />
           <div className="-z-50  absolute right-0 top-[260px] w-[424px] h-[544px] bg-gradient-to-r from-transparent via-[#131313] to-[#131313] opacity-50 pointer-events-none"></div>
-          {/* <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-[#131313] to-[#131313] opacity-50 pointer-events-none"></div> */}
+
         </div>
       </div>
       <div className="absolute inset-0">{children}</div>
@@ -80,4 +80,4 @@ const HeroBG = ({ children }: Props) => {
   );
 };
 
-export default HeroBG;
+export default HeroBG; 
