@@ -61,13 +61,13 @@ const FAQData = [
         "You have the option to upload a video or a brief presentation that explains your proposal. It is just good to have and not mandatory whatsoever. If you are selected as one of the winners, you may be asked to present your application; more information about this will be provided to your team with prior notice.",
       color: "red",
     },
-    // {
-    //   key: 10,
-    //   question:
-    //     "If it is a team submission, does it mean that all team members will have access to the work at the same time?",
-    //   answer: "Yes, all team members can log in from their accounts and submit their projects on the DevsHouse portal.",
-    //   color: "yellow",
-    // },
+     {
+       key: 10,
+       question:
+         "Can I use an existing project or can I attempt the hackathon with a partially built project?",
+       answer: "No, all projects have to start and finish within the stipulated time of the hackathon. No pre built projects will be allowed.",
+       color: "yellow",
+     },
     {
       key: 11,
       question: "Who will own the IP(intellectual property) rights to the projects I have built?",
