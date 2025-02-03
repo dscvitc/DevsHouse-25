@@ -42,22 +42,27 @@ const HeroContent: React.FC<Props> = () => {
               <span className="text-[#FF8171]">36 hours</span> to develop real-world solutions using a range of cutting-edge tech stacks.
             </div>
 
-            <div className="max-md:text-base md:text-[26px] text-[#AEAEAE] text-center font-mona-sans mt-2 px-4">
+            <div className="text-base md:text-[26px] text-[#AEAEAE] font-mona-sans mt-2 px-4 w-full text-left">
               <a
                 href="https://www.google.com/calendar/render?action=TEMPLATE&text=Devshouse+25&dates=20250404T000000Z/20250406T235959Z&details=Event+Details&location=Event+Location"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-[#AEAEAE]"
+                className="text-[#AEAEAE] flex w-full"
               >
-                <span className="text-[#5B8EFF]">Mark your calendar:</span>{" "}
+                <span className="text-[#5B8EFF]">Mark your calendar:&nbsp;</span>
                 <span className="font-bold text-[#FF8171]">4th to 6th April</span>
               </a>
             </div>
+
+
+
+
+
           </div>
         </div>
 
 
-        <div className="px-4">
+        <div className="px-0 w-full text-left">
           <CountdownTimer targetTime={targetDate} />
         </div>
 
