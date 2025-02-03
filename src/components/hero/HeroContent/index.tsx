@@ -1,34 +1,14 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CountdownTimer from "../CountdownTimer";
 import { Button } from "@mantine/core";
 import Link from "next/link";
 
 type Props = {};
 
-const HeroContent = (props: Props) => {
-  // Target date: April 4, 2025, 00:00:00
+const HeroContent: React.FC<Props> = () => {
   const targetDate = new Date("2025-04-04T00:00:00Z").getTime();
-  const currentTime = new Date().getTime();
-  const initialTimeLeft = Math.max(Math.floor((targetDate - currentTime) / 1000), 0);
-
-  const [timeLeft, setTimeLeft] = useState<number>(initialTimeLeft);
-
-  // Update the countdown timer every second
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        if (prevTime <= 0) {
-          clearInterval(intervalId); // Stop the timer once it reaches 0
-          return 0;
-        }
-        return prevTime - 1;
-      });
-    }, 1000);
-
-    return () => clearInterval(intervalId); // Cleanup on unmount
-  }, []);
 
   return (
     <div className="flex flex-col justify-center items-center gap-y-0 w-full mt-4">
@@ -49,9 +29,7 @@ const HeroContent = (props: Props) => {
                       BUILD IT.
                     </span>
                   </div>
-                  <span className="font-mona-sans-bold font-extrabold text-[32px]">
-                    OWN IT.
-                  </span>
+                  <span className="font-mona-sans-bold font-extrabold text-[32px]">OWN IT.</span>
                 </span>
               </div>
               <div className="font-bold leading-none max-md:text-[25px] md:text-[120px] p-0 m-0 font-hubot-sans bg-gradient-to-b from-[#2158E2] to-[#958AF6] text-transparent bg-clip-text">
@@ -75,22 +53,20 @@ const HeroContent = (props: Props) => {
                 <span className="font-bold text-[#FF8171]">4th to 6th April</span>
               </a>
             </div>
-
           </div>
         </div>
+
+
         <div className="px-4">
-          <CountdownTimer targetTime={timeLeft} />
+          <CountdownTimer targetTime={targetDate} />
         </div>
+
         <div className="flex md:gap-x-4 max-md:justify-center max-md:gap-x-4 max-md:px-2 w-full">
           <Link target="_blank" href="https://devshouse25.devfolio.co/" passHref>
-            <Button size="compact-lg" className="button-Sponsor mt-3 md:mx-4">
-              Register Now!
-            </Button>
+            <Button size="compact-lg" className="button-Sponsor mt-3 md:mx-4">Register Now!</Button>
           </Link>
           <Link target="_blank" href="https://discord.com/invite/UFfPjTtzh7" passHref>
-            <Button size="compact-lg" className="button-Sponsor mt-3 md:mx-4">
-              Community Page
-            </Button>
+            <Button size="compact-lg" className="button-Sponsor mt-3 md:mx-4">Community Page</Button>
           </Link>
         </div>
       </div>
