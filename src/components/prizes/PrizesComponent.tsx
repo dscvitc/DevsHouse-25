@@ -23,14 +23,14 @@ export default function Prizes() {
       src: "/images/prizes/bronze.svg",
       width: 250,
       height: 250,
-      price: "₹20,000",
+      price: "₹10,000",
       alt: "3rd",
     },
     {
       src: "/images/prizes/silver.svg",
       width: 250,
       height: 250,
-      price: "₹10,000",
+      price: "₹20,000",
       alt: "2nd",
     },
   ];
