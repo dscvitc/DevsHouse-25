@@ -36,20 +36,20 @@ const HeroContent: React.FC<Props> = () => {
                 25
               </div>
             </div>
-            <div className="max-md:text-base md:text-[22px] text-[#AEAEAE] text-left font-mona-sans max-md:mt-3 px-4">
+            <div className="max-md:text-base md:text-[22px] text-[#AEAEAE] text-left font-mona-sans max-md:mt-3 px-4 translate-y-8">
               DevsHouse '25 is a{" "}
               <span className="text-[#5B8EFF]">national-level</span> hackathon where students from colleges across the country will have{" "}
               <span className="text-[#FF8171]">36 hours</span> to develop real-world solutions using a range of cutting-edge tech stacks.
             </div>
 
-            <div className="text-base md:text-[26px] text-[#AEAEAE] font-mona-sans mt-2 px-4 w-full text-left">
+            <div className="text-base md:text-[26px] text-[#AEAEAE] font-mona-sans mt-2 px-4 w-full text-left translate-y-8">
               <a
                 href="https://www.google.com/calendar/render?action=TEMPLATE&text=Devshouse+25&dates=20250404T000000Z/20250406T235959Z&details=Event+Details&location=Event+Location"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="text-[#AEAEAE] flex w-full"
               >
-                <span className="text-[#5B8EFF]">Mark your calendar:&nbsp;</span>
+                <span className="text-[#5B8EFF]">Mark your calendars:&nbsp;</span>
                 <span className="font-bold text-[#FF8171]">4th to 6th April</span>
               </a>
             </div>
@@ -62,11 +62,11 @@ const HeroContent: React.FC<Props> = () => {
         </div>
 
 
-        <div className="px-0 w-full text-left">
+        <div className="px-0 w-full text-left translate-y-8">
           <CountdownTimer targetTime={targetDate} />
         </div>
 
-        <div className="flex md:gap-x-4 max-md:justify-center max-md:gap-x-4 max-md:px-2 w-full">
+        <div className="flex md:gap-x-4 max-md:justify-center max-md:gap-x-4 max-md:px-2 w-full translate-y-8">
           <Link target="_blank" href="https://devshouse25.devfolio.co/" passHref>
             <Button size="compact-lg" className="button-Sponsor mt-3 md:mx-4">Register Now!</Button>
           </Link>
