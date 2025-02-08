@@ -16,7 +16,7 @@ export default function Prizes() {
       src: "/images/prizes/gold.svg",
       width: 300,
       height: 300,
-      price: "30,000",
+      price: "₹30,000",
       alt: "1st",
     },
     {
