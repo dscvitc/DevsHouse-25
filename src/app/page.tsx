@@ -11,6 +11,7 @@ import FAQ from "@/components/FAQ";
 import Hero from "@/components/hero/Hero";
 import Sponsors from "@/components/sponsors/Sponsors";
 import Prizes from "@/components/prizes/PrizesComponent";
+import Community from "@/components/Community";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <Speakers /> */}
       <Org />
       <Sponsors />
+      <Community />
       <FAQ />
       <Glimpses />
       <HostInvitation />

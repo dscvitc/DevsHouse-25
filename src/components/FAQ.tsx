@@ -54,7 +54,7 @@ const FAQ = () => {
       <div id="faqs" className="flex flex-col justify-center items-center pb-20 md:pb-0 pt-10 relative mt-8">
         <div className="relative flex flex-col items-center">
           <div className="md-108">
-            <Heading title="‎‎ ‎‎‎  ‎ ‎FAQ‎ ‎  ‎" geometry="Ellipsoid" />
+            <Heading title="‎‎ ‎‎‎  ‎FAQs‎ ‎  ‎" geometry="Ellipsoid" />
           </div>
         </div>
 
