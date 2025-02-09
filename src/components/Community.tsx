@@ -13,9 +13,9 @@ const images: string[] = Array.from({ length: imageCount }, (_, i) =>
 
 export default function Community(): React.JSX.Element {
   return (
-    <div className="flex flex-col justify-center items-center bg-bg-black w-full gap-6 md:gap-12 my-12">
+    <div id="community" className="flex flex-col justify-center items-center bg-bg-black w-full gap-4 md:gap-6 ">
       <div className="w-[90%] md:w-[80%] h-auto">
-        <h1 className={`text-5xl ${Mona.className} text-white text-center mb-14 mt-12`}>
+        <h1 className={`text-5xl ${Mona.className} text-white text-center mb-6 mt-24 md:mt-12`}>
           Community Partners
         </h1>
       </div>
