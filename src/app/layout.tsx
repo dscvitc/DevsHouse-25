@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "@mantine/core/styles.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 import {
   ColorSchemeScript,
@@ -77,6 +78,7 @@ export default function RootLayout({
           <noscript>
             <iframe src={`https://www.googletagmanager.com/ns.html?id=${GA_TRACKING_ID}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
           </noscript>
+          <SmoothScroll />
           {children}
           <Footer />
         </MantineProvider>
