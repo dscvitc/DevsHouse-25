@@ -7,6 +7,7 @@ import codecraftersLogo from "@/../public/sponsors/codecrafters.png";
 import wolframLogo from "@/../public/sponsors/wolfram.png";
 import xyzLogo from "@/../public/sponsors/xyz.png";
 import ethindiaLogo from "@/../public/sponsors/ethindia.png";
+import devfolioLogo from "@/../public/sponsors/devfolio.png";
 import { Mona_Sans } from "next/font/google";
 
 const monasans = Mona_Sans({ subsets: ["latin"] });
@@ -18,7 +19,7 @@ const Sponsor = () => {
     <div id="sponsors" className={`flex justify-center ${monasans.className} items-center flex-col`}>
       <SponsorMarquee />
 
-      
+
 
       {/* RUBY SECTION */}
 
@@ -58,6 +59,18 @@ const Sponsor = () => {
         </div>
 
         <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
+
+          <div className="flex flex-row justify-center justify-self-center text-center items-center ">
+            <a href="https://devfolio.co/" target="_blank">
+              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                <div className="flex flex-row justify-center items-center">
+                  <Image src={devfolioLogo} alt={"DEVFOLIO LOGO"} />
+                </div>
+              </div>
+            </a>
+
+            <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+          </div>
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
             <a href="https://polygon.technology/" target="_blank">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
@@ -88,7 +101,7 @@ const Sponsor = () => {
             <a href="https://ethindia2024.devfolio.co/" target="_blank">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center">
-                  <Image src={ethindiaLogo} alt={"Solana LOGO"} width={500} height={250} />
+                  <Image src={ethindiaLogo} alt={"ETHINDIA LOGO"} width={500} height={250} />
                 </div>
               </div>
             </a>
@@ -139,7 +152,7 @@ const Sponsor = () => {
             <a href="https://codecrafters.io/" target="_blank">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center p-18">
-                  <Image src={codecraftersLogo} alt={"REPLIT LOGO"} width={150} />
+                  <Image src={codecraftersLogo} alt={"CODECRAFTERS LOGO"} width={150} />
                 </div>
               </div>
             </a>
@@ -193,7 +206,7 @@ const Sponsor = () => {
                 <a href="https://www.wolfram.com/" target="_blank">
                   <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                     <div className="flex flex-row justify-center items-center">
-                      <Image src={wolframLogo} alt={"ESALES LOGO"} width={300} />
+                      <Image src={wolframLogo} alt={"WOLFRAM LOGO"} width={300} />
                     </div>
                   </div>
                 </a>
@@ -211,13 +224,13 @@ const Sponsor = () => {
 
                 <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
               </div>
-            </div>       
             </div>
           </div>
         </div>
-
       </div>
-    
+
+    </div>
+
   );
 };
 
