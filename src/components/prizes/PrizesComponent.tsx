@@ -84,7 +84,7 @@ export default function Prizes() {
       id="prizes"
       className="w-full flex flex-col justify-center items-center overflow-hidden mb-8"
     >
-      <div className="relative flex items-center justify-center mt-12">
+      <div className="relative flex items-center justify-center mt-10 mb-6">
       <svg
         viewBox="0 0 391 398"
         fill="none"

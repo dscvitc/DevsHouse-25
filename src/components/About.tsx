@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk md:mt-32"
+      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk -mt-12 md:mt-32"
     >
       <div className="md-108 w-full flex items-center justify-center">
         <Heading title="ABOUT US" geometry="Dodecahedron" />{" "}

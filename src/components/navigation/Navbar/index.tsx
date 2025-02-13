@@ -30,7 +30,7 @@ const Navbar = (props: Props) => {
     if (id) {
       const section = document.getElementById(id);
       if (section) {
-        const offset = 50; // Adjust this value to set how much space above the section you want
+        const offset = 90; // Adjust this value to set how much space above the section you want
         const sectionTop = section.offsetTop - offset;
         window.scrollTo({
           top: sectionTop,

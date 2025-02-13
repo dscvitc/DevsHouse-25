@@ -17,7 +17,7 @@ export function SponsorMarquee() {
         >
           <div className="flex items-center justify-center">
             <Image
-              src="/sponsors-new/marquee-diamond.svg"
+              src="/sponsors/marquee-diamond.svg"
               alt="gdsc-angular"
               height={28}
               width={28}
