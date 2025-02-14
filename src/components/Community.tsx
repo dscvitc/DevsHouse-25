@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import { Mona_Sans } from "next/font/google";
+import Heading from "./ui/Heading";
 
 const Mona = Mona_Sans({ weight: "700", subsets: ["latin"] });
 
