@@ -51,9 +51,9 @@ const FAQ = () => {
 
   return (
     <>
-      <div id="faqs" className="flex flex-col justify-center items-center pb-20 md:pb-0 pt-10 relative mt-8">
+      <div id="faqs" className="flex flex-col justify-center items-center pb-20 md:pb-0 pt-10 relative">
         <div className="relative flex flex-col items-center">
-          <div className="md-108">
+          <div className="md-108 w-[120%]">
             <Heading title="‎‎ ‎‎‎  ‎FAQs‎ ‎  ‎" geometry="Ellipsoid" />
           </div>
         </div>

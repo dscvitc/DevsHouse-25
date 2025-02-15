@@ -101,7 +101,7 @@ const Sponsor = () => {
             <a href="https://ethindia2024.devfolio.co/" target="_blank">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center">
-                  <Image src={ethindiaLogo} alt={"ETHINDIA LOGO"} width={500} height={250} />
+                  <Image src={ethindiaLogo} alt={"ETHINDIA LOGO"} width={450} height={250} />
                 </div>
               </div>
             </a>
@@ -152,7 +152,7 @@ const Sponsor = () => {
             <a href="https://codecrafters.io/" target="_blank">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center p-18">
-                  <Image src={codecraftersLogo} alt={"CODECRAFTERS LOGO"} width={150} />
+                  <Image src={codecraftersLogo} alt={"CODECRAFTERS LOGO"} width={500} />
                 </div>
               </div>
             </a>
