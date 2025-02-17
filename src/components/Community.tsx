@@ -12,14 +12,9 @@ const images: string[] = Array.from({ length: imageCount }, (_, i) =>
 
 export default function Community(): React.JSX.Element {
   return (
-    <div id="community" className="flex flex-col justify-center items-center bg-bg-black w-full gap-4 md:gap-6 mt-20">
-      {/* <div className="w-[90%] md:w-[80%] h-auto">
-        <h1 className={text-5xl ${Mona.className} text-white text-center mb-6 mt-24 md:mt-12}>
-          Community Partners
-        </h1>
-      </div> */}
-      <div className="md-108 w-full flex items-center justify-center mb-16">
-        <Heading title="Community Partners" geometry="Spiral" />{" "}
+    <div id="community" className="flex flex-col justify-center items-center bg-bg-black w-full gap-4 md:gap-6 ">
+      <div className="md:w-full flex items-center justify-center text-center mb-8 mt-24 md:mt-24 md:mb-14"> 
+        <Heading title="Community   Partners" geometry="Spiral" />{" "}
         {/* Add margin-bottom here */}
       </div>
       <Marquee>
