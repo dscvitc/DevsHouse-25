@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "@mantine/core/styles.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import { Toaster } from "@/components/ui/sonner"
 
 import {
   ColorSchemeScript,
@@ -80,6 +81,7 @@ export default function RootLayout({
           </noscript>
           <SmoothScroll />
           {children}
+          <Toaster />
           <Footer />
           {/* MLH Banner */}
           <a

@@ -336,3 +336,12 @@ body {
 .font-hubot-sans-bold {
   font-family: HubotSansBold;
 }
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
