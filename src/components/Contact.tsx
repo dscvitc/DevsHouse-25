@@ -203,8 +203,8 @@ export default function Contact() {
 			<Image
 				style={{
 					filter: "brightness(0.75)",
-					width: "70vw",
-					height: "70vw",
+					width: "min(70vw, 120vh)",
+					height: "min(70vw, 120vh)",
 					position: "absolute",
 					zIndex: -1,
 					left: "55%",
