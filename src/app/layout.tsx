@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Azeret_Mono as Geist_Mono } from 'next/font/google';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "@mantine/core/styles.css";
@@ -70,7 +70,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`antialiased `}
+        className={`antialiased ${geistSans.variable} ${geistMono.variable}`}
         suppressHydrationWarning
       >
         <MantineProvider>
@@ -81,6 +81,29 @@ export default function RootLayout({
           <SmoothScroll />
           {children}
           <Footer />
+          {/* MLH Banner */}
+          <a
+            id="mlh-trust-badge"
+            style={{
+              display: 'block',
+              maxWidth: '100px',
+              minWidth: '60px',
+              position: 'fixed',
+              right: '50px',
+              top: 0,
+              width: '10%',
+              zIndex: 10000
+            }}
+            href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=gray"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
+              alt="Major League Hacking 2025 Hackathon Season"
+              style={{ width: '100%' }}
+            />
+          </a>
         </MantineProvider>
         <SpeedInsights />
       </body>

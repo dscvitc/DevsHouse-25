@@ -22,6 +22,7 @@ const Footer = () => {
 						<a className="my-1" href="#sponsors">Sponsors</a>
 						<a className="my-1" href="#faqs">FAQs</a>
 						<a className="my-1" href="#contact">Contact Us</a>
+						<a className="my-1" href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md">MLH Code of Conduct</a>
 					</div>
 				</div>
 				<div className='basis-1/2 md:basis-0'>
