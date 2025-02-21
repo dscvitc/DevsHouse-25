@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 
     // Send Email via Resend
     const response = await resend.emails.send({
-      from: "onboarding@resend.dev", // Resend verified sender
+      from: "no-reply@mail.devshouse.in", // Resend verified sender
       to: "devshouse.tech@gmail.com", // Your recipient email
       replyTo: email, // Allows replies to the sender
       subject: `New Contact Form Submission: ${subject}`,
