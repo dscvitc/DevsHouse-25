@@ -9,11 +9,13 @@ import Joel from "../../public/organizers/joel.png";
 import Sanjana from "../../public/organizers/sanjana.png";
 import Emir from "../../public/organizers/emir.png";
 import Adityaash from "../../public/organizers/adityaash.png";
-import Bhavika from "../../public/organizers/bhavika.png";
+import Sahana from "../../public/organizers/sahana.png";
 import Kartikey from "../../public/organizers/kartikey.png";
 import Abhinav from "../../public/organizers/abhinav.png";
 import Yash from "../../public/organizers/yash.png";
-import Mohit from "../../public/organizers/mohit.png";
+import Ishita from "../../public/organizers/ishita.png";
+import Naren from "../../public/organizers/naren.png";
+import Meenakshi from "../../public/organizers/meenakshi.png";
 import Logesh from "../../public/organizers/logesh.png";
 
 export const Organizers = [
@@ -74,11 +76,25 @@ export const Organizers = [
     linkedIn: "https://www.linkedin.com/in/aditya3012/",
   },
   {
-    name: "     Bhavika Maini",
-    image: Bhavika,
+    name: "             Sahana",
+    image: Sahana,
     role: "Co-Organizer",
     github: "https://github.com/",
-    linkedIn: "https://www.linkedin.com/",
+    linkedIn: "https://www.linkedin.com/in/sahana-g-m/",
+  },
+  {
+    name: "     Naren Kumar",
+    image: Naren,
+    role: "Co-Organizer",
+    github: "https://github.com/",
+    linkedIn: "https://www.linkedin.com/in/naren-kumar-738305323/",
+  },
+  {
+    name: " Meenakshi V Nair",
+    image: Meenakshi,
+    role: "Co-Organizer",
+    github: "https://github.com/",
+    linkedIn: "https://www.linkedin.com/in/meenakshi-v-nair-909066253/",
   },
   {
     name: "      Aditya Aryan",
@@ -92,7 +108,8 @@ export const Organizers = [
     image: Shubhi,
     role: "Co-Organizer",
     github: "https://github.com/",
-    linkedIn: "https://www.linkedin.com/in/shubhi-goel-599307278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/shubhi-goel-599307278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "    Kartikey Patel",
@@ -102,11 +119,11 @@ export const Organizers = [
     linkedIn: "https://www.linkedin.com/in/kartikeypatel/",
   },
   {
-    name: "            P.Mohit",
-    image: Mohit,
+    name: "     Ishita Chauhan",
+    image: Ishita,
     role: "Co-Organizer",
     github: "https://github.com/",
-    linkedIn: "https://www.linkedin.com/in/mohit-patnaikuni-8b3117215/",
+    linkedIn: "https://www.linkedin.com/in/ishita-chauhan-176473320/",
   },
   {
     name: "      Yash Sharma",

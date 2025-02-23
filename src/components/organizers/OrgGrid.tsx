@@ -36,8 +36,23 @@ export default function OrgGrid() {
         <Heading title="CO-ORGANIZER" geometry=""></Heading>
       </div>
       <div className="w-full flex justify-center -mt-8">
-        <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-3 grid-cols-1 w-max gap-8">
-          {Organizers.slice(8, 16).map((organizer) => (
+        <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-max gap-8">
+          {Organizers.slice(8, 18).map((organizer) => (
+            <OrgCard
+              key={Math.random() * 100}
+              name={organizer.name}
+              image={organizer.image}
+              linkedIn={organizer.linkedIn}
+            />
+          ))}
+        </div>{" "}
+      </div>
+      <div className="text-center">
+        <Heading title="FACULTY CO-ORDINATOR" geometry=""></Heading>
+      </div>
+      <div className="w-full flex justify-center -mt-8">
+        <div className="grid grid-cols-1 w-max ">
+          {Organizers.slice(18).map((organizer) => (
             <OrgCard
               key={Math.random() * 100}
               name={organizer.name}
