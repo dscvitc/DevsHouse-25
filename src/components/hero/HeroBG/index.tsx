@@ -39,7 +39,7 @@ const HeroBG = ({ children }: Props) => {
             priority
             placeholder="empty"
             loading="eager"
-            className="-z-10 relative -left-48 -top-16 max-md:-top-20 max-md:hidden"
+            className="-z-10 relative -top-16 max-md:-top-20 max-md:hidden"
           />
           <Image
             src="/images/4-35.svg"
@@ -49,7 +49,8 @@ const HeroBG = ({ children }: Props) => {
             priority
             placeholder="empty"
             loading="eager"
-            className="-z-10 relative -left-[292px] -top-[66px]"
+            style={{ transform: 'translateX(-40%)' }}
+            className="-z-10 relative -top-[66px]"
           />
           <Image
             src="/images/rectangle-67.svg"
@@ -59,7 +60,8 @@ const HeroBG = ({ children }: Props) => {
             priority
             placeholder="empty"
             loading="eager"
-            className="-z-10 relative -left-[443px] -top-[70px]"
+            style={{ transform: 'translateX(-100%)' }}
+            className="-z-10 relative -top-[70px]"
           />
           <Image
             src="/images/holo-7.svg"
@@ -69,7 +71,8 @@ const HeroBG = ({ children }: Props) => {
             priority
             placeholder="empty"
             loading="eager"
-            className="z-[1000] relative -top-12 -left-[490px] right-0 max-md:left-auto max-md:right-0"
+            style={{ transform: 'translateX(-100%)' }}
+            className="z-[1000] relative -top-12 right-0 max-md:left-auto max-md:right-0"
           />
         </div>
 
