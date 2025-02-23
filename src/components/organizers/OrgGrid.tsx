@@ -36,7 +36,7 @@ export default function OrgGrid() {
         <Heading title="CO-ORGANIZER" geometry=""></Heading>
       </div>
       <div className="w-full flex justify-center -mt-8">
-        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-max gap-8">
+        <div className="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-3 grid-cols-1 w-max gap-8">
           {Organizers.slice(8, 16).map((organizer) => (
             <OrgCard
               key={Math.random() * 100}
