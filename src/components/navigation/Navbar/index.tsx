@@ -30,7 +30,7 @@ const Navbar = (props: Props) => {
     if (id) {
       const section = document.getElementById(id);
       if (section) {
-        const offset = 100; // Adjust this value to set how much space above the section you want
+        const offset = 90; // Adjust this value to set how much space above the section you want
         const sectionTop = section.offsetTop - offset;
         window.scrollTo({
           top: sectionTop,
@@ -40,7 +40,7 @@ const Navbar = (props: Props) => {
     }
   };
   return (
-    <div className="bg-white/5 backdrop-blur-lg lg:mt-2 text-black py-6 px-5 max-sm:px-3 flex justify-between items-center fixed w-full z-50">
+    <div className="bg-white/5 backdrop-blur-lg  text-black py-6 px-5 max-sm:px-3 flex justify-between items-center fixed w-full z-50">
       <div className="flex justify-center items-center gap-x-5 z-50">
         <Image
           src={"images/gdsc-logo.svg"}

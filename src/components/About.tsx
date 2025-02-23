@@ -12,14 +12,14 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk pt-12"
+      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk -mt-9 md:mt-36 max-md:mt-32"
     >
       <div className="md-108 w-full flex items-center justify-center">
         <Heading title="ABOUT US" geometry="Dodecahedron" />{" "}
         {/* Add margin-bottom here */}
       </div>
 
-      <div className="flex flex-col md:flex-row w-full px-8 md:px-16 items-center gap-20 m-12 pt-12">
+      <div className="flex flex-col md:flex-row w-full px-8 md:px-16 items-center gap-20 m-12 pt-12 md:pt-0">
         <div className="flex flex-col md:w-1/2">
           <p className="text-6xl font-bold mb-8">
             VIT Chennai
@@ -78,12 +78,13 @@ export default function About() {
             {/* Adjusted position and animation */}
           </div>
           <p className="text-2xl text-gray-400">
-            GDG On Campus VIT Chennai is a student run community
-            group powered by Google Developers. We are a
-            passionate group of budding developers who work
-            together to build solutions for local businesses
-            and communities with Google technology and
-            promote healthy developer culture.
+            GDG On Campus VIT Chennai is a student run
+            community group powered by Google Developers. We
+            are a passionate group of budding developers who
+            work together to build solutions for local
+            businesses and communities with Google
+            technology and promote healthy developer
+            culture.
           </p>
         </div>
       </div>

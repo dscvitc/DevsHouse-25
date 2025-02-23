@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 
-const Heart = () => {
+const ThreeJSComponent = () => {
   const mountRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -17,79 +17,37 @@ const Heart = () => {
     // Camera
     const camera = new THREE.PerspectiveCamera(
       75,
-      currentMount.clientWidth / currentMount.clientHeight,
+      window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
-    camera.position.z = 5;
+    camera.position.z = 70;
+    camera.position.y = -27; // Move the camera down by 5 units
 
     // Renderer
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(currentMount.clientWidth, currentMount.clientHeight);
+    const renderer = new THREE.WebGLRenderer({ alpha: true }); // Enable transparency
+    renderer.setSize(window.innerWidth, window.innerHeight);
     currentMount.appendChild(renderer.domElement);
 
-    // Heart shape using BufferGeometry
-    const vertices: number[] = [];
-    const size = 1.5;
-    const step = 0.1;
-
-    for (let x = -size; x <= size; x += step) {
-      for (let y = -size; y <= size; y += step) {
-        for (let z = -size; z <= size; z += step) {
-          const equation =
-            Math.pow(x * x + (9 / 4) * y * y + z * z - 1, 3) -
-            x * x * z * z * z -
-            (9 / 200) * y * y * z * z * z;
-          if (equation <= 0) {
-            vertices.push(x, y, z);
-          }
-        }
-      }
-    }
-
-    if (vertices.length === 0) {
-      console.error("No vertices found for the heart shape.");
-      return;
-    }
-
-    const heartGeometry = new THREE.BufferGeometry();
-    heartGeometry.setAttribute(
-      "position",
-      new THREE.Float32BufferAttribute(vertices, 3)
-    );
-
-    const heartWireframe = new THREE.WireframeGeometry(heartGeometry);
-
-    // Material
-    const material = new THREE.LineBasicMaterial({
-      color: 0x888888,
-      opacity: 0.8,
-      transparent: true,
+    // Torus Knot
+    const torusKnotGeometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+    const torusKnotMaterial = new THREE.MeshBasicMaterial({
+      color: 0x808080, // Grey color
+      wireframe: true,
+      opacity: 0.6, // Set opacity
+      transparent: true, // Enable transparency
     });
-    const heartMesh = new THREE.LineSegments(heartWireframe, material);
-    scene.add(heartMesh);
-
-    // Rotate the heart to stand upright
-    heartMesh.rotation.x = 3 * Math.PI / 2;
+    const torusKnot = new THREE.Mesh(torusKnotGeometry, torusKnotMaterial);
+    scene.add(torusKnot);
 
     // Animation
-    let scaleDirection = 1;
     const animate = () => {
       requestAnimationFrame(animate);
 
-      // Update scale
-      heartMesh.scale.x += 0.005 * scaleDirection;
-      heartMesh.scale.y += 0.005 * scaleDirection;
-      heartMesh.scale.z += 0.005 * scaleDirection;
+      // Rotate torus knot slowly
+      torusKnot.rotation.x += 0.005;
+      torusKnot.rotation.y += 0.005;
 
-      // Reverse direction if scale exceeds limits
-      if (heartMesh.scale.x > 1.5 || heartMesh.scale.x < 0.5) {
-        scaleDirection *= -1;
-      }
-
-      camera.position.x = 5 * Math.sin(Date.now() * 0.001);
-      camera.position.z = 5 * Math.cos(Date.now() * 0.001);
-      camera.lookAt(scene.position);
       renderer.render(scene, camera);
     };
 
@@ -103,7 +61,16 @@ const Heart = () => {
     };
   }, []);
 
-  return <div ref={mountRef} style={{ width: "100%", height: "350px" }} />;
+  return (
+    <div
+      ref={mountRef}
+      style={{
+        width: "100%",
+        height: "350px",
+        marginTop: "-50px", // Move the canvas up by 50 pixels
+      }}
+    />
+  );
 };
 
-export default Heart;
+export default ThreeJSComponent;

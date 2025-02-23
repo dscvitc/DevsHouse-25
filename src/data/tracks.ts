@@ -8,7 +8,7 @@ interface Track {
 
 export const tracks: Track[] = [
     {
-        title: "Finance",
+        title: "FinTech",
         number: "TRACK #01",
         description:
             "Break free from the ordinary! Our FinTech track empowers you to redefine financial systems. Dive into the world of digital payments, lending, and financial inclusion to create scalable and secure solutions for the future.",

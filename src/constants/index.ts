@@ -20,6 +20,14 @@ export const navbarItems = [
     href: "organizers",
   },
   {
+    title: "Sponsors",
+    href: "sponsors",
+  },
+  {
+    title: "Community",
+    href: "community",
+  },
+  {
     title: "FAQs",
     href: "faqs",
   },

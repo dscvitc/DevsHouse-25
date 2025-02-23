@@ -49,15 +49,15 @@ const Panorama: React.FC = () => {
                     <h2 className={`${mona.className} text-center text-6xl`}>GLIMPSES</h2>
                 </div> */}
         <div
-          className="relative flex justify-center items-center mb-6"
+          className="relative flex justify-center items-center mb-10"
           style={{ height: 205 }}
         >
           <Heading title="GLIMPSES" geometry="Sphere" />{" "}
         </div>
-        <p className="text-center" style={hubot.style}>
+        <p className="text-center text-lg" style={hubot.style}>
           A sneak peek into the innovation, energy, and
         </p>
-        <p className={` ${hubot.style} text-center`}>
+        <p className={` ${hubot.style} text-center text-lg`}>
           brilliance that shaped last year&apos;s incredible
           hackathon experience!
         </p>

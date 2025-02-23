@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { Hubot_Sans } from "next/font/google";
 import { Button } from "@mantine/core";
+import Link from "next/link";
 
 const hubot = Hubot_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 const HostInvitation = () => {
     return (
-        <div className="relative lg:mt-32 lg:mb-64 h-screen flex flex-col items-center justify-center">
-            <div className="absolute flex justify-center left-1/2 transform -translate-x-1/2 translate-y-0 w-full">
+        <div className="relative lg:mt-24 lg:mb-36 h-fit flex flex-col items-center justify-center">
+            <div className="absolute flex justify-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:-translate-x-1/2 md:translate-y-0 w-full">
                 <Image
                     src="/detailedGlobe.svg"
                     alt="Host Background"
@@ -37,16 +38,18 @@ const HostInvitation = () => {
                             Let&apos;s Host Together
                         </div>
                         <div>
+                            <Link href="https://forms.gle/Rq1hYWMu3MvQCcQv5" target="_blank">
                             <Button size="compact-xl" className="button-Sponsor mt-4 ml-0 ">
                                 Sponsor Us
                             </Button>
+                            </Link>
                         </div>
                     </div>
                     <div className=" mb-2 lg:text-3xl text-lg md:text-left">
                         Elevate your brand, be part of the tech revolution!
                     </div>
                     <div className="lg:text-3xl text-lg md:text-left">
-                        Write to collaborate with us at: sponsorship@devshouse.tech
+                        Write to collaborate with us at: devshouse.tech@gmail.com
                     </div>
                 </div>
             </div>

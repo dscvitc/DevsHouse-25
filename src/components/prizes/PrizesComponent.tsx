@@ -16,24 +16,21 @@ export default function Prizes() {
       src: "/images/prizes/gold.svg",
       width: 300,
       height: 300,
-      // price: "₹50,000",
-      price: "Soon",
+      price: "₹30,000",
       alt: "1st",
     },
     {
       src: "/images/prizes/bronze.svg",
       width: 250,
       height: 250,
-      // price: "₹10,000",
-      price: "",
+      price: "₹10,000",
       alt: "3rd",
     },
     {
       src: "/images/prizes/silver.svg",
       width: 250,
       height: 250,
-      // price: "₹15,000",
-      price: "",
+      price: "₹20,000",
       alt: "2nd",
     },
   ];
@@ -87,7 +84,7 @@ export default function Prizes() {
       id="prizes"
       className="w-full flex flex-col justify-center items-center overflow-hidden mb-8"
     >
-      <div className="relative flex items-center justify-center mt-12">
+      <div className="relative flex items-center justify-center mt-10 mb-6">
       <svg
         viewBox="0 0 391 398"
         fill="none"
@@ -198,7 +195,7 @@ export default function Prizes() {
         </div>
       </div>
 
-      {tracks.length > 0 ? (
+      {/* {tracks.length > 0 ? (
         <>
           <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
           <div className="w-full px-12 grid grid-cols-1 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
@@ -215,7 +212,7 @@ export default function Prizes() {
         </>
       ) : (
         <></>
-      )}
+      )} */}
       {/* </div> */}
     </section>
   );
