@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk -mt-9 md:mt-36"
+      className="flex flex-col w-full items-center justify-evenly text-white font-spaceGrotesk -mt-9 md:mt-36 max-md:mt-32"
     >
       <div className="md-108 w-full flex items-center justify-center">
         <Heading title="ABOUT US" geometry="Dodecahedron" />{" "}
@@ -78,12 +78,13 @@ export default function About() {
             {/* Adjusted position and animation */}
           </div>
           <p className="text-2xl text-gray-400">
-            GDG On Campus VIT Chennai is a student run community
-            group powered by Google Developers. We are a
-            passionate group of budding developers who work
-            together to build solutions for local businesses
-            and communities with Google technology and
-            promote healthy developer culture.
+            GDG On Campus VIT Chennai is a student run
+            community group powered by Google Developers. We
+            are a passionate group of budding developers who
+            work together to build solutions for local
+            businesses and communities with Google
+            technology and promote healthy developer
+            culture.
           </p>
         </div>
       </div>
