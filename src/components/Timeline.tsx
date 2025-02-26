@@ -28,7 +28,7 @@ const Timeline = () => {
       </div>
       <div className="w-full max-w-4xl pt-20">
         <Image
-          src="/Timeline.svg"
+          src="/timeline.svg"
           alt="Timeline"
           width={900}
           height={600}
