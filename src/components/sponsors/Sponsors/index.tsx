@@ -150,10 +150,10 @@ const Sponsor = () => {
         <div className="mt-10 flex flex-col md:flex-row gap-10 md:gap-40">
 
           <div className="flex flex-row justify-center justify-self-center text-center items-center ">
-            <a href="https://devfolio.co/" target="_blank">
+            <a href="https://mlh.io/" target="_blank">
               <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
                 <div className="flex flex-row justify-center items-center">
-                  <Image className="w-[75%] md:w-[80%] lg:w-auto" src={mlhLogo} alt={"DEVFOLIO LOGO"} width={300} height={250} />
+                  <Image className="w-[75%] md:w-[80%] lg:w-auto" src={mlhLogo} alt={"MLH LOGO"} width={300} height={250} />
                 </div>
               </div>
             </a>
