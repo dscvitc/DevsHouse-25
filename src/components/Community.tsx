@@ -5,7 +5,7 @@ import Heading from "./ui/Heading";
 
 
 // Import images dynamically
-const imageCount = 31;
+const imageCount = 56;
 const images: string[] = Array.from({ length: imageCount }, (_, i) => 
   `/comm/${i + 1}.png`
 );
