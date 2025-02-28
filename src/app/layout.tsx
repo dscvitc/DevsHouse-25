@@ -2,7 +2,7 @@ import { Geist, Azeret_Mono as Geist_Mono } from 'next/font/google';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "@mantine/core/styles.css";
-import SmoothScroll from "@/components/SmoothScroll";
+//import SmoothScroll from "@/components/SmoothScroll";
 import { Toaster } from "@/components/ui/sonner"
 
 import {
@@ -82,8 +82,7 @@ export default function RootLayout({
           <noscript>
             <iframe src={`https://www.googletagmanager.com/ns.html?id=${GA_TRACKING_ID}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
           </noscript>
-          <SmoothScroll />
-          {children}
+            {children}
           <Toaster />
           <Footer />
           {/* MLH Banner */}

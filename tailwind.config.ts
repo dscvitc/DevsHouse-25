@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      scrollBehavior: {
+        smooth: "smooth", // ✅ Enables Tailwind smooth scrolling
+      },
       animation: {
         "spin-elastic":
           "spin-elastic 3s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite",
@@ -53,8 +56,7 @@ export default {
             transform: "translateX(0)",
           },
           to: {
-            transform:
-              "translateX(calc(-100% - var(--gap)))",
+            transform: "translateX(calc(-100% - var(--gap)))",
           },
         },
         "marquee-vertical": {
@@ -62,8 +64,7 @@ export default {
             transform: "translateY(0)",
           },
           to: {
-            transform:
-              "translateY(calc(-100% - var(--gap)))",
+            transform: "translateY(calc(-100% - var(--gap)))",
           },
         },
       },
