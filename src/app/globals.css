@@ -1,16 +1,56 @@
+/* Lenis smooth scroll styles */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Enhanced link styles for better clickability */
+a {
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+/* Fix for footer links */
+footer {
+  position: relative;
+  z-index: 10;
+}
+
+footer a {
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
   height: auto;
+  scroll-padding-top: 2rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  
 }
 
 @layer base {

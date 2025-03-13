@@ -2,7 +2,7 @@ import { Geist, Azeret_Mono as Geist_Mono } from 'next/font/google';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "@mantine/core/styles.css";
-//import SmoothScroll from "@/components/SmoothScroll";
+import LenisScroll from "@/components/LenisScroll";
 import { Toaster } from "@/components/ui/sonner"
 
 import {
@@ -78,6 +78,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <MantineProvider>
+          <LenisScroll />
           <Navbar />
           <noscript>
             <iframe src={`https://www.googletagmanager.com/ns.html?id=${GA_TRACKING_ID}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
