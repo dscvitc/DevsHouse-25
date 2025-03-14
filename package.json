@@ -17,6 +17,7 @@
     "@vercel/speed-insights": "^1.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "critters": "^0.0.23",
     "embla-carousel": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
     "framer-motion": "^11.15.0",
