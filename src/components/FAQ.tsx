@@ -1,16 +1,12 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Image from "next/image";
 import FAQData from "./FAQData";
-import { Hubot_Sans } from "next/font/google"; // ✅ Keeping Hubot_Sans as per reference
-import RedBubble from "../../public/FAQ_assets/green bubbles.svg";
-import YellowBubble from "../../public/FAQ_assets/green bubbles (1).svg";
-import BlueBubble from "../../public/FAQ_assets/green bubbles (2).svg";
-import GreenBubble from "../../public/FAQ_assets/green bubbles (3).svg";
+import { Hubot_Sans } from "next/font/google";
+import BubbleSVG from "../../public/FAQ_assets/green bubbles.svg";
 import BlackBg from "../../public/FAQ_assets/Black-119.svg";
+import SectionHeading from "./ui/SectionHeading";
 
-import Heading from "../components/ui/Heading";
-
-// ✅ Correct font styles from reference code
+// Correct font styles
 const Hubot = Hubot_Sans({ weight: "700", subsets: ["latin"] });
 
 const FAQ = () => {
@@ -20,11 +16,12 @@ const FAQ = () => {
     yellow: "bg-yellow-200",
     green: "bg-green-200",
   };
-  const imageClasses = {
-    red: RedBubble,
-    blue: BlueBubble,
-    yellow: YellowBubble,
-    green: GreenBubble,
+  
+  const bubbleColorClasses = {
+    red: "filter-red",
+    blue: "filter-blue",
+    yellow: "filter-yellow",
+    green: "filter-green",
   };
 
   const items = FAQData.map((props) => (
@@ -33,9 +30,9 @@ const FAQ = () => {
         <AccordionTrigger className={`text-white text-left hover:bg-inherit`}>
           <div className={`flex ${Hubot.className} md:text-2xl text-[0.8rem] items-center`}>
             <Image
-              src={imageClasses[props.color as keyof typeof imageClasses]}
+              src={BubbleSVG}
               alt="bubbles"
-              className="border-bottom rounded-xl scale-75 origin-bottom-left"
+              className={`border-bottom rounded-xl scale-75 origin-bottom-left ${bubbleColorClasses[props.color as keyof typeof bubbleColorClasses]}`}
             />
             {props.question}
           </div>
@@ -50,38 +47,17 @@ const FAQ = () => {
   ));
 
   return (
-    <>
-      <div id="faqs" className="flex flex-col justify-center items-center pb-20 md:pb-0 pt-10 relative">
-        <div className="relative flex flex-col items-center">
-          <div className="md-108 w-[120%]">
-            <Heading title="‎‎ ‎‎‎  ‎FAQs‎ ‎  ‎" geometry="Ellipsoid" />
-          </div>
-        </div>
-
-        {/* Accordion content below */}
-        <div className="w-[100%] md:w-[80%] h-auto z-10 mt-10">
-          <Accordion type="single" className="space-y-4">
-            {items}
-          </Accordion>
-        </div>
-
-        <Image
-          style={{
-            position: "absolute",
-            zIndex: -1,
-            top: "55%",
-            left: "50%",
-            transform: "translate(-50%, -45%)",
-            width: "90vw",
-            height: "80vw",
-          }}
-          src={BlackBg}
-          width={800}
-          height={800}
-          alt=""
+    <div id="faq" className="relative flex flex-col items-center md:pt-12 pt-20 p-6">
+      <div className="relative flex items-center justify-center w-full mb-8">
+        <SectionHeading
+          title="FAQ"
+          geometry="Dodecahedron"
         />
       </div>
-    </>
+      <div className="w-full max-w-4xl space-y-4">
+        {items}
+      </div>
+    </div>
   );
 };
 

@@ -29,7 +29,7 @@ export const navbarItems = [
   },
   {
     title: "FAQs",
-    href: "faqs",
+    href: "faq",
   },
   {
     title: "Glimpses",

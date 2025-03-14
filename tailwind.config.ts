@@ -17,8 +17,6 @@ export default {
           "spin-elastic 3s cubic-bezier(0.17, 0.67, 0.83, 0.67) infinite",
         "accordion-down": "accordion-down 0.6s ease-out",
         "accordion-up": "accordion-up 0.6s ease-out",
-        printedGraphic: "url('/Pasted Graphic.png')",
-        PastedGraphics: "url('/Pasted Graphic 2.png')",
         marquee: "marquee var(--duration) infinite linear",
         "marquee-vertical":
           "marquee-vertical var(--duration) linear infinite",

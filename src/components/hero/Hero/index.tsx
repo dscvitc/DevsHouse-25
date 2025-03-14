@@ -7,13 +7,17 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="max-md:h-[800px] h-[1000px] overflow-x-hidden">
-      <HeroBG>
-        <div className="container mx-auto h-[800px] max-md:min-h-[600px] min-h-[800px] max-h-[800px] max-md:h-[65%] pl-1 w-full flex justify-center items-end">
-          <HeroContent />
-        </div>
-        <MarqueeDemo />
-      </HeroBG>
+    <div className="relative w-full overflow-x-hidden">
+      <div className="relative w-full h-[1000px] max-md:h-[800px]">
+        <HeroBG>
+          <div className="absolute inset-0 flex flex-col justify-end">
+            <div className="container mx-auto h-[800px] max-md:h-[600px] w-full flex justify-center items-end">
+              <HeroContent />
+            </div>
+            <MarqueeDemo />
+          </div>
+        </HeroBG>
+      </div>
     </div>
   );
 };

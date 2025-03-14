@@ -3,6 +3,13 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 
+// Add TypeScript declaration for the global window object
+declare global {
+  interface Window {
+    lenis?: Lenis;
+  }
+}
+
 export default function LenisScroll() {
   useEffect(() => {
     // Initialize Lenis for smooth scrolling
@@ -25,6 +32,9 @@ export default function LenisScroll() {
       }
     });
 
+    // Make lenis available globally
+    window.lenis = lenis;
+
     // Handle link clicks manually to ensure they work with smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
       anchor.addEventListener('click', function(this: HTMLAnchorElement, e: Event) {
@@ -46,6 +56,7 @@ export default function LenisScroll() {
     // Clean up the Lenis instance when the component unmounts
     return () => {
       lenis.destroy();
+      window.lenis = undefined;
     };
   }, []);
 

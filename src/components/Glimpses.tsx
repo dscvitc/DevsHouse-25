@@ -2,9 +2,7 @@
 
 import { useEffect } from "react";
 import { Hubot_Sans, } from "next/font/google";
-
 import Image from "next/image";
-
 import Heading from "../components/ui/Heading";
 
 const hubot = Hubot_Sans({
@@ -43,11 +41,6 @@ const Panorama: React.FC = () => {
   return (
     <>
       <div className=" py-20" id="glimpses">
-        {/* <div
-                    className="relative flex justify-center items-center my-3" style={{ height: 205 }} >
-                    <Image className="absolute" src={Bgimage} alt="bgimage" width={200} height={200} />
-                    <h2 className={`${mona.className} text-center text-6xl`}>GLIMPSES</h2>
-                </div> */}
         <div
           className="relative flex justify-center items-center mb-10"
           style={{ height: 205 }}
@@ -184,7 +177,6 @@ const Panorama: React.FC = () => {
 
         </div>
         <div className="flex justify-center items-center">
-
           <p className="text-center pr-2 pl-4" style={hubot.style}>
             Swipe Left
           </p>
