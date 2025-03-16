@@ -63,6 +63,7 @@ html {
   height: auto;
   scroll-padding-top: 2rem;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 
 body {
