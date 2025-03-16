@@ -52,7 +52,11 @@ const ResponsiveCarousel: React.FC<ResponsiveCarouselProps> = ({
   const startDate = new Date(2025, 3, 4);
   const oneDay = 24 * 60 * 60 * 1000;
   const dates = Array.from({ length: totalSlides }, (_, i) => {
-    return new Date(startDate.getTime() + i * oneDay);
+    const date = new Date(startDate.getTime() + i * oneDay);
+    return {
+      id: `date-${i}`,  // Add a stable id for key prop
+      date: date
+    };
   });
 
   const formatDate = (date: Date) => {
@@ -98,7 +102,7 @@ const ResponsiveCarousel: React.FC<ResponsiveCarouselProps> = ({
             const isActive = currentSlide === i;
             return (
               <Button
-                key={i}
+                key={date.id}
                 // Dynamically set size based on screen width
                 size={isSmallScreen ? "sm" : "md"}
                 className={`
@@ -110,7 +114,7 @@ const ResponsiveCarousel: React.FC<ResponsiveCarouselProps> = ({
                 `}
                 onClick={() => setCurrentSlide(i)}
               >
-                {formatDate(date)}
+                {formatDate(date.date)}
               </Button>
             );
           })}

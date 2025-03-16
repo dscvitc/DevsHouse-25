@@ -63,7 +63,9 @@ html {
   height: auto;
   scroll-padding-top: 2rem;
   -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
+  @media (max-width: 767px) {
+    overflow-x: hidden;
+  }
 }
 
 body {

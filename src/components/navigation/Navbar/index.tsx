@@ -32,7 +32,7 @@ const Navbar = (props: Props) => {
     const section = document.getElementById(sectionId);
     
     if (section) {
-      const offset = 90;
+      const offset = 80;
       const sectionTop = section.offsetTop - offset;
       window.scrollTo({
         top: sectionTop,

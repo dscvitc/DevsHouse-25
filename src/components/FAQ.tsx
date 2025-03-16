@@ -25,25 +25,27 @@ const FAQ = () => {
   };
 
   const items = FAQData.map((props) => (
-    <Accordion type="single" collapsible key={props.key}>
-      <AccordionItem className="rounded-xl border-bottom bg-[#ffffff08]" value={props.question}>
-        <AccordionTrigger className={`text-white text-left hover:bg-inherit`}>
-          <div className={`flex ${Hubot.className} md:text-2xl text-[0.8rem] items-center`}>
-            <Image
-              src={BubbleSVG}
-              alt="bubbles"
-              className={`border-bottom rounded-xl scale-75 origin-bottom-left ${bubbleColorClasses[props.color as keyof typeof bubbleColorClasses]}`}
-            />
-            {props.question}
-          </div>
-        </AccordionTrigger>
-        <AccordionContent className={`${colorClasses[props.color as keyof typeof colorClasses]} rounded-xl p-5`}>
-          <p className={`${Hubot.className} pl-2 md:md:text-lg text-[0.8rem] text-black`}>
-            {props.answer}
-          </p>
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+    <div key={`faq-${props.key}`}>
+      <Accordion type="single" collapsible>
+        <AccordionItem className="rounded-xl border-bottom bg-[#ffffff08]" value={props.question}>
+          <AccordionTrigger className={`text-white text-left hover:bg-inherit`}>
+            <div className={`flex ${Hubot.className} md:text-2xl text-[0.8rem] items-center`}>
+              <Image
+                src={BubbleSVG}
+                alt="bubbles"
+                className={`border-bottom rounded-xl scale-75 origin-bottom-left ${bubbleColorClasses[props.color as keyof typeof bubbleColorClasses]}`}
+              />
+              {props.question}
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className={`${colorClasses[props.color as keyof typeof colorClasses]} rounded-xl p-5`}>
+            <p className={`${Hubot.className} pl-2 md:md:text-lg text-[0.8rem] text-black`}>
+              {props.answer}
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
   ));
 
   return (
@@ -57,6 +59,21 @@ const FAQ = () => {
       <div className="w-full max-w-4xl space-y-4">
         {items}
       </div>
+      <Image
+          style={{
+            position: "absolute",
+            zIndex: -1,
+            top: "55%",
+            left: "50%",
+            transform: "translate(-50%, -45%)",
+            width: "90vw",
+            height: "80vw",
+          }}
+          src={BlackBg}
+          width={800}
+          height={800}
+          alt=""
+        />
     </div>
   );
 };
