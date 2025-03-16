@@ -91,7 +91,7 @@ const ResponsiveCarousel: React.FC<ResponsiveCarouselProps> = ({
 
   return (
     <div className="w-full flex justify-center">
-      <div className="relative mx-auto w-full max-w-[46rem]">
+      <div className="relative mx-auto w-full md:max-w-[50rem]">
         {/* Date Buttons (Top Center) */}
         <div className="absolute top-2 left-1/2 transform -translate-x-1/2 flex gap-1 sm:gap-2 z-30">
           {dates.map((date, i) => {
