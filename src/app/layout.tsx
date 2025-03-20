@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import LenisScroll from "@/components/LenisScroll";
 import { Toaster } from "@/components/ui/sonner"
+import { SponsorPopup } from "@/components/ui/SponsorPopup";
 import Image from "next/image";
 
 import {
@@ -91,6 +92,7 @@ export default function RootLayout({
           </noscript>
           {children}
           <Toaster />
+          <SponsorPopup />
           <Footer />
           {/* MLH Banner */}
           <a
