@@ -2,12 +2,7 @@ import Divider from "./Divider";
 import MainPrize from "./MainPrizeCard";
 import SpecialPrize from "./SpecialPrizeCardImage";
 import Image from "next/image";
-import { Hubot_Sans } from "next/font/google";
 
-const hubot = Hubot_Sans({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 export default function Prizes() {
   const PrizeInfo = [
@@ -37,54 +32,71 @@ export default function Prizes() {
 
 
   const tracks = [
-    //Individual prize tracks
     {
-      trackName: "Company A",
-      trackLogo: "/images/icons-track-prize.png",
-      trackText: "Innovative financial system solutions earn premium plans from Company A.",
-      color: "#C10929",
-    },
-    {
-      trackName: "Company B",
-      trackLogo: "/images/icons-track-prize.png",
-      trackText: "Leading eco-friendly tech solutions win a 1-year Wolfram|Alpha Pro subscription.",
-      color: "#FF5B62",
-    },
-    {
-      trackName: "Company C",
-      trackLogo: "/images/icons-track-prize.png",
-      trackText: "Winning team for efficient developer tools gets 90-day unrestricted Balsamic Cloud access.",
-      color: "#98098A",
-    },
-    {
-      trackName: "Company D",
-      trackLogo: "/images/icons-track-prize.png",
+      trackName: "Wolfram",
+      trackLogo: "/sponsors/wolfram.png",
       trackText:
-        "Cutting-edge hardware innovations, from IoT to embedded systems, pushing tech boundaries: Prize - INR 5,000.",
-      color: "#42000A",
+        "6-month license for all participants to Wolfram|One ($830 value). 1-year license for top projects utilizing Wolfram ($1,660 value) + $500 summer program scholarship eligibility.",
+      color: "#C10929",
+      imageWidth: 250,
+      imageHeight: 90,
     },
     {
-      trackName: "Company E",
-      trackLogo: "/images/icons-track-prize.png",
-      trackText: "Project promoting inclusivity through tech wins free therapist sessions from BetterHelp.",
-      color: "#374391",
+      trackName: ".xyz",
+      trackLogo: "/sponsors/xyz.png",
+      trackText:
+        "Ten free domains worth $10 each.",
+      color: "#FF5B62",
+      imageWidth: 150,
+      imageHeight: 80,
     },
     {
-      trackName: "Company F",
-      trackLogo: "/images/icons-track-prize.png",
-      trackText: "Top open-source projects fostering transparent and collaborative tech development win INR 10,000.",
-      color: "#07A158",
+      trackName: "Interview Buddy",
+      trackLogo: "/sponsors/IBlogo_light_1.png",
+      trackText:
+        "GenAI mock interviews (with unlimited practice and AI feedback reports) as prizes for the winners and runners-up of all events and competitions.",
+      color: "#98098A",
+      imageWidth: 200,
+      imageHeight: 80,
     },
+    {
+      trackName: "CodeCrafters",
+      trackLogo: "/sponsors/codecrafters.png",
+      trackText:
+        "First Prize – 2-year VIP CodeCrafters membership. Second Prize – 1-year VIP CodeCrafters membership. Third Prize – 6-month VIP CodeCrafters membership",
+  color: "#42000A",
+    imageWidth: 250,
+      imageHeight: 80,
+    },
+{
+  trackName: "Balsamiq",
+    trackLogo: "/sponsors/balsamiq.png",
+      trackText:
+  "60-day extended free trial code to all participants.",
+    color: "#374391",
+      imageWidth: 250,
+        imageHeight: 80,
+    },
+/* {
+  trackName: "Company F",
+    trackLogo: "/images/icons-track-prize.png",
+      trackText:
+  "Top open-source projects fostering transparent and collaborative tech development win INR 10,000.",
+    color: "#07A158",
+      imageWidth: 160,
+        imageHeight: 80,
+    }, */
   ];
 
 
-  
-  return (
-    <section
-      id="prizes"
-      className="w-full flex flex-col justify-center items-center overflow-hidden mb-8"
-    >
-      <div className="relative flex items-center justify-center mt-10 mb-6">
+
+
+return (
+  <section
+    id="prizes"
+    className="w-full flex flex-col justify-center items-center overflow-hidden mb-8"
+  >
+    <div className="relative flex items-center justify-center mt-10 mb-6">
       <svg
         viewBox="0 0 391 398"
         fill="none"
@@ -143,77 +155,78 @@ export default function Prizes() {
         PRIZES
       </h1>
 
-    
-      </div>
-      <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
-      <div className="flex flex-row justify-center items-end md:px-12 md:gap-x-10 lg:gap-x-32 mt-[60px] mb-[60px]">
-        <div className="w-[30%]">
 
-          <div className="absolute">
-            <div className="absolute top-1/3 left-1/3 w-32 h-48 md:w-64 md:h-80 rounded-full bg-slate-500 blur-3xl z-[-1] opacity-150 md:mt-[60px] md:ml-[-30px] mt-[40px] ml-[-10px]"></div> 
-          </div>
-          <MainPrize
-            src={PrizeInfo[1].src} //bronze
-            width={PrizeInfo[1].width}
-            height={PrizeInfo[1].height}
-            price={PrizeInfo[1].price}
-            alt={PrizeInfo[1].alt}
-          />
+    </div>
+    <Divider heading="Top 3 Overall" mt="50px" mb="20px" />
+    <div className="flex flex-row justify-center items-end md:px-12 md:gap-x-10 lg:gap-x-32 mt-[60px] mb-[60px]">
+      <div className="w-[30%]">
+
+        <div className="absolute">
+          <div className="absolute top-1/3 left-1/3 w-32 h-48 md:w-64 md:h-80 rounded-full bg-slate-500 blur-3xl z-[-1] opacity-150 md:mt-[60px] md:ml-[-30px] mt-[40px] ml-[-10px]"></div>
         </div>
-        <div className="w-[40%]">
-          <div className="absolute z-[-1] left-1/2 transform -translate-x-1/2">
-            <div className="relative w-[220px] h-[300px] ml-[10px] md:w-[600px] md:h-[600px] md:mt-12">
-              <Image src="/images/prizes/bg.png" fill priority alt="Background" />
-            </div>
+        <MainPrize
+          src={PrizeInfo[1].src} //bronze
+          width={PrizeInfo[1].width}
+          height={PrizeInfo[1].height}
+          price={PrizeInfo[1].price}
+          alt={PrizeInfo[1].alt}
+        />
+      </div>
+      <div className="w-[40%]">
+        <div className="absolute z-[-1] left-1/2 transform -translate-x-1/2">
+          <div className="relative w-[220px] h-[300px] ml-[10px] md:w-[600px] md:h-[600px] md:mt-12">
+            <Image src="/images/prizes/bg.png" fill priority alt="Background" />
           </div>
-          <div className="absolute">
+        </div>
+        <div className="absolute">
           <div className="absolute top-1/3 left-1/3 w-32 h-44 md:w-96 md:h-[400px] mt-[30px] ml-[30px] rounded-full bg-[#FDDB85] blur-3xl z-[-1] opacity-70 flex items-center justify-center md:mt-[50px] md:ml-[-20px]">
             <div className="w-32 h-44 md:w-56 md:h-56 rounded-full bg-[#FFC727] blur-3xl z-[-1] opacity-100 "></div>
-          </div> 
           </div>
-         
+        </div>
 
-          <MainPrize
-            src={PrizeInfo[0].src} //gold
-            width={PrizeInfo[0].width}
-            height={PrizeInfo[0].height}
-            price={PrizeInfo[0].price}
-            alt={PrizeInfo[0].alt}
-          />
-        </div>
-        <div className="w-[30%]">
-          <div className="absolute">
-          <div className="absolute top-1/3 left-1/3 w-32 h-48 ml-[-10px] mt-[40px] md:w-64 md:h-80 rounded-full bg-[#0387DA] blur-3xl z-[-1] opacity-75 md:mt-[60px]"></div>
-          </div>
-          <MainPrize
-            src={PrizeInfo[2].src} //silver
-            width={PrizeInfo[2].width}
-            height={PrizeInfo[2].height}
-            price={PrizeInfo[2].price}
-            alt={PrizeInfo[2].alt}
-          />
-        </div>
+
+        <MainPrize
+          src={PrizeInfo[0].src} //gold
+          width={PrizeInfo[0].width}
+          height={PrizeInfo[0].height}
+          price={PrizeInfo[0].price}
+          alt={PrizeInfo[0].alt}
+        />
       </div>
+      <div className="w-[30%]">
+        <div className="absolute">
+          <div className="absolute top-1/3 left-1/3 w-32 h-48 ml-[-10px] mt-[40px] md:w-64 md:h-80 rounded-full bg-[#0387DA] blur-3xl z-[-1] opacity-75 md:mt-[60px]"></div>
+        </div>
+        <MainPrize
+          src={PrizeInfo[2].src} //silver
+          width={PrizeInfo[2].width}
+          height={PrizeInfo[2].height}
+          price={PrizeInfo[2].price}
+          alt={PrizeInfo[2].alt}
+        />
+      </div>
+    </div>
 
-      {/* {tracks.length > 0 ? (
-        <>
-          <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
-          <div className="w-full px-12 grid grid-cols-1 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
-            {tracks.map((track) => (
-              <SpecialPrize
-                key={track.trackName}
-                trackName={track.trackName}
-                trackLogo={track.trackLogo}
-                trackText={track.trackText}
-                color={track.color}
-              />
-            ))}
-          </div>
-        </>
-      ) : (
-        <></>
-      )} */}
-      {/* </div> */}
-    </section>
-  );
+    {tracks.length > 0 ? (
+      <>
+        <Divider heading="Special Track Prizes" mt="70px" mb="70px" />
+        <div className="w-full px-12 grid grid-cols-1 gap-7 mb-4 justify-center items-center sm:grid-cols-2 sm:grid-rows-3">
+          {tracks.map((track) => (
+            <SpecialPrize
+              key={track.trackName}
+              trackLogo={track.trackLogo}
+              trackText={track.trackText}
+              color={track.color}
+              imageWidth={track.imageWidth}
+              imageHeight={track.imageHeight}
+            />
+          ))}
+        </div>
+      </>
+    ) : (
+      <></>
+    )}
+    {/* </div> */}
+  </section>
+);
 }
