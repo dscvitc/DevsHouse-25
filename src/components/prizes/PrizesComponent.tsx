@@ -63,7 +63,7 @@ export default function Prizes() {
       trackName: "CodeCrafters",
       trackLogo: "/sponsors/codecrafters.png",
       trackText:
-        "First Prize – 2-year VIP CodeCrafters membership. Second Prize – 1-year VIP CodeCrafters membership. Third Prize – 6-month VIP CodeCrafters membership",
+        "First Prize – 2-year VIP CodeCrafters membership. Second Prize – 1-year VIP CodeCrafters membership. Third Prize – 6-month VIP CodeCrafters membership.",
   color: "#42000A",
     imageWidth: 250,
       imageHeight: 80,
