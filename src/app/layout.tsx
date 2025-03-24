@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import LenisScroll from "@/components/LenisScroll";
 import { Toaster } from "@/components/ui/sonner"
-import { SponsorPopup } from "@/components/ui/SponsorPopup";
 import Image from "next/image";
 
 import {
@@ -16,8 +15,6 @@ import {
   MantineProvider,
   mantineHtmlProps,
 } from "@mantine/core";
-import Navbar from "@/components/navigation/Navbar";
-import Footer from "@/components/footer";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -86,14 +83,11 @@ export default function RootLayout({
       >
         <MantineProvider>
           <LenisScroll />
-          <Navbar />
           <noscript>
             <iframe src={`https://www.googletagmanager.com/ns.html?id=${GA_TRACKING_ID}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe>
           </noscript>
           {children}
           <Toaster />
-          <SponsorPopup />
-          <Footer />
           {/* MLH Banner */}
           <a
             id="mlh-trust-badge"

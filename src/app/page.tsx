@@ -10,10 +10,15 @@ import Hero from "@/components/hero/Hero";
 import Sponsors from "@/components/sponsors/Sponsors";
 import Prizes from "@/components/prizes/PrizesComponent";
 import Community from "@/components/Community";
+import Navbar from "@/components/navigation/Navbar";
+import Footer from "@/components/footer";
+import { SponsorPopup } from "@/components/ui/SponsorPopup";
 
 export default function Home() {
   return (
     <>
+    <Navbar />
+    <SponsorPopup />
       <Hero />
       <About />
       <Tracks />
@@ -26,6 +31,7 @@ export default function Home() {
       <Glimpses />
       <HostInvitation />
       <ContactUs />
+      <Footer />
     </>
   );
 }
