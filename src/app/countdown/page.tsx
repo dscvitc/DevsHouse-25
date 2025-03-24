@@ -18,9 +18,9 @@ const Page = () => {
 
   // Responsive styles
   const digitStyle = {
-    width: width < 640 ? 50 : width < 768 ? 70 : 100,
-    height: width < 640 ? 70 : width < 768 ? 100 : 160,
-    fontSize: width < 640 ? 36 : width < 768 ? 60 : 100,
+    width: width < 640 ? 50 : width < 768 ? 70 : 120,
+    height: width < 640 ? 70 : width < 768 ? 100 : 180,
+    fontSize: width < 640 ? 36 : width < 768 ? 60 : 120,
     backgroundColor: 'white', // Fully opaque to avoid seeing flipped digits
     color: 'black',
     borderRadius: 12,
