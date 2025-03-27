@@ -148,7 +148,7 @@ const Page = () => {
           className="-z-10 relative -left-[200px] bottom-64"
         />
         <Image
-          src="/images/countdown/rectangle-67.svg"
+          src="/images/countdown/Rectangle-67.svg"
           alt="bg-asset"
           height={420}
           width={380}
