@@ -32,6 +32,33 @@ export default function Prizes() {
 
 
   const tracks = [
+   {
+  trackName: "Gemini",
+    trackLogo: "/sponsors/genai-prize-category.webp",
+      trackText:
+  "Best Use of Gemini API: Assorted Prizes - Push the limits of AI with the Google Gemini API! Build apps that understand language, analyze data, and generate creative content.",
+    color: "#07A158",
+      imageWidth: 200,
+        imageHeight: 80,
+    }, 
+    {
+      trackName: "Midnight",
+        trackLogo: "/sponsors/midnight.webp",
+          trackText:
+      "Best Use of Midnight - JBL Tune 510BT Wireless Headphones: Leverage Midnight's blockchain to build secure, data-protected DApps and win wireless headphones for your entire team!",
+        color: "#07A158",
+          imageWidth: 200,
+            imageHeight: 80,
+        }, 
+        {
+          trackName: "MongoDB",
+            trackLogo: "/sponsors/mongodb.webp",
+              trackText:
+          "Best Use of MongoDB Atlas - M5GO IoT Starter Kit: Build a hack using MongoDB Atlas for a chance to win a M5GO IoT Starter Kit for you and each member of your team!",
+            color: "#07A158",
+              imageWidth: 200,
+                imageHeight: 80,
+            }, 
     {
       trackName: "Wolfram",
       trackLogo: "/sponsors/wolfram.png",
@@ -76,34 +103,7 @@ export default function Prizes() {
     color: "#374391",
       imageWidth: 250,
         imageHeight: 80,
-    },
- {
-  trackName: "Gemini",
-    trackLogo: "/sponsors/genai-prize-category.webp",
-      trackText:
-  "Best Use of Gemini API: Assorted Prizes - Push the limits of AI with the Google Gemini API! Build apps that understand language, analyze data, and generate creative content.",
-    color: "#07A158",
-      imageWidth: 200,
-        imageHeight: 80,
-    }, 
-    {
-      trackName: "Midnight",
-        trackLogo: "/sponsors/midnight.webp",
-          trackText:
-      "Best Use of Midnight - JBL Tune 510BT Wireless Headphones: Leverage Midnight's blockchain to build secure, data-protected DApps and win wireless headphones for your entire team!",
-        color: "#07A158",
-          imageWidth: 200,
-            imageHeight: 80,
-        }, 
-        {
-          trackName: "MongoDB",
-            trackLogo: "/sponsors/mongodb.webp",
-              trackText:
-          "Best Use of MongoDB Atlas - M5GO IoT Starter Kit: Build a hack using MongoDB Atlas for a chance to win a M5GO IoT Starter Kit for you and each member of your team!",
-            color: "#07A158",
-              imageWidth: 200,
-                imageHeight: 80,
-            }, 
+    }
   ];
 
 
