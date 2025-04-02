@@ -14,6 +14,10 @@ import ibLogo from "@/../public/sponsors/IBlogo_light.png"
 import balsamiqLogo from "@/../public/sponsors/balsamiq.png";
 import endlessDomainsLogo from "@/../public/sponsors/endless-domains.png"
 import githubLogo from "@/../public/sponsors/github-logo.png"
+import oreillyLogo from "@/../public/sponsors/oreilly.png"
+import digitalSouthLogo from "@/../public/sponsors/digitalSouth.png"
+import chennaiExpoLogo from "@/../public/sponsors/chennaiExpo.png"
+import guildLogo from "@/../public/sponsors/guild.png"
 import { Mona_Sans } from "next/font/google";
 
 const monasans = Mona_Sans({ subsets: ["latin"] });
@@ -117,7 +121,7 @@ const Sponsor = () => {
         </div>
       </div>
 
-      
+
       <div className="flex flex-col items-center w-full justify-center mt-20">
         <div className="flex justify-center w-full items-center">
           <svg
@@ -204,45 +208,58 @@ const Sponsor = () => {
           </svg>
         </div>
         <div className="flex flex-col gap-12 mt-20 justify-center items-center">
-            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
-              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+          <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+            <div className="flex flex-row justify-center justify-self-center text-center items-center">
               <a href="https://codecrafters.io/" target="_blank">
-              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                <div className="flex flex-row justify-center items-center p-18">
-                  <Image src={codecraftersLogo} alt={"CODECRAFTERS LOGO"} width={500} />
-                </div>
-              </div>
-            </a>
-
-                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-              </div>
-              <div className="flex flex-row justify-center justify-self-center text-center items-center">
-                <a href="https://endlessdomains.io/" target="_blank">
-                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                    <div className="flex flex-row justify-center items-center">
-                      <Image src={endlessDomainsLogo} alt={"ENDLESS DOMAINS LOGO"} width={350} />
-                    </div>
+                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                  <div className="flex flex-row justify-center items-center p-18">
+                    <Image src={codecraftersLogo} alt={"CODECRAFTERS LOGO"} width={500} />
                   </div>
-                </a>
-
-                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-              </div>
-            </div>
-          </div>
-        <div className="flex flex-col gap-12 mt-20 justify-center items-center">
-            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
-              <div className="flex flex-row justify-center justify-self-center text-center items-center">
-              <a href="https://github.com/" target="_blank">
-              <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
-                <div className="flex flex-row justify-center items-center p-18">
-                  <Image src={githubLogo} alt={"GITHUB LOGO"} width={320} />
                 </div>
-              </div>
-            </a>
-                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
-              </div>
+              </a>
+
+              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+            </div>
+            <div className="flex flex-row justify-center justify-self-center text-center items-center">
+              <a href="https://endlessdomains.io/" target="_blank">
+                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                  <div className="flex flex-row justify-center items-center">
+                    <Image src={endlessDomainsLogo} alt={"ENDLESS DOMAINS LOGO"} width={350} />
+                  </div>
+                </div>
+              </a>
+
+              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
             </div>
           </div>
+        </div>
+        <div className="flex flex-col gap-12 mt-20 justify-center items-center">
+          <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+              <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+                <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                  <a href="https://github.com/" target="_blank">
+                    <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                      <div className="flex flex-row justify-center items-center p-18">
+                        <Image src={githubLogo} alt={"GITHUB LOGO"} width={320} />
+                      </div>
+                    </div>
+                  </a>
+                  <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            </div>
+            <div className="flex flex-row justify-center justify-self-center text-center items-center">
+              <a href="https://www.oreilly.com/" target="_blank">
+                <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                  <div className="flex flex-row justify-center items-center">
+                    <Image src={oreillyLogo} alt={"OREILLY LOGO"} width={350} />
+                  </div>
+                </div>
+              </a>
+
+              <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+            </div>
+          </div>
+        </div>
       </div>
 
 
@@ -283,6 +300,32 @@ const Sponsor = () => {
             </svg>
           </div>
           {/* company section */}
+          <div className="flex flex-col gap-12 mt-20 justify-center items-center">
+            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://digitalsouth.co.in/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={digitalSouthLogo} alt={"DIGITAL SOUTH LOGO"} width={300} />
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image className="translate-y-4" src={chennaiExpoLogo} alt={"CHENNAI EXPO"} width={250} />
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col gap-12 mt-20 justify-center items-center">
             <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
               <div className="flex flex-row justify-center justify-self-center text-center items-center">
@@ -335,6 +378,21 @@ const Sponsor = () => {
               </div>
             </div>
           </div>
+          <div className="flex flex-col gap-12 mt-20 justify-center items-center">
+            <div className="flex gap-60 max-lg:flex-col max-lg:gap-20">
+              <div className="flex flex-row justify-center justify-self-center text-center items-center">
+                <a href="https://www.guildengineering.com/" target="_blank">
+                  <div className="w-[300px] h-[190px] mr-[-290px] backdrop-opacity-100 bg-neutral-200 rounded-[10.61px] flex flex-col justify-center  lg:w-[450px] lg:mr-[-440px] p-1 xl:w-[560px] xl:mr-[-547px]">
+                    <div className="flex flex-row justify-center items-center">
+                      <Image src={guildLogo} alt={"GUILD LOGO"} width={300} />
+                    </div>
+                  </div>
+                </a>
+
+                <div className="w-[300px] h-[190px] rounded-[10.61px] border-2 border-white lg:w-[450px] xl:w-[560px] mt-[24px]" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-12">
@@ -353,9 +411,9 @@ const Sponsor = () => {
               fill="white"
             />
           </svg>
-            <span className="whitespace-nowrap text-[#FF5A4C] mx-4 text-[25px] leading-normal font-bold px-1 font-spaceGrotesk max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
+          <span className="whitespace-nowrap text-[#FF5A4C] mx-4 text-[25px] leading-normal font-bold px-1 font-spaceGrotesk max-xl:text-[25px] max-lg:text-[20px] max-mg:text-[15px] max-sm:text-[15px]">
             Hackathon Partner
-            </span>
+          </span>
           <svg
             className="flex justify-start w-1/2"
             height="5"

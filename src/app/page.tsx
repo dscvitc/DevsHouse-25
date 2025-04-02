@@ -12,13 +12,10 @@ import Prizes from "@/components/prizes/PrizesComponent";
 import Community from "@/components/Community";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/footer";
-import { SponsorPopup } from "@/components/ui/SponsorPopup";
-
 export default function Home() {
   return (
     <>
     <Navbar />
-    <SponsorPopup />
       <Hero />
       <About />
       <Tracks />
