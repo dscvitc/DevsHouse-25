@@ -10,14 +10,14 @@ import Image from 'next/image';
 const Page = () => {
   const [mounted, setMounted] = useState(false);
   const { width } = useWindowSize();
+  const [countdownStarted, setCountdownStarted] = useState(false);
+  const [targetTime, setTargetTime] = useState(null);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  const targetDate = new Date('2025-04-06T06:00:00');
-
-  // Responsive styles
+  // Responsive styles for the flip digits
   const digitStyle = {
     width: width < 640 ? 50 : width < 768 ? 70 : 130,
     height: width < 640 ? 70 : width < 768 ? 100 : 190,
@@ -35,6 +35,12 @@ const Page = () => {
     fontWeight: 700,
     textTransform: 'uppercase' as const,
     marginTop: 8,
+  };
+
+  // Function to start the countdown with 36 hours (36 * 3600 * 1000 ms)
+  const startCountdown = () => {
+    setTargetTime(Date.now() + 36 * 3600 * 1000);
+    setCountdownStarted(true);
   };
 
   return (
@@ -88,21 +94,38 @@ const Page = () => {
           </div>
         </div>
 
-        {/* Countdown */}
-        <div className="md:mt-20 mt-8 w-full flex justify-center">
+        {/* Render the button or the countdown based on state */}
+        <div className="w-full flex justify-center">
           {mounted && (
-            <div className="transform scale-[0.75] sm:scale-90 md:scale-100 origin-top">
-              <FlipClockCountdown
-                to={targetDate.getTime()}
-                labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
-                className="text-white"
-                digitBlockStyle={digitStyle}
-                labelStyle={labelStyle}
-                separatorStyle={{ color: 'white', size: '6px' }}
-                dividerStyle={{ color: '#444', height: 0.5 }}
-                duration={0.5}
-              />
-            </div>
+            <>
+              {!countdownStarted ? (
+                <button 
+                onClick={startCountdown} 
+                className="relative inline-flex mt-12 h-24 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+              >
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 py-4 text-2xl font-bold text-white backdrop-blur-3xl">
+                  LET THE HACKATHON BEGIN!
+                </span>
+              </button>
+              
+              ) : (
+                <div className="md:mt-20 mt-8 flex justify-center">
+                  <div className="transform scale-[0.75] sm:scale-90 md:scale-100 origin-top">
+                    <FlipClockCountdown
+                      to={targetTime}
+                      labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
+                      className="text-white"
+                      digitBlockStyle={digitStyle}
+                      labelStyle={labelStyle}
+                      separatorStyle={{ color: 'white', size: '6px' }}
+                      dividerStyle={{ color: '#444', height: 0.5 }}
+                      duration={0.5}
+                    />
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>
