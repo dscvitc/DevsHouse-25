@@ -5,6 +5,7 @@ import { BackgroundBeams } from '@/components/ui/background-beams';
 import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import useWindowSize from '@/hooks/use-window-size';
+import vitLogo from '@/../public/images/countdown/vit_logo.png';
 import Image from 'next/image';
 
 const Page = () => {
@@ -22,12 +23,12 @@ const Page = () => {
     width: width < 640 ? 50 : width < 768 ? 70 : 130,
     height: width < 640 ? 70 : width < 768 ? 100 : 190,
     fontSize: width < 640 ? 36 : width < 768 ? 60 : 130,
-    backgroundColor: 'white', // Fully opaque to avoid seeing flipped digits
+    backgroundColor: 'white',
     color: 'black',
     borderRadius: 12,
     border: '2px solid white',
     boxShadow: '0 4px 12px rgba(255, 255, 255, 0.15)',
-    backdropFilter: 'blur(6px)', // Subtle glass effect
+    backdropFilter: 'blur(6px)',
   };
 
   const labelStyle = {
@@ -45,16 +46,17 @@ const Page = () => {
 
   return (
     <div className='h-screen overflow-hidden'>
-      <div className='absolute top-6 left-4'>
-        <div className="flex justify-start items-center gap-x-5 z-50">
+      {/* GDSC Logo on the left */}
+      <div className='absolute top-6 left-4 z-50'>
+        <div className="flex justify-start items-center gap-x-5">
           <Image
             src={"images/gdsc-logo.svg"}
-            alt="logo"
+            alt="GDSC logo"
             height={40}
             width={80}
             className="max-md:h-10 max-md:w-10"
           />
-          <div className="flex flex-col justify-center items-center text-white font-poppins max-sm:gap-y-0">
+          <div className="flex flex-col justify-center items-center text-white font-poppins">
             <span className="max-md:text-lg md:text-xl max-sm:text-[16px]">
               Google Developer Groups
             </span>
@@ -64,6 +66,17 @@ const Page = () => {
           </div>
         </div>
       </div>
+
+      {/* VIT Logo centered at the top */}
+      <div className='absolute top-2 right-0 transform -translate-x-1/4 z-50'>
+        <Image
+          src={vitLogo}
+          alt="VIT Logo"
+          height={200}
+          width={150}
+        />
+      </div>
+
       <BackgroundBeams />
 
       <div className="h-screen -translate-y-12 flex flex-col justify-center items-center text-white px-4">
@@ -100,15 +113,14 @@ const Page = () => {
             <>
               {!countdownStarted ? (
                 <button 
-                onClick={startCountdown} 
-                className="relative inline-flex mt-12 h-24 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-              >
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 py-4 text-2xl font-bold text-white backdrop-blur-3xl">
-                  LET THE HACKATHON BEGIN!
-                </span>
-              </button>
-              
+                  onClick={startCountdown} 
+                  className="relative inline-flex mt-12 h-24 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                >
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 py-4 text-2xl font-bold text-white backdrop-blur-3xl">
+                    LET THE HACKATHON BEGIN!
+                  </span>
+                </button>
               ) : (
                 <div className="md:mt-20 mt-8 flex justify-center">
                   <div className="transform scale-[0.75] sm:scale-90 md:scale-100 origin-top">

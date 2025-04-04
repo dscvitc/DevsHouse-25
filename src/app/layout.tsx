@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import LenisScroll from "@/components/LenisScroll";
 import { Toaster } from "@/components/ui/sonner"
-import Image from "next/image";
 
 import {
   ColorSchemeScript,
@@ -88,33 +87,6 @@ export default function RootLayout({
           </noscript>
           {children}
           <Toaster />
-          {/* MLH Banner */}
-          <a
-            id="mlh-trust-badge"
-            style={{
-              display: 'block',
-              maxWidth: '100px',
-              minWidth: '60px',
-              position: 'fixed',
-              right: '50px',
-              top: 0,
-              width: '10%',
-              zIndex: 10000
-            }}
-            href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=gray"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-lenis-prevent
-          >
-            <Image
-              src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
-              alt="Major League Hacking 2025 Hackathon Season"
-              width={100}
-              height={100}
-              style={{ width: '100%', height: 'auto' }}
-              priority
-            />
-          </a>
         </MantineProvider>
         <SpeedInsights />
       </body>
