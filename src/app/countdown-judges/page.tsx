@@ -68,12 +68,12 @@ const Page = () => {
       </div>
 
       {/* VIT Logo centered at the top */}
-      <div className='absolute top-2 right-0 transform -translate-x-1/4 z-50'>
+      <div className='absolute top-2 right-0 transform -translate-x-8 z-50'>
         <Image
           src={vitLogo}
           alt="VIT Logo"
-          height={200}
-          width={150}
+          height={400}
+          width={250}
         />
       </div>
 
