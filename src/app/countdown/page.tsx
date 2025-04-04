@@ -59,7 +59,33 @@ const Page = () => {
         </div>
       </div>
       <BackgroundBeams />
-
+      {/* MLH Banner */}
+          <a
+                  id="mlh-trust-badge"
+                  style={{
+                    display: 'block',
+                    maxWidth: '100px',
+                    minWidth: '60px',
+                    position: 'fixed',
+                    right: '50px',
+                    top: 0,
+                    width: '10%',
+                    zIndex: 10000
+                  }}
+                  href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=gray"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-lenis-prevent
+                >
+                  <Image
+                    src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
+                    alt="Major League Hacking 2025 Hackathon Season"
+                    width={100}
+                    height={100}
+                    style={{ width: '100%', height: 'auto' }}
+                    priority
+                  />
+                </a>
       <div className="h-screen -translate-y-12 flex flex-col justify-center items-center text-white px-4">
         {/* Heading */}
         <div className="flex justify-center items-start max-md:flex-col max-md:items-center">
