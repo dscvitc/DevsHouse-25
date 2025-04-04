@@ -11,7 +11,7 @@ const Page = () => {
   const [mounted, setMounted] = useState(false);
   const { width } = useWindowSize();
   const [countdownStarted, setCountdownStarted] = useState(false);
-  const [targetTime, setTargetTime] = useState(null);
+  const [targetTime, setTargetTime] = useState<number | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -113,7 +113,7 @@ const Page = () => {
                 <div className="md:mt-20 mt-8 flex justify-center">
                   <div className="transform scale-[0.75] sm:scale-90 md:scale-100 origin-top">
                     <FlipClockCountdown
-                      to={targetTime}
+                      to={targetTime || Date.now()}
                       labels={['DAYS', 'HOURS', 'MINUTES', 'SECONDS']}
                       className="text-white"
                       digitBlockStyle={digitStyle}
