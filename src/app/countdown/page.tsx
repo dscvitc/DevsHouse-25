@@ -132,7 +132,7 @@ const Page = () => {
           )}
         </div>
       </div>
-      <div className="flex gap-8 justify-between">
+      <div className="flex gap-4 justify-between">
         <Image
           src="/images/countdown/g91-2.svg"
           alt="bg-asset"
