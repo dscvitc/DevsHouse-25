@@ -115,3 +115,5 @@ const Panorama: React.FC = () => {
 };
 
 export default Panorama;
+
+//Maruchan
