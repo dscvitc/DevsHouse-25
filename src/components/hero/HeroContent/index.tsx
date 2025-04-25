@@ -91,7 +91,7 @@ const HeroContent: React.FC<Props> = () => {
         <div className="flex md:gap-x-4 max-md:justify-center max-md:gap-x-4 max-md:px-2 w-full translate-y-8">
           <Link
             target="_blank"
-            href="https://devshouse25.devfolio.co/"
+            href="https://devshouse25.devfolio.co/projects"
             passHref
             onClick={handleRegisterClick} // Track click event
           >
@@ -99,7 +99,7 @@ const HeroContent: React.FC<Props> = () => {
               size="compact-lg"
               className="button-Sponsor mt-3 md:mx-4"
             >
-              Register Now!
+              View Projects!
             </Button>
           </Link>
           <Link

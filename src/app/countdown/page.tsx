@@ -15,7 +15,7 @@ const Page = () => {
     setMounted(true);
   }, []);
 
-  const targetDate = new Date('2025-04-06T06:00:00');
+  const targetDate = new Date('2025-04-06T06:45:00');
 
   // Responsive styles
   const digitStyle = {

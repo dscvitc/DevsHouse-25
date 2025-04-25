@@ -24,7 +24,7 @@ export function RegisterSection() {
                     </p>
                     <Link 
                         target="_blank"
-                        href="https://devshouse25.devfolio.co/" 
+                        href="https://devshouse25.devfolio.co/projects" 
                         passHref
                     >
                         <motion.div
@@ -40,7 +40,7 @@ export function RegisterSection() {
                                 size="compact-lg"
                                 className="button-Sponsor"
                             >
-                                Register Now!
+                                View Projects!
                             </Button>
                         </motion.div>
                     </Link>
